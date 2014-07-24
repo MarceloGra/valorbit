@@ -92,7 +92,7 @@ void Shutdown()
     TRY_LOCK(cs_Shutdown, lockShutdown);
     if (!lockShutdown) return;
 
-    RenameThread("blackcoin-shutoff");
+    RenameThread("valorcoin-shutoff");
     mempool.AddTransactionsUpdated(1);
     StopRPCThreads();
 #ifdef ENABLE_WALLET
@@ -110,7 +110,7 @@ void Shutdown()
     }
 #ifdef ENABLE_WALLET
     if (pwalletMain)
-        bitdb.Flush(true);
+<        bitdb.Flush(true);
 #endif
     boost::filesystem::remove(GetPidFile());
     UnregisterAllWallets();
@@ -134,15 +134,21 @@ void HandleSIGHUP(int)
     fReopenDebugLog = true;
 }
 
+            std::string strUsage = _("ValorCoin version") + " " + FormatFullVersion() + "\n\n" +
+                  "  valorcoind [options]                     " + "\n" +
+                  "  valorcoind [options] <command> [params]  " + _("Send command to -server or valorcoind") + "\n" +
+                  "  valorcoind [options] help                " + _("List commands") + "\n" +
+                  "  valorcoind [options] help <command>      " + _("Get help for a command") + "\n";
+            if (!IsSwitchChar(argv[i][0]) && !boost::algorithm::istarts_with(argv[i], "valorcoin:"))
 bool static InitError(const std::string &str)
 {
-    uiInterface.ThreadSafeMessageBox(str, "", CClientUIInterface::MSG_ERROR);
+    uiInterface.ThreadSafeMessageBox(str, _("ValorCoin"), CClientUIInterface::OK | CClientUIInterface::MODAL);
     return false;
 }
 
 bool static InitWarning(const std::string &str)
 {
-    uiInterface.ThreadSafeMessageBox(str, "", CClientUIInterface::MSG_WARNING);
+    uiInterface.ThreadSafeMessageBox(str, _("ValorCoin"), CClientUIInterface::OK | CClientUIInterface::ICON_EXCLAMATION | CClientUIInterface::MODAL);
     return true;
 }
 
@@ -454,7 +460,7 @@ bool AppInit2(boost::thread_group& threadGroup)
 
     // Sanity check
     if (!InitSanityCheck())
-        return InitError(_("Initialization sanity check failed. BlackCoin is shutting down."));
+        return InitError(_("Initialization sanity check failed. ValorCoin is shutting down."));
 
     std::string strDataDir = GetDataDir().string();
 #ifdef ENABLE_WALLET
@@ -484,7 +490,7 @@ bool AppInit2(boost::thread_group& threadGroup)
     std::ostringstream strErrors;
 
     if (fDaemon)
-        fprintf(stdout, "BlackCoin server starting\n");
+        fprintf(stdout, "ValorCoin server starting\n");
 
     int64_t nStart;
 
