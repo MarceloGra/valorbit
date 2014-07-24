@@ -3,22 +3,22 @@
     <name>AboutDialog</name>
     <message>
         <location filename="../forms/aboutdialog.ui" line="+14"/>
-        <source>About BlackCoin</source>
-        <translation>Om BlackCoin</translation>
+        <source>About ValorCoin</source>
+        <translation>Om ValorCoin</translation>
     </message>
     <message>
         <location line="+39"/>
-        <source>&lt;b&gt;BlackCoin&lt;/b&gt; version</source>
-        <translation>&lt;b&gt;BlackCoin&lt;/b&gt; version</translation>
+        <source>&lt;b&gt;ValorCoin&lt;/b&gt; version</source>
+        <translation>&lt;b&gt;ValorCoin&lt;/b&gt; version</translation>
     </message>
     <message>
         <location line="+41"/>
         <source>Copyright © 2009-2014 The Bitcoin developers
 Copyright © 2012-2014 The NovaCoin developers
-Copyright © 2014 The BlackCoin developers</source>
+Copyright © 2014 The ValorCoin developers</source>
         <translation>Copyright © 2009-2014 The Bitcoin developers
 Copyright © 2012-2014 The NovaCoin developers
-Copyright © 2014 The BlackCoin developers</translation>
+Copyright © 2014 The ValorCoin developers</translation>
     </message>
     <message>
         <location line="+15"/>
@@ -60,8 +60,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-43"/>
-        <source>These are your BlackCoin addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
-        <translation>Dette er dine BlackCoin adresser til at modtage betalinger. Du ønsker måske at give en anden en til af hver afsender, så du kan holde styr på hvem der betaler dig.</translation>
+        <source>These are your ValorCoin addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
+        <translation>Dette er dine ValorCoin adresser til at modtage betalinger. Du ønsker måske at give en anden en til af hver afsender, så du kan holde styr på hvem der betaler dig.</translation>
     </message>
     <message>
         <location line="+53"/>
@@ -75,8 +75,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+7"/>
-        <source>Sign a message to prove you own a BlackCoin address</source>
-        <translation>Signerer en meddelelse for at bevise du ejer en BlackCoin adresse</translation>
+        <source>Sign a message to prove you own a ValorCoin address</source>
+        <translation>Signerer en meddelelse for at bevise du ejer en ValorCoin adresse</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -90,8 +90,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-10"/>
-        <source>Verify a message to ensure it was signed with a specified BlackCoin address</source>
-        <translation>Bekræft en meddelelse for at sikre, den blev underskrevet med en specificeret BlackCoin adresse</translation>
+        <source>Verify a message to ensure it was signed with a specified ValorCoin address</source>
+        <translation>Bekræft en meddelelse for at sikre, den blev underskrevet med en specificeret ValorCoin adresse</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -258,8 +258,6 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+82"/>
-        <source>BlackCoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
-        <translation>BlackCoin lukker nu for at afslutte krypteringen. Husk at en krypteret  tegnebog ikke fuldt ud beskytter dine mønter mod at blive stjålet af malware som har inficeret din computer.</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -352,8 +350,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+4"/>
-        <source>Show information about BlackCoin</source>
-        <translation>Vis oplysninger om BlackCoin</translation>
+        <source>Show information about ValorCoin</source>
+        <translation>Vis oplysninger om ValorCoin</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -392,13 +390,13 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-55"/>
-        <source>Send coins to a BlackCoin address</source>
-        <translation>Send mønter til en BlackCoin adresse</translation>
+        <source>Send coins to a ValorCoin address</source>
+        <translation>Send mønter til en ValorCoin adresse</translation>
     </message>
     <message>
         <location line="+39"/>
-        <source>Modify configuration options for BlackCoin</source>
-        <translation>Ændre indstillingsmuligheder for BlackCoin</translation>
+        <source>Modify configuration options for ValorCoin</source>
+        <translation>Ændre indstillingsmuligheder for ValorCoin</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -437,19 +435,18 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-214"/>
-        <location line="+555"/>
-        <source>BlackCoin</source>
-        <translation>BlackCoin</translation>
+        <location line="+551"/>
+        <translation>ValorCoin</translation>
     </message>
     <message>
-        <location line="-555"/>
+        <location line="-551"/>
         <source>Wallet</source>
         <translation>Tegnebog</translation>
     </message>
     <message>
         <location line="+193"/>
-        <source>&amp;About BlackCoin</source>
-        <translation>&amp;Om BlackCoin</translation>
+        <source>&amp;About ValorCoin</source>
+        <translation>&amp;Om ValorCoin</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -472,7 +469,7 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation>Lås tegnebog</translation>
     </message>
     <message>
-        <location line="+32"/>
+        <location line="+28"/>
         <source>&amp;File</source>
         <translation>Fil</translation>
     </message>
@@ -500,13 +497,13 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="+0"/>
         <location line="+58"/>
-        <source>BlackCoin client</source>
-        <translation>BlackCoin klient</translation>
+        <source>ValorCoin client</source>
+        <translation>ValorCoin klient</translation>
     </message>
     <message numerus="yes">
         <location line="+70"/>
-        <source>%n active connection(s) to BlackCoin network</source>
-        <translation><numerusform>%n aktiv forbindelse til BlackCoin netværk</numerusform><numerusform>%n aktive forbindelser til BlackCoin netværk</numerusform></translation>
+        <source>%n active connection(s) to ValorCoin network</source>
+        <translation><numerusform>%n aktiv forbindelse til ValorCoin netværk</numerusform><numerusform>%n aktive forbindelser til ValorCoin netværk</numerusform></translation>
     </message>
     <message>
         <location line="+488"/>
@@ -534,7 +531,7 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation>Ingen rente fordi der ingen modne mønter eksistere </translation>
     </message>
     <message>
-        <location line="-812"/>
+        <location line="-808"/>
         <source>&amp;Dashboard</source>
         <translation type="unfinished"/>
     </message>
@@ -554,7 +551,7 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation>Lås tegnebog op</translation>
     </message>
     <message>
-        <location line="+277"/>
+        <location line="+273"/>
         <source>Up to date</source>
         <translation>Opdateret</translation>
     </message>
@@ -600,8 +597,8 @@ Adresse: %4
     <message>
         <location line="-15"/>
         <location line="+15"/>
-        <source>URI can not be parsed! This can be caused by an invalid BlackCoin address or malformed URI parameters.</source>
-        <translation>URI kan ikke tolkes! Dette kan skyldes en ugyldig BlackCoin adresse eller misdannede URI parametre.</translation>
+        <source>URI can not be parsed! This can be caused by an invalid ValorCoin address or malformed URI parameters.</source>
+        <translation>URI kan ikke tolkes! Dette kan skyldes en ugyldig ValorCoin adresse eller misdannede URI parametre.</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -723,7 +720,7 @@ Adresse: %4
     </message>
     <message>
         <location filename="../bitcoin.cpp" line="+104"/>
-        <source>A fatal error occurred. BlackCoin can no longer continue safely and will quit.</source>
+        <source>A fatal error occurred. ValorCoin can no longer continue safely and will quit.</source>
         <translation>Der opstod en fejl under forsøg på at gemme dataene i tegnebogen til den nye placering.</translation>
     </message>
 </context>
@@ -773,7 +770,7 @@ Adresse: %4
         <translation>Lav Udgangseffekt:</translation>
     </message>
     <message>
-        <location filename="../coincontroldialog.cpp" line="+537"/>
+        <location filename="../coincontroldialog.cpp" line="+552"/>
         <source>no</source>
         <translation>nej</translation>
     </message>
@@ -838,7 +835,7 @@ Adresse: %4
         <translation>Prioritet</translation>
     </message>
     <message>
-        <location filename="../coincontroldialog.cpp" line="-500"/>
+        <location filename="../coincontroldialog.cpp" line="-515"/>
         <source>Copy address</source>
         <translation>Kopier adresse</translation>
     </message>
@@ -929,7 +926,7 @@ Adresse: %4
         <translation>lavest</translation>
     </message>
     <message>
-        <location line="+140"/>
+        <location line="+155"/>
         <source>DUST</source>
         <translation>DUST</translation>
     </message>
@@ -1057,8 +1054,8 @@ Det betyder, at et gebyr på mindst %2 er påkrævet.</translation>
     </message>
     <message>
         <location line="-5"/>
-        <source>The entered address &quot;%1&quot; is not a valid BlackCoin address.</source>
-        <translation>Den indtastede adresse &quot;%1&quot; er ikke en gyldig BlackCoin adresse.</translation>
+        <source>The entered address &quot;%1&quot; is not a valid ValorCoin address.</source>
+        <translation>Den indtastede adresse &quot;%1&quot; er ikke en gyldig ValorCoin adresse.</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -1076,8 +1073,8 @@ Det betyder, at et gebyr på mindst %2 er påkrævet.</translation>
     <message>
         <location filename="../guiutil.cpp" line="+426"/>
         <location line="+12"/>
-        <source>BlackCoin-Qt</source>
-        <translation>BlackCoin-Qt</translation>
+        <source>ValorCoin-Qt</source>
+        <translation>ValorCoin-Qt</translation>
     </message>
     <message>
         <location line="-12"/>
@@ -1149,13 +1146,13 @@ Det betyder, at et gebyr på mindst %2 er påkrævet.</translation>
     </message>
     <message>
         <location line="+31"/>
-        <source>Automatically start BlackCoin after logging in to the system.</source>
-        <translation>Automatisk start BlackCoin efter at have logget ind på systemet.</translation>
+        <source>Automatically start ValorCoin after logging in to the system.</source>
+        <translation>Automatisk start ValorCoin efter at have logget ind på systemet.</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Start BlackCoin on system login</source>
-        <translation>&amp;Start BlackCoin ved systems login</translation>
+        <source>&amp;Start ValorCoin on system login</source>
+        <translation>&amp;Start ValorCoin ved systems login</translation>
     </message>
     <message>
         <location line="+21"/>
@@ -1164,8 +1161,8 @@ Det betyder, at et gebyr på mindst %2 er påkrævet.</translation>
     </message>
     <message>
         <location line="+6"/>
-        <source>Automatically open the BlackCoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Automatisk åbne BlackCoin klient-port på routeren. Dette virker kun, når din router understøtter UPnP og er det er aktiveret.</translation>
+        <source>Automatically open the ValorCoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Automatisk åbne ValorCoin klient-port på routeren. Dette virker kun, når din router understøtter UPnP og er det er aktiveret.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1173,7 +1170,17 @@ Det betyder, at et gebyr på mindst %2 er påkrævet.</translation>
         <translation>Konfigurer port vha. UPnP</translation>
     </message>
     <message>
-        <location line="+19"/>
+        <location line="+7"/>
+        <source>Connect to the BlackCoin network through a SOCKS proxy (e.g. when connecting through Tor).</source>
+        <translation>Opret forbindelse til BlackCoin netværk via en SOCKS proxy (fx ved tilslutning gennem Tor).</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>&amp;Connect through SOCKS proxy:</source>
+        <translation>&amp;Tilslut gennem SOCKS proxy:</translation>
+    </message>
+    <message>
+        <location line="+9"/>
         <source>Proxy &amp;IP:</source>
         <translation>Proxy-IP:</translation>
     </message>
@@ -1193,17 +1200,17 @@ Det betyder, at et gebyr på mindst %2 er påkrævet.</translation>
         <translation>Porten på proxyen (f.eks. 9050)</translation>
     </message>
     <message>
-        <location line="-57"/>
-        <source>Connect to the BlackCoin network through a SOCKS5 proxy (e.g. when connecting through Tor).</source>
-        <translation type="unfinished"/>
+        <location line="+7"/>
+        <source>SOCKS &amp;Version:</source>
+        <translation>SOCKS-version</translation>
     </message>
     <message>
-        <location line="+3"/>
-        <source>&amp;Connect through SOCKS5 proxy:</source>
-        <translation type="unfinished"/>
+        <location line="+13"/>
+        <source>SOCKS version of the proxy (e.g. 5)</source>
+        <translation>SOCKS-version af proxyen (f.eks. 5)</translation>
     </message>
     <message>
-        <location line="+90"/>
+        <location line="+36"/>
         <source>&amp;Window</source>
         <translation>Vindue</translation>
     </message>
@@ -1239,8 +1246,8 @@ Det betyder, at et gebyr på mindst %2 er påkrævet.</translation>
     </message>
     <message>
         <location line="+13"/>
-        <source>The user interface language can be set here. This setting will take effect after restarting BlackCoin.</source>
-        <translation>Sproget i brugergrænsefladen kan indstilles her. Denne indstilling vil træde i kraft efter genstart af BlackCoin tegnebog.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting ValorCoin.</source>
+        <translation>Sproget i brugergrænsefladen kan indstilles her. Denne indstilling vil træde i kraft efter genstart af ValorCoin tegnebog.</translation>
     </message>
     <message>
         <location line="+11"/>
@@ -1293,12 +1300,12 @@ Det betyder, at et gebyr på mindst %2 er påkrævet.</translation>
         <translation>&amp;Anvend</translation>
     </message>
     <message>
-        <location filename="../optionsdialog.cpp" line="+47"/>
+        <location filename="../optionsdialog.cpp" line="+53"/>
         <source>default</source>
         <translation>standard</translation>
     </message>
     <message>
-        <location line="+148"/>
+        <location line="+149"/>
         <location line="+9"/>
         <source>Warning</source>
         <translation>Advarsel</translation>
@@ -1306,8 +1313,8 @@ Det betyder, at et gebyr på mindst %2 er påkrævet.</translation>
     <message>
         <location line="-9"/>
         <location line="+9"/>
-        <source>This setting will take effect after restarting BlackCoin.</source>
-        <translation>Denne indstilling vil træde i kraft efter genstart af BlackCoin.</translation>
+        <source>This setting will take effect after restarting ValorCoin.</source>
+        <translation>Denne indstilling vil træde i kraft efter genstart af ValorCoin.</translation>
     </message>
     <message>
         <location line="+29"/>
@@ -1325,8 +1332,8 @@ Det betyder, at et gebyr på mindst %2 er påkrævet.</translation>
     <message>
         <location line="+46"/>
         <location line="+247"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the BlackCoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>De viste oplysninger kan være forældet. Din tegnebog synkroniserer automatisk med BlackCoin netværket efter en forbindelse er etableret, men denne proces er ikke afsluttet endnu.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the ValorCoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>De viste oplysninger kan være forældet. Din tegnebog synkroniserer automatisk med ValorCoin netværket efter en forbindelse er etableret, men denne proces er ikke afsluttet endnu.</translation>
     </message>
     <message>
         <location line="-173"/>
@@ -1567,8 +1574,8 @@ Det betyder, at et gebyr på mindst %2 er påkrævet.</translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>Show the BlackCoin-Qt help message to get a list with possible BlackCoin command-line options.</source>
-        <translation>Vis BlackCoin-Qt hjælpe besked for at få en liste med mulige BlackCoin kommandolinjeparametre.</translation>
+        <source>Show the ValorCoin-Qt help message to get a list with possible ValorCoin command-line options.</source>
+        <translation>Vis ValorCoin-Qt hjælpe besked for at få en liste med mulige ValorCoin kommandolinjeparametre.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1587,13 +1594,13 @@ Det betyder, at et gebyr på mindst %2 er påkrævet.</translation>
     </message>
     <message>
         <location line="-104"/>
-        <source>BlackCoin - Debug window</source>
-        <translation>BlackCoin - Debug vindue</translation>
+        <source>ValorCoin - Debug window</source>
+        <translation>ValorCoin - Debug vindue</translation>
     </message>
     <message>
         <location line="+25"/>
-        <source>BlackCoin Core</source>
-        <translation>BlackCoin Kerne</translation>
+        <source>ValorCoin Core</source>
+        <translation>ValorCoin Kerne</translation>
     </message>
     <message>
         <location line="+256"/>
@@ -1602,8 +1609,8 @@ Det betyder, at et gebyr på mindst %2 er påkrævet.</translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>Open the BlackCoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Åbn BlackCoin debug logfilen fra den nuværende data mappe. Dette kan tage et par sekunder for store logfiler.</translation>
+        <source>Open the ValorCoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Åbn ValorCoin debug logfilen fra den nuværende data mappe. Dette kan tage et par sekunder for store logfiler.</translation>
     </message>
     <message>
         <location line="+102"/>
@@ -1612,8 +1619,8 @@ Det betyder, at et gebyr på mindst %2 er påkrævet.</translation>
     </message>
     <message>
         <location filename="../rpcconsole.cpp" line="+325"/>
-        <source>Welcome to the BlackCoin RPC console.</source>
-        <translation>Velkommen til BlackCoin RPC-konsol.</translation>
+        <source>Welcome to the ValorCoin RPC console.</source>
+        <translation>Velkommen til ValorCoin RPC-konsol.</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1665,7 +1672,7 @@ Det betyder, at et gebyr på mindst %2 er påkrævet.</translation>
     <name>SendCoinsDialog</name>
     <message>
         <location filename="../forms/sendcoinsdialog.ui" line="+14"/>
-        <location filename="../sendcoinsdialog.cpp" line="+182"/>
+        <location filename="../sendcoinsdialog.cpp" line="+181"/>
         <location line="+5"/>
         <location line="+5"/>
         <location line="+5"/>
@@ -1717,7 +1724,15 @@ Det betyder, at et gebyr på mindst %2 er påkrævet.</translation>
         <translation>Beløb:</translation>
     </message>
     <message>
-        <location line="+35"/>
+        <location line="+22"/>
+        <location line="+86"/>
+        <location line="+86"/>
+        <location line="+32"/>
+        <source>0.00 BC</source>
+        <translation>123.456 BC {0.00 ?}</translation>
+    </message>
+    <message>
+        <location line="-191"/>
         <source>Priority:</source>
         <translation>Prioritet:</translation>
     </message>
@@ -1782,7 +1797,12 @@ Det betyder, at et gebyr på mindst %2 er påkrævet.</translation>
         <translation>Saldo:</translation>
     </message>
     <message>
-        <location line="+47"/>
+        <location line="+16"/>
+        <source>123.456 BC</source>
+        <translation>123.456 BC</translation>
+    </message>
+    <message>
+        <location line="+31"/>
         <source>Confirm the send action</source>
         <translation>Bekræft afsendelsen</translation>
     </message>
@@ -1792,9 +1812,9 @@ Det betyder, at et gebyr på mindst %2 er påkrævet.</translation>
         <translation>Afsend</translation>
     </message>
     <message>
-        <location filename="../sendcoinsdialog.cpp" line="-174"/>
-        <source>Enter a BlackCoin address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
-        <translation>Indtast en BlackCoin-adresse (f.eks B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
+        <location filename="../sendcoinsdialog.cpp" line="-173"/>
+        <source>Enter a ValorCoin address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
+        <translation>Indtast en ValorCoin-adresse (f.eks B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
     </message>
     <message>
         <location line="+15"/>
@@ -1837,7 +1857,7 @@ Det betyder, at et gebyr på mindst %2 er påkrævet.</translation>
         <translation>Kopier forandring</translation>
     </message>
     <message>
-        <location line="+87"/>
+        <location line="+86"/>
         <source>&lt;b&gt;%1&lt;/b&gt; to %2 (%3)</source>
         <translation>&lt;b&gt;%1&lt;/b&gt; til %2 (%3)</translation>
     </message>
@@ -1893,8 +1913,8 @@ Det betyder, at et gebyr på mindst %2 er påkrævet.</translation>
     </message>
     <message>
         <location line="+247"/>
-        <source>WARNING: Invalid BlackCoin address</source>
-        <translation>ADVARSEL: Ugyldig BlackCoin adresse</translation>
+        <source>WARNING: Invalid ValorCoin address</source>
+        <translation>ADVARSEL: Ugyldig ValorCoin adresse</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -1967,8 +1987,8 @@ Det betyder, at et gebyr på mindst %2 er påkrævet.</translation>
     </message>
     <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
-        <source>Enter a BlackCoin address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
-        <translation>Indtast en BlackCoin-adresse (f.eks B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
+        <source>Enter a ValorCoin address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
+        <translation>Indtast en ValorCoin-adresse (f.eks B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
     </message>
 </context>
 <context>
@@ -2028,8 +2048,8 @@ Det betyder, at et gebyr på mindst %2 er påkrævet.</translation>
     </message>
     <message>
         <location line="+21"/>
-        <source>Sign the message to prove you own this BlackCoin address</source>
-        <translation>Underskriv brevet for at bevise du ejer denne BlackCoin adresse</translation>
+        <source>Sign the message to prove you own this ValorCoin address</source>
+        <translation>Underskriv brevet for at bevise du ejer denne ValorCoin adresse</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -2060,8 +2080,8 @@ Det betyder, at et gebyr på mindst %2 er påkrævet.</translation>
     </message>
     <message>
         <location line="+40"/>
-        <source>Verify the message to ensure it was signed with the specified BlackCoin address</source>
-        <translation>Kontroller meddelelsen for at sikre, at den blev indgået med den angivne BlackCoin adresse</translation>
+        <source>Verify the message to ensure it was signed with the specified ValorCoin address</source>
+        <translation>Kontroller meddelelsen for at sikre, at den blev indgået med den angivne ValorCoin adresse</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -2071,8 +2091,8 @@ Det betyder, at et gebyr på mindst %2 er påkrævet.</translation>
     <message>
         <location filename="../signverifymessagedialog.cpp" line="+27"/>
         <location line="+3"/>
-        <source>Enter a BlackCoin address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
-        <translation>Indtast en BlackCoin-adresse (f.eks B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
+        <source>Enter a ValorCoin address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
+        <translation>Indtast en ValorCoin-adresse (f.eks B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
     </message>
     <message>
         <location line="-2"/>
@@ -2081,11 +2101,11 @@ Det betyder, at et gebyr på mindst %2 er påkrævet.</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Enter BlackCoin signature</source>
-        <translation>Indtast BlackCoin underskrift</translation>
+        <source>Enter ValorCoin signature</source>
+        <translation>Indtast ValorCoin underskrift</translation>
     </message>
     <message>
-        <location line="+85"/>
+        <location line="+82"/>
         <location line="+81"/>
         <source>The entered address is invalid.</source>
         <translation>Den indtastede adresse er ugyldig.</translation>
@@ -2213,19 +2233,19 @@ Det betyder, at et gebyr på mindst %2 er påkrævet.</translation>
     </message>
     <message>
         <location line="+5"/>
-        <location line="+13"/>
+        <location line="+17"/>
         <source>From</source>
         <translation>Fra</translation>
     </message>
     <message>
         <location line="+1"/>
-        <location line="+19"/>
+        <location line="+22"/>
         <location line="+58"/>
         <source>To</source>
         <translation>Til</translation>
     </message>
     <message>
-        <location line="-74"/>
+        <location line="-77"/>
         <location line="+2"/>
         <source>own address</source>
         <translation>egen adresse</translation>
@@ -2236,7 +2256,7 @@ Det betyder, at et gebyr på mindst %2 er påkrævet.</translation>
         <translation>mærkat</translation>
     </message>
     <message>
-        <location line="+34"/>
+        <location line="+37"/>
         <location line="+12"/>
         <location line="+45"/>
         <location line="+17"/>
@@ -2323,7 +2343,7 @@ Det betyder, at et gebyr på mindst %2 er påkrævet.</translation>
         <translation>falsk</translation>
     </message>
     <message>
-        <location line="-202"/>
+        <location line="-209"/>
         <source>, has not been successfully broadcast yet</source>
         <translation>, er ikke blevet transmitteret endnu</translation>
     </message>
@@ -2333,7 +2353,7 @@ Det betyder, at et gebyr på mindst %2 er påkrævet.</translation>
         <translation type="unfinished"><numerusform></numerusform><numerusform></numerusform></translation>
     </message>
     <message>
-        <location line="+67"/>
+        <location line="+71"/>
         <source>unknown</source>
         <translation>ukendt</translation>
     </message>
@@ -2660,8 +2680,8 @@ Det betyder, at et gebyr på mindst %2 er påkrævet.</translation>
     <name>bitcoin-core</name>
     <message>
         <location filename="../bitcoinstrings.cpp" line="+173"/>
-        <source>BlackCoin version</source>
-        <translation>BlackCoin version</translation>
+        <source>ValorCoin version</source>
+        <translation>ValorCoin version</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2670,8 +2690,8 @@ Det betyder, at et gebyr på mindst %2 er påkrævet.</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Send command to -server or blackcoind</source>
-        <translation>Send kommando til-server eller blackcoind</translation>
+        <source>Send command to -server or valorcoind</source>
+        <translation>Send kommando til-server eller valorcoind</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2690,13 +2710,13 @@ Det betyder, at et gebyr på mindst %2 er påkrævet.</translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Specify configuration file (default: blackcoin.conf)</source>
-        <translation>Angiv konfigurationsfil (default: blackcoin.conf)</translation>
+        <source>Specify configuration file (default: valorcoin.conf)</source>
+        <translation>Angiv konfigurationsfil (default: valorcoin.conf)</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Specify pid file (default: blackcoind.pid)</source>
-        <translation>Angiv pid fil (standard: blackcoind.pid)</translation>
+        <source>Specify pid file (default: valorcoind.pid)</source>
+        <translation>Angiv pid fil (standard: valorcoind.pid)</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -2734,7 +2754,7 @@ for example: alertnotify=echo %%s | mail -s &quot;BlackCoin Alert&quot; admin@fo
         <translation>Set database disk logstørrelsen i megabyte (standard: 100)</translation>
     </message>
     <message>
-        <location line="+5"/>
+        <location line="+6"/>
         <source>Listen for connections on &lt;port&gt; (default: 15714 or testnet: 25714)</source>
         <translation>Lyt efter forbindelser på &lt;port&gt; (default: 15714 eller Testnet: 25714)</translation>
     </message>
@@ -2779,17 +2799,17 @@ for example: alertnotify=echo %%s | mail -s &quot;BlackCoin Alert&quot; admin@fo
         <translation>Antal sekunder dårlige forbindelser skal vente før reetablering (standard: 86400)</translation>
     </message>
     <message>
-        <location line="-36"/>
+        <location line="-37"/>
         <source>An error occurred while setting up the RPC port %u for listening on IPv4: %s</source>
         <translation>Der opstod en fejl ved angivelse af RPC-porten %u til at lytte på IPv4: %s</translation>
     </message>
     <message>
-        <location line="+63"/>
+        <location line="+65"/>
         <source>Listen for JSON-RPC connections on &lt;port&gt; (default: 15715 or testnet: 25715)</source>
         <translation>Spor efter JSON-RPC-forbindelser på &lt;port&gt; (default: 15715 eller Testnet: 25715)</translation>
     </message>
     <message>
-        <location line="-16"/>
+        <location line="-17"/>
         <source>Accept command line and JSON-RPC commands</source>
         <translation>Accepter kommandolinje- og JSON-RPC-kommandoer</translation>
     </message>
@@ -2809,24 +2829,24 @@ for example: alertnotify=echo %%s | mail -s &quot;BlackCoin Alert&quot; admin@fo
         <translation>Accepter forbindelser udefra (standard: 1 hvis hverken -proxy eller -connect)</translation>
     </message>
     <message>
-        <location line="-28"/>
+        <location line="-29"/>
         <source>An error occurred while setting up the RPC port %u for listening on IPv6, falling back to IPv4: %s</source>
         <translation>Der opstod en fejl ved angivelse af RPC-porten %u til at lytte på IPv6, falder tilbage til IPv4: %s</translation>
     </message>
     <message>
-        <location line="+94"/>
+        <location line="+96"/>
         <source>Set maximum size of high-priority/low-fee transactions in bytes (default: 27000)</source>
         <translation>Angiv maksimal størrelse på high-priority/low-fee transaktioner i bytes (standard: 27000)</translation>
     </message>
     <message>
-        <location line="+15"/>
+        <location line="+12"/>
         <source>Warning: -paytxfee is set very high! This is the transaction fee you will pay if you send a transaction.</source>
         <translation>Advarsel: -paytxfee er sat meget højt! Dette er det gebyr du vil betale, hvis du sender en transaktion.</translation>
     </message>
     <message>
-        <location line="-104"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong BlackCoin will not work properly.</source>
-        <translation>Advarsel: Kontroller venligst, at computerens dato og klokkeslæt er korrekt! Hvis dit ur er forkert vil BlackCoin ikke fungere korrekt.</translation>
+        <location line="-103"/>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong ValorCoin will not work properly.</source>
+        <translation>Advarsel: Kontroller venligst, at computerens dato og klokkeslæt er korrekt! Hvis dit ur er forkert vil ValorCoin ikke fungere korrekt.</translation>
     </message>
     <message>
         <location line="+132"/>
@@ -2834,12 +2854,12 @@ for example: alertnotify=echo %%s | mail -s &quot;BlackCoin Alert&quot; admin@fo
         <translation>Advarsel: fejl under læsning af wallet.dat! Alle nøgler blev læst korrekt, men transaktionsdata eller adressebogsposter kan mangle eller være forkerte.</translation>
     </message>
     <message>
-        <location line="-17"/>
+        <location line="-18"/>
         <source>Warning: wallet.dat corrupt, data salvaged! Original wallet.dat saved as wallet.{timestamp}.bak in %s; if your balance or transactions are incorrect you should restore from a backup.</source>
         <translation>Advarsel: wallet.dat ødelagt, data reddet! Oprindelig wallet.net gemt som wallet.{timestamp}.bak i %s; hvis din saldo eller dine transaktioner er forkert, bør du genskabe fra en sikkerhedskopi.</translation>
     </message>
     <message>
-        <location line="-34"/>
+        <location line="-31"/>
         <source>Attempt to recover private keys from a corrupt wallet.dat</source>
         <translation>Forsøg at genskabe private nøgler fra ødelagt wallet.dat</translation>
     </message>
@@ -2849,7 +2869,7 @@ for example: alertnotify=echo %%s | mail -s &quot;BlackCoin Alert&quot; admin@fo
         <translation>Blokoprettelsestilvalg:</translation>
     </message>
     <message>
-        <location line="-68"/>
+        <location line="-69"/>
         <source>Connect only to the specified node(s)</source>
         <translation>Tilslut kun til de(n) angivne knude(r)</translation>
     </message>
@@ -2859,17 +2879,17 @@ for example: alertnotify=echo %%s | mail -s &quot;BlackCoin Alert&quot; admin@fo
         <translation>Find egen IP-adresse (standard: 1 når lytter og ingen -externalip)</translation>
     </message>
     <message>
-        <location line="+102"/>
+        <location line="+101"/>
         <source>Failed to listen on any port. Use -listen=0 if you want this.</source>
         <translation>Lytning på enhver port mislykkedes. Brug -listen=0, hvis du ønsker dette.</translation>
     </message>
     <message>
-        <location line="-92"/>
+        <location line="-91"/>
         <source>Sync checkpoints policy (default: strict)</source>
         <translation>Synkroniser checkpoints politik (default: streng)</translation>
     </message>
     <message>
-        <location line="+90"/>
+        <location line="+89"/>
         <source>Invalid -tor address: &apos;%s&apos;</source>
         <translation>Ugyldig-tor-adresse: &apos;% s&apos;</translation>
     </message>
@@ -2879,7 +2899,7 @@ for example: alertnotify=echo %%s | mail -s &quot;BlackCoin Alert&quot; admin@fo
         <translation>Ugyldigt beløb for-reservebalance = &lt;beløb&gt;</translation>
     </message>
     <message>
-        <location line="-89"/>
+        <location line="-88"/>
         <source>Maximum per-connection receive buffer, &lt;n&gt;*1000 bytes (default: 5000)</source>
         <translation>Maksimum for modtagelsesbuffer pr. forbindelse, &lt;n&gt;*1000 bytes (standard: 5000)</translation>
     </message>
@@ -2899,17 +2919,27 @@ for example: alertnotify=echo %%s | mail -s &quot;BlackCoin Alert&quot; admin@fo
         <translation>Prepend debug output med tidsstempel</translation>
     </message>
     <message>
-        <location line="+40"/>
+        <location line="+41"/>
         <source>SSL options: (see the Bitcoin Wiki for SSL setup instructions)</source>
         <translation>SSL-indstillinger: (se Bitcoin Wiki for SSL-opsætningsinstruktioner)</translation>
     </message>
     <message>
-        <location line="-38"/>
+        <location line="-81"/>
+        <source>Select the version of socks proxy to use (4-5, default: 5)</source>
+        <translation>Vælg den version af socks proxy du vil bruge (4-5, standard: 5)</translation>
+    </message>
+    <message>
+        <location line="+42"/>
         <source>Send trace/debug info to console instead of debug.log file</source>
         <translation>Send sporings-/fejlsøgningsinformation til konsollen i stedet for debug.log filen</translation>
     </message>
     <message>
-        <location line="+34"/>
+        <location line="+5"/>
+        <source>Send trace/debug info to debugger</source>
+        <translation>Send trace / debug info til debugger</translation>
+    </message>
+    <message>
+        <location line="+30"/>
         <source>Set maximum block size in bytes (default: 250000)</source>
         <translation>Indstil maks. blok størrelse i bytes (standard: 250000)</translation>
     </message>
@@ -2919,12 +2949,12 @@ for example: alertnotify=echo %%s | mail -s &quot;BlackCoin Alert&quot; admin@fo
         <translation>Angiv minimumsblokstørrelse i bytes (standard: 0)</translation>
     </message>
     <message>
-        <location line="-34"/>
+        <location line="-35"/>
         <source>Shrink debug.log file on client startup (default: 1 when no -debug)</source>
         <translation>Formindsk debug.log filen ved klientopstart (standard: 1 hvis ikke -debug)</translation>
     </message>
     <message>
-        <location line="-42"/>
+        <location line="-43"/>
         <source>Specify connection timeout in milliseconds (default: 5000)</source>
         <translation>Angiv tilslutningstimeout i millisekunder (standard: 5000)</translation>
     </message>
@@ -2936,7 +2966,7 @@ for example: alertnotify=echo %%s | mail -s &quot;BlackCoin Alert&quot; admin@fo
 </translation>
     </message>
     <message>
-        <location line="-87"/>
+        <location line="-86"/>
         <source>Use UPnP to map the listening port (default: 0)</source>
         <translation>Forsøg at bruge UPnP til at konfigurere den lyttende port (standard: 0)</translation>
     </message>
@@ -2951,17 +2981,17 @@ for example: alertnotify=echo %%s | mail -s &quot;BlackCoin Alert&quot; admin@fo
         <translation>Brug proxy til at nå tor skjulte services (Standard: samme som-proxy)</translation>
     </message>
     <message>
-        <location line="+46"/>
+        <location line="+47"/>
         <source>Username for JSON-RPC connections</source>
         <translation>Brugernavn til JSON-RPC-forbindelser</translation>
     </message>
     <message>
-        <location line="+54"/>
+        <location line="+51"/>
         <source>Verifying database integrity...</source>
         <translation>Bekræfter database integritet ...</translation>
     </message>
     <message>
-        <location line="+43"/>
+        <location line="+44"/>
         <source>Error: Wallet locked, unable to create transaction!</source>
         <translation type="unfinished"/>
     </message>
@@ -3001,22 +3031,17 @@ for example: alertnotify=echo %%s | mail -s &quot;BlackCoin Alert&quot; admin@fo
         <translation>Advarsel: Denne version er forældet, opgradering påkrævet!</translation>
     </message>
     <message>
-        <location line="-53"/>
+        <location line="-54"/>
         <source>wallet.dat corrupt, salvage failed</source>
         <translation>wallet.dat ødelagt, redning af data mislykkedes</translation>
     </message>
     <message>
-        <location line="-59"/>
+        <location line="-56"/>
         <source>Password for JSON-RPC connections</source>
         <translation>Adgangskode til JSON-RPC-forbindelser</translation>
     </message>
     <message>
-        <location line="-48"/>
-        <source>Connect through SOCKS5 proxy</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <location line="+17"/>
+        <location line="-32"/>
         <source>Sync time with other nodes. Disable if time on your system is precise e.g. syncing with NTP (default: 1)</source>
         <translation>Synkroniser tid med andre noder. Deaktiver, hvis tiden på dit system er præcis eksempelvis synkroniseret med NTP (default: 1)</translation>
     </message>
@@ -3046,7 +3071,7 @@ for example: alertnotify=echo %%s | mail -s &quot;BlackCoin Alert&quot; admin@fo
         <translation type="unfinished"/>
     </message>
     <message>
-        <location line="+8"/>
+        <location line="+9"/>
         <source>Allow JSON-RPC connections from specified IP address</source>
         <translation>Tillad JSON-RPC-forbindelser fra bestemt IP-adresse</translation>
     </message>
@@ -3126,22 +3151,12 @@ for example: alertnotify=echo %%s | mail -s &quot;BlackCoin Alert&quot; admin@fo
         <translation>Serverens private nøgle (standard: server.pem)</translation>
     </message>
     <message>
-        <location line="+5"/>
-        <source>Error: Unsupported argument -socks found. Setting SOCKS version isn&apos;t possible anymore, only SOCKS5 proxies are supported.</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <location line="+8"/>
+        <location line="+10"/>
         <source>Initialization sanity check failed. BlackCoin is shutting down.</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location line="+21"/>
-        <source>Error loading block database</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <location line="+28"/>
+        <location line="+50"/>
         <source>Error: Wallet unlocked for staking only, unable to create transaction.</source>
         <translation>Fejl: Pung låst for at udregne rente, ude af stand til at skabe transaktion.</translation>
     </message>
@@ -3166,39 +3181,49 @@ for example: alertnotify=echo %%s | mail -s &quot;BlackCoin Alert&quot; admin@fo
         <translation>Denne hjælpebesked</translation>
     </message>
     <message>
-        <location line="+105"/>
+        <location line="+104"/>
         <source>Wallet %s resides outside data directory %s.</source>
         <translation>Wallet% s placeret udenfor data mappe% s.</translation>
     </message>
     <message>
-        <location line="+36"/>
+        <location line="+37"/>
         <source>Unable to bind to %s on this computer (bind returned error %d, %s)</source>
         <translation>Kunne ikke tildele %s på denne computer (bind returnerede fejl %d, %s)</translation>
     </message>
     <message>
-        <location line="-131"/>
+        <location line="-133"/>
+        <source>Connect through socks proxy</source>
+        <translation>Tilslut gennem socks proxy</translation>
+    </message>
+    <message>
+        <location line="+3"/>
         <source>Allow DNS lookups for -addnode, -seednode and -connect</source>
         <translation>Tillad DNS-opslag for -addnode, -seednode og -connect</translation>
     </message>
     <message>
-        <location line="+127"/>
+        <location line="+126"/>
         <source>Loading addresses...</source>
         <translation>Indlæser adresser...</translation>
     </message>
     <message>
-        <location line="-10"/>
+        <location line="-12"/>
+        <source>Error loading blkindex.dat</source>
+        <translation>Fejl ved indlæsning af blkindex.dat</translation>
+    </message>
+    <message>
+        <location line="+2"/>
         <source>Error loading wallet.dat: Wallet corrupted</source>
         <translation>Fejl ved indlæsning af wallet.dat: Tegnebog ødelagt</translation>
     </message>
     <message>
         <location line="+4"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of BlackCoin</source>
-        <translation>Fejl ved indlæsning af wallet.dat: Wallet kræver en nyere version af BlackCoin</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of ValorCoin</source>
+        <translation>Fejl ved indlæsning af wallet.dat: Wallet kræver en nyere version af ValorCoin</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Wallet needed to be rewritten: restart BlackCoin to complete</source>
-        <translation>Det er nødvendig for wallet at blive omskrevet: Genstart BlackCoin for fuldføre</translation>
+        <source>Wallet needed to be rewritten: restart ValorCoin to complete</source>
+        <translation>Det er nødvendig for wallet at blive omskrevet: Genstart ValorCoin for fuldføre</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -3216,7 +3241,12 @@ for example: alertnotify=echo %%s | mail -s &quot;BlackCoin Alert&quot; admin@fo
         <translation>Ukendt netværk anført i -onlynet: &apos;%s&apos;</translation>
     </message>
     <message>
-        <location line="+3"/>
+        <location line="-1"/>
+        <source>Unknown -socks proxy version requested: %i</source>
+        <translation>Ukendt -socks proxy-version: %i</translation>
+    </message>
+    <message>
+        <location line="+4"/>
         <source>Cannot resolve -bind address: &apos;%s&apos;</source>
         <translation>Kan ikke finde -bind adressen: &apos;%s&apos;</translation>
     </message>
@@ -3226,12 +3256,12 @@ for example: alertnotify=echo %%s | mail -s &quot;BlackCoin Alert&quot; admin@fo
         <translation>Kan ikke finde -externalip adressen: &apos;%s&apos;</translation>
     </message>
     <message>
-        <location line="-22"/>
+        <location line="-23"/>
         <source>Invalid amount for -paytxfee=&lt;amount&gt;: &apos;%s&apos;</source>
         <translation>Ugyldigt beløb for -paytxfee=&lt;amount&gt;: &apos;%s&apos;</translation>
     </message>
     <message>
-        <location line="+59"/>
+        <location line="+60"/>
         <source>Sending...</source>
         <translation>Sender...</translation>
     </message>
@@ -3251,22 +3281,22 @@ for example: alertnotify=echo %%s | mail -s &quot;BlackCoin Alert&quot; admin@fo
         <translation>Indlæser blokindeks...</translation>
     </message>
     <message>
-        <location line="-111"/>
+        <location line="-110"/>
         <source>Add a node to connect to and attempt to keep the connection open</source>
         <translation>Tilføj en knude til at forbinde til og forsøg at holde forbindelsen åben</translation>
     </message>
     <message>
-        <location line="+126"/>
-        <source>Unable to bind to %s on this computer. BlackCoin is probably already running.</source>
-        <translation>Kunne ikke binde sig til% s på denne computer. BlackCoin kører sikkert allerede.</translation>
+        <location line="+125"/>
+        <source>Unable to bind to %s on this computer. ValorCoin is probably already running.</source>
+        <translation>Kunne ikke binde sig til% s på denne computer. ValorCoin kører sikkert allerede.</translation>
     </message>
     <message>
-        <location line="-102"/>
+        <location line="-101"/>
         <source>Fee per KB to add to transactions you send</source>
         <translation>Gebyr pr KB som tilføjes til transaktioner, du sender</translation>
     </message>
     <message>
-        <location line="+33"/>
+        <location line="+34"/>
         <source>Minimize weight consumption (experimental) (default: 0)</source>
         <translation type="unfinished"/>
     </message>
@@ -3291,7 +3321,7 @@ for example: alertnotify=echo %%s | mail -s &quot;BlackCoin Alert&quot; admin@fo
         <translation type="unfinished"/>
     </message>
     <message>
-        <location line="+8"/>
+        <location line="+5"/>
         <source>Invalid amount for -mininput=&lt;amount&gt;: &apos;%s&apos;</source>
         <translation>Ugyldigt beløb for-mininput = &lt;beløb&gt;: &apos;% s&apos;</translation>
     </message>
@@ -3306,7 +3336,7 @@ for example: alertnotify=echo %%s | mail -s &quot;BlackCoin Alert&quot; admin@fo
         <translation type="unfinished"/>
     </message>
     <message>
-        <location line="+16"/>
+        <location line="+17"/>
         <source>Loading wallet...</source>
         <translation>Indlæser tegnebog...</translation>
     </message>

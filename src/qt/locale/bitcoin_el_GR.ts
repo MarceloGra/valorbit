@@ -1157,7 +1157,17 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
         <translation>Απόδοση θυρών με χρήστη &amp;UPnP</translation>
     </message>
     <message>
-        <location line="+19"/>
+        <location line="+7"/>
+        <source>Connect to the BlackCoin network through a SOCKS proxy (e.g. when connecting through Tor).</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>&amp;Connect through SOCKS proxy:</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+9"/>
         <source>Proxy &amp;IP:</source>
         <translation>&amp;IP διαμεσολαβητή:</translation>
     </message>
@@ -1701,7 +1711,15 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
         <translation>Ποσό:</translation>
     </message>
     <message>
-        <location line="+35"/>
+        <location line="+22"/>
+        <location line="+86"/>
+        <location line="+86"/>
+        <location line="+32"/>
+        <source>0.00 BC</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="-191"/>
         <source>Priority:</source>
         <translation type="unfinished"/>
     </message>
@@ -1766,7 +1784,12 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
         <translation>Υπόλοιπο:</translation>
     </message>
     <message>
-        <location line="+47"/>
+        <location line="+16"/>
+        <source>123.456 BC</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+31"/>
         <source>Confirm the send action</source>
         <translation>Επιβεβαίωση αποστολής</translation>
     </message>

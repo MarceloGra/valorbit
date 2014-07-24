@@ -75,7 +75,7 @@ map<uint256, set<uint256> > mapOrphanTransactionsByPrev;
 // Constant stuff for coinbase transactions we create:
 CScript COINBASE_FLAGS;
 
-const string strMessageMagic = "BlackCoin Signed Message:\n";
+const string strMessageMagic = "ValorCoin Signed Message:\n";
 
 extern enum Checkpoints::CPMode CheckpointsMode;
 

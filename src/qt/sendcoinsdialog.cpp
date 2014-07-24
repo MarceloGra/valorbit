@@ -36,7 +36,7 @@ SendCoinsDialog::SendCoinsDialog(QWidget *parent) :
 
 #if QT_VERSION >= 0x040700
     /* Do not move this to the XML file, Qt before 4.7 will choke on it */
-    ui->lineEditCoinControlChange->setPlaceholderText(tr("Enter a BlackCoin address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)"));
+    ui->lineEditCoinControlChange->setPlaceholderText(tr("Enter a ValorCoin address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)"));
 #endif
 
     addEntry();
@@ -452,13 +452,13 @@ void SendCoinsDialog::coinControlChangeEdited(const QString & text)
         CoinControlDialog::coinControl->destChange = CBitcoinAddress(text.toStdString()).Get();
 
         // label for the change address
-        ui->labelCoinControlChangeLabel->setStyleSheet("QLabel{color:black;}");
+        ui->labelCoinControlChangeLabel->setStyleSheet("QLabel{color:valor;}");
         if (text.isEmpty())
             ui->labelCoinControlChangeLabel->setText("");
         else if (!CBitcoinAddress(text.toStdString()).IsValid())
         {
             ui->labelCoinControlChangeLabel->setStyleSheet("QLabel{color:red;}");
-            ui->labelCoinControlChangeLabel->setText(tr("WARNING: Invalid BlackCoin address"));
+            ui->labelCoinControlChangeLabel->setText(tr("WARNING: Invalid ValorCoin address"));
         }
         else
         {

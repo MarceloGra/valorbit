@@ -1180,7 +1180,17 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
         <translation>Map port using &amp;UPnP</translation>
     </message>
     <message>
-        <location line="+19"/>
+        <location line="+7"/>
+        <source>Connect to the BlackCoin network through a SOCKS proxy (e.g. when connecting through Tor).</source>
+        <translation>Connect to the BlackCoin network through a SOCKS proxy (e.g. when connecting through Tor).</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>&amp;Connect through SOCKS proxy:</source>
+        <translation>&amp;Connect through SOCKS proxy:</translation>
+    </message>
+    <message>
+        <location line="+9"/>
         <source>Proxy &amp;IP:</source>
         <translation>Proxy &amp;IP:</translation>
     </message>
@@ -1724,7 +1734,15 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
         <translation type="unfinished">Amount:</translation>
     </message>
     <message>
-        <location line="+35"/>
+        <location line="+22"/>
+        <location line="+86"/>
+        <location line="+86"/>
+        <location line="+32"/>
+        <source>0.00 BC</source>
+        <translation type="unfinished">123.456 BC {0.00 ?}</translation>
+    </message>
+    <message>
+        <location line="-191"/>
         <source>Priority:</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1789,7 +1807,12 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
         <translation>Balance:</translation>
     </message>
     <message>
-        <location line="+47"/>
+        <location line="+16"/>
+        <source>123.456 BC</source>
+        <translation>123.456 BC</translation>
+    </message>
+    <message>
+        <location line="+31"/>
         <source>Confirm the send action</source>
         <translation>Confirm the send action</translation>
     </message>

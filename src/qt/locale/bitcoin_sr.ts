@@ -3,7 +3,7 @@
     <name>AboutDialog</name>
     <message>
         <location filename="../forms/aboutdialog.ui" line="+14"/>
-        <source>About BlackCoin</source>
+                <source>About BlackCoin</source>
         <translation>О BlackCoin-u</translation>
     </message>
     <message>

@@ -245,15 +245,15 @@ Value dumpprivkey(const Array& params, bool fHelp)
 {
     if (fHelp || params.size() != 1)
         throw runtime_error(
-            "dumpprivkey <blackcoinaddress>\n"
-            "Reveals the private key corresponding to <blackcoinaddress>.");
+            "dumpprivkey <valorcoinaddress>\n"
+            "Reveals the private key corresponding to <valorcoinaddress>.");
 
     EnsureWalletIsUnlocked();
 
     string strAddress = params[0].get_str();
     CBitcoinAddress address;
     if (!address.SetString(strAddress))
-        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid BlackCoin address");
+        throw JSONRPCError(RPC_INVALID_ADDRESS_OR_KEY, "Invalid ValorCoin address");
     if (fWalletUnlockStakingOnly)
         throw JSONRPCError(RPC_WALLET_UNLOCK_NEEDED, "Wallet is unlocked for staking only.");
     CKeyID keyID;

@@ -1005,7 +1005,7 @@ void ThreadMapPort()
             }
         }
 
-        string strDesc = "BlackCoin " + FormatFullVersion();
+        string strDesc = "ValorCoin " + FormatFullVersion();
 
         try {
           while (true) {
