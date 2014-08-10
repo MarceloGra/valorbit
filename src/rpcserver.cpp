@@ -27,6 +27,7 @@
 #include <boost/iostreams/concepts.hpp>
 #include <boost/iostreams/stream.hpp>
 #include <boost/shared_ptr.hpp>
+
 #include <list>
 
 using namespace std;
@@ -84,12 +85,32 @@ void RPCTypeCheck(const Object& o,
 
 int64_t AmountFromValue(const Value& value)
 {
-    double dAmount = value.get_real();
+    boost::int64_t iAmount = 0;
+    double dAmount = 0.0;
+    string sAmount;
+
+    switch(value.type()) {
+      case int_type:
+                cout << "Got int type: ";
+                iAmount = value.get_int64();
+                cout << iAmount << std::endl ;
+        break;;
+      case real_type:
+                cout << "Got real type: ";
+                dAmount = value.get_real();
+                cout << dAmount << std::endl ;
+        break;;
+      default:
+        throw JSONRPCError(RPC_TYPE_ERROR, "Invalid amount");
+        break;
+    }
+
     if (dAmount <= 0.0 || dAmount > MAX_MONEY)
         throw JSONRPCError(RPC_TYPE_ERROR, "Invalid amount");
     int64_t nAmount = roundint64(dAmount * COIN);
     if (!MoneyRange(nAmount))
         throw JSONRPCError(RPC_TYPE_ERROR, "Invalid amount");
+    cout << "nAmount = " << nAmount << std::endl;
     return nAmount;
 }
 
@@ -97,6 +118,17 @@ Value ValueFromAmount(int64_t amount)
 {
     return (double)amount / (double)COIN;
 }
+
+std::string HexBits(unsigned int nBits)
+{
+    union {
+        int32_t nBits;
+        char cBits[4];
+    } uBits;
+    uBits.nBits = htonl((int32_t)nBits);
+    return HexStr(BEGIN(uBits.cBits), END(uBits.cBits));
+}
+
 
 
 //

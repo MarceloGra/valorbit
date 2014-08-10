@@ -8,6 +8,9 @@
 
 CXX=llvm-g++
 DEPSDIR=/opt/local
+QMAKE=$(DEPSDIR)/bin/qmake
+TARGET=$(shell sed -n '/^macx.*TARGET *=/s/.*= *"\(.*\)"/\1/p' ../valorcoin-qt.pro)
+
 
 INCLUDEPATHS= \
  -I"$(CURDIR)" \
@@ -132,6 +135,12 @@ leveldb/libleveldb.a:
 	@echo "Building LevelDB ..."; cd leveldb; make libleveldb.a libmemenv.a; cd ..
 obj/txdb-leveldb.o: leveldb/libleveldb.a
 
+# try
+#leveldb/libmemenv.a:
+#	@echo "Building LevelDB ..."; cd leveldb; make libmemenv.a ; cd ..
+#obj/txdb-leveldb.o: leveldb/libleveldb.a leveldb/libmemenv.a
+
+
 # auto-generated dependencies:
 -include obj/*.P
 
@@ -155,6 +164,26 @@ obj/scrypt-x86_64.o: scrypt-x86_64.S
 
 valorcoind: $(OBJS:obj/%=obj/%)
 	$(CXX) $(CFLAGS) -o $@ $(LIBPATHS) $^ $(LIBS)
+
+install: valorcoind 
+	install -d $(HOME)/bin
+	install valorcoind $(HOME)/bin
+
+install.app: app
+	install -d $(HOME)/Applications
+	cp -a ../$(TARGET).app $(HOME)/Applications
+
+app:
+	rm -rf ../$(TARGET).app
+	(cd ..; $(QMAKE); make)
+
+dmg: app
+	(cd ..; rm ../$(TARGET).dmg ; macdeployqt $(TARGET).app -dmg;cd -)
+
+listlibs:
+	echo $(TARGET)
+	otool -L ../$(TARGET).app/Contents/MacOS/$(TARGET)
+
 
 clean:
 	-rm -f valorcoind
