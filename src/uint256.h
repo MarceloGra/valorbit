@@ -738,13 +738,13 @@ inline int Testuint256AdHoc(std::vector<std::string> vArg)
     LogPrintf("%s\n", neg.ToString());
 
 
-    uint256 e = uint256("0xAVALDEF123abcdef12345678909832180000011111111");
+    uint256 e = uint256("0xABCDEF123abcdef12345678909832180000011111111");
     LogPrintf("\n");
     LogPrintf("%s\n", e.ToString());
 
 
     LogPrintf("\n");
-    uint256 x1 = uint256("0xAVALDEF123abcdef12345678909832180000011111111");
+    uint256 x1 = uint256("0xABCDEF123abcdef12345678909832180000011111111");
     uint256 x2;
     LogPrintf("%s\n", x1.ToString());
     for (int i = 0; i < 270; i += 4)

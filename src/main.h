@@ -42,23 +42,46 @@ static const unsigned int DEFAULT_MAX_ORPHAN_BLOCKS = 750;
 /** The maximum number of entries in an 'inv' protocol message */
 static const unsigned int MAX_INV_SZ = 50000;
 /** Fees smaller than this (in satoshi) are considered zero fee (for transaction creation) */
-static const int64_t MIN_TX_FEE = 10000;
+static const int64_t MIN_TX_FEE = 10 * CENT;
 /** Fees smaller than this (in satoshi) are considered zero fee (for relaying) */
-static const int64_t MIN_RELAY_TX_FEE = MIN_TX_FEE;
+static const int64_t MIN_RELAY_TX_FEE =  1 * CENT ;
 /** No amount larger than this (in satoshi) is valid */
-static const int64_t MAX_MONEY = 2000000000 * COIN;
+static const int64_t MAX_MONEY = 92233720000000000LL * COIN;
 inline bool MoneyRange(int64_t nValue) { return (nValue >= 0 && nValue <= MAX_MONEY); }
 /** Threshold for nLockTime: below this value it is interpreted as block number, otherwise as UNIX timestamp. */
 static const unsigned int LOCKTIME_THRESHOLD = 500000000; // Tue Nov  5 00:53:20 1985 UTC
 
-static const int64_t COIN_YEAR_REWARD = 1 * CENT; // 1% per year
+static const int64_t COIN_YEAR_REWARD = 3 * CENT; // 2% per year
 
 inline bool IsProtocolV1RetargetingFixed(int nHeight) { return TestNet() || nHeight > 38423; }
 inline bool IsProtocolV2(int nHeight) { return TestNet() || nHeight > 319000; }
+/** Number of blocks with Proof-Of-Work **/
+static const int LAST_POW_BLOCK = 30;
 
+static const int64_t SEED_MONEY = MAX_MONEY/100;
+
+static const int64_t WARN_LARGE_TX_FEE = 100000 * COIN ;
+static const int64_t IPO_PROOF_OF_WORK_REWARD = 500 * COIN ;
+
+// genesis : mainnet
+static const unsigned int timeGenesisBlock = 1396911600;
+static const uint256 hashGenesisBlockMerkleRoot("0xbee97d6f97d46e697ed7478213778a8f6ffe4b59023853d42ccfefde55dfcd2c");
+static const uint256 hashGenesisBlock("0x0000082f5a41526b57ff1c844f0319e3158cf78e47b5aa37ff5826c717a50820");
+
+// genesis : testnet
+static const unsigned int timeGenesisBlockTestNet = 1396911600;
+static const uint256 hashSeedBlockMerkleRoot("0x072f9e1bc3bf04c07b1cdb7ab34c96d9cb99e285513f178ad9761f3f8150f7d7");
+static const uint256 hashSeedBlock("0x0000077d7da5c0bf1edc4c6adf88c76c6e481fa7f9ebd80e7628effaea3a8099");
+static const char* hash160SeedAddress = "63461f92be529d66c28194357eaf357aab8e1b2c";
+
+// seed : testnet
 inline int64_t FutureDriftV1(int64_t nTime) { return nTime + 10 * 60; }
 inline int64_t FutureDriftV2(int64_t nTime) { return nTime + 15; }
 inline int64_t FutureDrift(int64_t nTime, int nHeight) { return IsProtocolV2(nHeight) ? FutureDriftV2(nTime) : FutureDriftV1(nTime); }
+inline bool IsProtocolV2(int nHeight) { return nHeight > LAST_POW_BLOCK  ; }
+
+inline int64_t PastDrift(int64_t nTime, int nHeight)   { return IsProtocolV2(nHeight) ? nTime - 5 * 60 : nTime - 10 * 60; }
+inline int64_t FutureDrift(int64_t nTime, int nHeight) { return IsProtocolV2(nHeight) ? nTime + 5 *60 : nTime + 10 * 60; }
 
 inline unsigned int GetTargetSpacing(int nHeight) { return IsProtocolV2(nHeight) ? 64 : 60; }
 
