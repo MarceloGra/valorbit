@@ -22,8 +22,6 @@ bool BitcoinUnits::valid(int unit)
     switch(unit)
     {
     case BTC:
-    case mBTC:
-    case uBTC:
         return true;
     default:
         return false;
@@ -35,8 +33,6 @@ QString BitcoinUnits::name(int unit)
     switch(unit)
     {
     case BTC: return QString("VAL");
-    case mBTC: return QString("mVAL");
-    case uBTC: return QString::fromUtf8("μVAL");
     default: return QString("VAL");
     }
 }
@@ -46,8 +42,6 @@ QString BitcoinUnits::description(int unit)
     switch(unit)
     {
     case BTC: return QString("ValorCoins");
-    case mBTC: return QString("Milli-ValorCoins (1 / 1,000)");
-    case uBTC: return QString("Micro-ValorCoins (1 / 1,000,000)");
     default: return QString("VAL");
     }
 }
@@ -56,10 +50,8 @@ qint64 BitcoinUnits::factor(int unit)
 {
     switch(unit)
     {
-    case BTC:  return 1;
-    //case mBTC: return 100000;
-    //case uBTC: return 100;
-    default:   return 1;
+    case BTC:  return 100;
+    default:   return 100;
     }
 }
 
@@ -67,9 +59,7 @@ int BitcoinUnits::amountDigits(int unit)
 {
     switch(unit)
     {
-    case BTC: return 8; // 21,000,000 (# digits, without commas)
-    case mBTC: return 11; // 21,000,000,000
-    case uBTC: return 14; // 21,000,000,000,000
+    case BTC: return 17; // 92,233,720,000,000,000 (# digits, without commas)
     default: return 0;
     }
 }
@@ -78,9 +68,7 @@ int BitcoinUnits::decimals(int unit)
 {
     switch(unit)
     {
-    case BTC: return 8;
-    case mBTC: return 5;
-    case uBTC: return 2;
+    case BTC: return 2;
     default: return 0;
     }
 }
