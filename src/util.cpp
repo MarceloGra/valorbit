@@ -316,7 +316,8 @@ string FormatMoney(int64_t n, bool fPlus)
     int64_t n_abs = (n > 0 ? n : -n);
     int64_t quotient = n_abs/COIN;
     int64_t remainder = n_abs%COIN;
-    string str = strprintf("%d.%08d", quotient, remainder);
+//    string str = strprintf("%d.%08d", quotient, remainder);
+    string str = strprintf("%"PRId64".%02"PRId64, quotient, remainder);
 
     // Right-trim excess zeros before the decimal point:
     int nTrim = 0;
@@ -550,7 +551,7 @@ bool SoftSetBoolArg(const std::string& strArg, bool fValue)
 
 string EncodeBase64(const unsigned char* pch, size_t len)
 {
-    static const char *pbase64 = "AVALDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/";
+    static const char *pbase64 = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/";
 
     string strRet="";
     strRet.reserve((len+2)/3*4);

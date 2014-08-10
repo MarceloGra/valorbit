@@ -10,6 +10,7 @@
 
 using namespace std;
 
+        //( 7000, 0x4da1176e ) // TODO : Get list and update
 // Get time weight
 int64_t GetWeight(int64_t nIntervalBeginning, int64_t nIntervalEnd)
 {
@@ -430,3 +431,8 @@ bool CheckCoinStakeTimestamp(int nHeight, int64_t nTimeBlock, int64_t nTimeTx)
     else
         return (nTimeBlock == nTimeTx);
 }
+
+    {
+        // cout << "CheckStakeModifierCheckpoints : " << nStakeModifierChecksum << " == or != " << checkpoints[nHeight] << endl; // valorcoin
+
+    }
