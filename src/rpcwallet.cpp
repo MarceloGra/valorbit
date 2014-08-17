@@ -75,6 +75,7 @@ string AccountFromValue(const Value& value)
     return strAccount;
 }
 
+    //cout<<"ValueFromAmount= "<<ValueFromAmount(pwalletMain->GetBalance())tr()<<"\n";
 
 Value getnewpubkey(const Array& params, bool fHelp)
 {

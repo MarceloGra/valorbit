@@ -45,7 +45,7 @@ static const unsigned int MAX_INV_SZ = 50000;
 /** Fees smaller than this (in satoshi) are considered zero fee (for transaction creation) */
 static const int64_t MIN_TX_FEE = 10 * CENT;
 /** Fees smaller than this (in satoshi) are considered zero fee (for relaying) */
-static const int64_t MIN_RELAY_TX_FEE =  1 * CENT ;
+static const int64_t MIN_RELAY_TX_FEE =  2 * CENT ;
 /** No amount larger than this (in satoshi) is valid */
 static const int64_t MAX_MONEY = 92233720000000000LL * COIN;
 inline bool MoneyRange(int64_t nValue) { return (nValue >= 0 && nValue <= MAX_MONEY); }
@@ -56,8 +56,11 @@ static const int64_t COIN_YEAR_REWARD = 3 * CENT; // 2% per year
 
 inline bool IsProtocolV1RetargetingFixed(int nHeight) { return TestNet() || nHeight > 38423; }
 inline bool IsProtocolV2(int nHeight) { return TestNet() || nHeight > 319000; }
+//static const int BLOCKS_PER_DAY = 1350;
+// TODO: corelation with protocol V2
+static const int BLOCKS_PER_DAY = 1440;
 /** Number of blocks with Proof-Of-Work **/
-static const int LAST_POW_BLOCK = 30;
+static const int LAST_POW_BLOCK = 20000000;
 
 static const int64_t SEED_MONEY = MAX_MONEY/100;
 
@@ -66,14 +69,15 @@ static const int64_t IPO_PROOF_OF_WORK_REWARD = 500 * COIN ;
 
 // genesis : mainnet
 static const unsigned int timeGenesisBlock = 1396911600;
-static const uint256 hashGenesisBlockMerkleRoot("0xbee97d6f97d46e697ed7478213778a8f6ffe4b59023853d42ccfefde55dfcd2c");
-static const uint256 hashGenesisBlock("0x0000082f5a41526b57ff1c844f0319e3158cf78e47b5aa37ff5826c717a50820");
+static const char* hash160GenesisAddress = "0553716e9c88172a42c19529d14a51e650047a34"; //1VALgqxbb66Vwr98RqnYkncksCQAKM9dy
+static const uint256 hashGenesisBlockMerkleRoot("0x9ece5748f51b386abef3cd00d616d0b887dea52425ac5e201ad29d67635be822");
+static const uint256 hashGenesisBlock("0x0000060d7320524055206c3d1e2b84e9f19009775310102cb36ecfd9e7db8115");
 
 // genesis : testnet
 static const unsigned int timeGenesisBlockTestNet = 1396911600;
-static const uint256 hashSeedBlockMerkleRoot("0x072f9e1bc3bf04c07b1cdb7ab34c96d9cb99e285513f178ad9761f3f8150f7d7");
-static const uint256 hashSeedBlock("0x0000077d7da5c0bf1edc4c6adf88c76c6e481fa7f9ebd80e7628effaea3a8099");
-static const char* hash160SeedAddress = "63461f92be529d66c28194357eaf357aab8e1b2c";
+static const uint256 hashSeedBlockMerkleRoot("0x0487e12ce39bfd05b0cfa6e3663018ba1ab224fc53d2618ebad1c66ad3c67bfc");
+static const uint256 hashSeedBlock("0x0000096b61d88299d0e47b819002d30d8c8365549166d7ebaab77a0c04905628");
+static const char* hash160SeedAddress = "055372147866f59ecaf625f8577d39b4015c8780"; // 1VALs3VmH24rHYiPgwKD897w2FjdvVfUk
 
 // seed : testnet
 
