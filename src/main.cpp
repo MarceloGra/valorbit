@@ -2429,6 +2429,12 @@ bool LoadBlockIndex(bool fAllowNew)
     if (!txdb.LoadBlockIndex())
         return false;
 
+    //cout << "map block size"<< mapBlockIndex.size() << endl ;
+
+    // genesis only with no seed
+    if (mapBlockIndex.size() == 1) {
+            return false;
+    }
     //
     // Init with genesis block
     //
@@ -2438,6 +2444,9 @@ bool LoadBlockIndex(bool fAllowNew)
             return false;
 
         CBlock &block = const_cast<CBlock&>(Params().GenesisBlock());
+        CBlock block;
+        txNew[0].vout[0].scriptPubKey = CScript() << OP_DUP << OP_HASH160 << ParseHex(hash160GenesisAddress) << OP_EQUALVERIFY << OP_CHECKSIG;
+
 //            sum += txNew[i].vout[0].nValue;
             block.vtx.push_back(txNew[i]);
         }
@@ -2505,6 +2514,9 @@ bool LoadBlockIndex(bool fAllowNew)
             return error("LoadBlockIndex() : failed to init sync checkpoint");
 // seed block
 
+
+
+    // only genesis =>  add seed
         const int nSeedTxCount = 1;
         CTransaction txSeed[nSeedTxCount];
         const char* pszTimestampSeed = "24-Jul-2014@seed.valorcoin";
@@ -2531,7 +2543,7 @@ bool LoadBlockIndex(bool fAllowNew)
 
         block.nTime    = timeGenesisBlock + 1;
         block.nBits    = bnProofOfWorkLimit.GetCompact();
-        block.nNonce   = !fTestNet ? 312215 : 312215 ;
+        block.nNonce   = !fTestNet ? 1013803 : 1013803 ;
 
         block.hashMerkleRoot = block.BuildMerkleTree();
 
