@@ -1466,13 +1466,30 @@ bool CBlock::ConnectBlock(CTxDB& txdb, CBlockIndex* pindex, bool fJustCheck)
 
     if (IsProofOfWork())
     {
+
+     // Genesis block is special
+      uint256 hash = GetHash(); 
+      if ( hash != Params().HashGenesisBlock()) 
+      {
+        //printf("ConnectBlock(): block %s\n", hash.ToString().c_str());
+        uint256 prevHash = 0;
+  
+        if(pindex->pprev)
+          prevHash = pindex->pprev->GetBlockHash();
+
+        if ( prevHash != Params().HashGenesisBlock() || hash != Params().HashSeedBlock() )
+        {
+        //printf("ConnectBlock(): prev block %s\n", prevHash.ToString().c_str());
         int64_t nReward = GetProofOfWorkReward(nFees);
         // Check coinbase reward
         if (vtx[0].GetValueOut() > nReward)
             return DoS(50, error("ConnectBlock() : coinbase reward exceeded (actual=%d vs calculated=%d)",
                    vtx[0].GetValueOut(),
                    nReward));
+        }
+      }
     }
+
     if (IsProofOfStake())
     {
         // ppcoin: coin stake tx earns reward instead of paying fee
@@ -2423,7 +2440,7 @@ bool LoadBlockIndex(bool fAllowNew)
         if (!block.AddToBlockIndex(nFile, nBlockPos, Params().HashGenesisBlock()))
             return error("LoadBlockIndex() : genesis block not accepted");
 
-        // ppcoin: initialize synchronized checkpoint
+        // initialize synchronized checkpoint
         if (!Checkpoints::WriteSyncCheckpoint(Params().HashGenesisBlock()))
             return error("LoadBlockIndex() : failed to init sync checkpoint");
 
@@ -2456,7 +2473,6 @@ bool LoadBlockIndex(bool fAllowNew)
         if ((Params().NetworkID() == CChainParams::MAIN) && !Checkpoints::ResetSyncCheckpoint())
             return error("LoadBlockIndex() : failed to reset sync-checkpoint");
     }
-
     return true;
 }
 
