@@ -2493,7 +2493,7 @@ bool LoadBlockIndex(bool fAllowNew)
                     if (CheckProofOfWork(block.GetHash(), block.nBits)) {
                        printf("* Solved genesis block! nonce %u hash 0x%s time %u\n",
                          block.nNonce, block.GetHash().ToString().c_str(), block.nTime);
-                       printf("* Mining took %lu minutes\n", (GetTimeMillis() - nStart)/60000);
+                       printf("* Mining took %llu minutes\n", (GetTimeMillis() - nStart)/60000);
                     }
                           block.print();
             }
@@ -2595,7 +2595,7 @@ bool LoadBlockIndex(bool fAllowNew)
                     if (CheckProofOfWork(block.GetHash(), block.nBits)) {
                        printf("* Solved seed block! nonce %u hash 0x%s time %u\n",
                          block.nNonce, block.GetHash().ToString().c_str(), block.nTime);
-                       printf("* Mining took %lu minutes\n", (GetTimeMillis() - nStart)/60000);
+                       printf("* Mining took %llu minutes\n", (GetTimeMillis() - nStart)/60000);
                     }
                     block.print();
         }
