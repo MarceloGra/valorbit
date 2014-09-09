@@ -15,6 +15,7 @@ src/build.h
 *.qm
 Makefile
 valorcoin-qt
+Valorcoin
 #resources cpp
 qrc_*.cpp
 #qt creator
