@@ -354,6 +354,9 @@ bool AppInit2(boost::thread_group& threadGroup)
 
     nDerivationMethodIndex = 0;
 
+    // default is to enable irc for now
+//    SoftSetBoolArg("-irc", true);
+
     if (!SelectParamsFromCommandLine()) {
         return InitError("Invalid combination of -testnet and -regtest.");
     }
