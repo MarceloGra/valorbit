@@ -45,3 +45,5 @@ src/test/test_bitcoin
 src/qt/moc_*.cpp
 share/setup.nsi
 src/qt/libbitcoinqt.a
+moc_qrcodedialog.cpp
+moc_macnotificationhandler.cpp
