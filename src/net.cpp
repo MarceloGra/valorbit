@@ -1078,11 +1078,6 @@ void MapPort(bool)
 
 
 void ThreadDNSAddressSeed()
-    ,{"seed2.valorcoin.com", "seed2.valorcoin.com"}
-    ,{"seed.valorcoin.info", "seed.valorcoin.info"}
-    ,{"seed2.valorcoin.info", "seed2.valorcoin.info"}
-    ,{"seed.valorvault.info", "seed.valorvault.info"}
-    ,{"seed2.valorvault.info", "seed2.valorvault.info"}
 {
     // goal: only query DNS seeds if address need is acute
     if ((addrman.size() > 0) &&

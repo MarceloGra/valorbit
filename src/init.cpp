@@ -110,7 +110,7 @@ void Shutdown()
     }
 #ifdef ENABLE_WALLET
     if (pwalletMain)
-<        bitdb.Flush(true);
+        bitdb.Flush(true);
 #endif
     boost::filesystem::remove(GetPidFile());
     UnregisterAllWallets();
@@ -134,21 +134,15 @@ void HandleSIGHUP(int)
     fReopenDebugLog = true;
 }
 
-            std::string strUsage = _("ValorCoin version") + " " + FormatFullVersion() + "\n\n" +
-                  "  valorcoind [options]                     " + "\n" +
-                  "  valorcoind [options] <command> [params]  " + _("Send command to -server or valorcoind") + "\n" +
-                  "  valorcoind [options] help                " + _("List commands") + "\n" +
-                  "  valorcoind [options] help <command>      " + _("Get help for a command") + "\n";
-            if (!IsSwitchChar(argv[i][0]) && !boost::algorithm::istarts_with(argv[i], "valorcoin:"))
 bool static InitError(const std::string &str)
 {
-    uiInterface.ThreadSafeMessageBox(str, _("ValorCoin"), CClientUIInterface::OK | CClientUIInterface::MODAL);
+    uiInterface.ThreadSafeMessageBox(str, "", CClientUIInterface::MSG_ERROR);
     return false;
 }
 
 bool static InitWarning(const std::string &str)
 {
-    uiInterface.ThreadSafeMessageBox(str, _("ValorCoin"), CClientUIInterface::OK | CClientUIInterface::ICON_EXCLAMATION | CClientUIInterface::MODAL);
+    uiInterface.ThreadSafeMessageBox(str, "", CClientUIInterface::MSG_WARNING);
     return true;
 }
 
