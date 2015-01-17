@@ -27,3 +27,4 @@ Makefile.Release
 Makefile.Debug
 Valorcoin*.app
 !src/leveldb/Makefile
+.idea/

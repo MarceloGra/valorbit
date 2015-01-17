@@ -84,7 +84,7 @@ public:
         assert(hashGenesisBlock == uint256("0x000001faef25dec4fbcf906e6242621df2c183bf232f263d0ba5b101911e4563"));
         assert(genesis.hashMerkleRoot == uint256("0x12630d16a97f24b287c8c2594dda5fb98c9e6c70fc61d44191931ea2aa08dc90"));
 
-        vSeeds.push_back(CDNSSeedData("rat4.blackcoin.co", "seed.blackcoin.co"));
+        vSeeds.push_back(CDNSSeedData("rat4.valorcoin.co", "seed.valorcoin.co"));
         vSeeds.push_back(CDNSSeedData("archon.darkfox.id.au", "foxy.seeds.darkfox.id.au"));
         vSeeds.push_back(CDNSSeedData("6.syllabear.us.to", "bcseed.syllabear.us.to"));
 

@@ -9,7 +9,7 @@
     <message>
         <location line="+39"/>
         <source>&lt;b&gt;ValorCoin&lt;/b&gt; version</source>
-        <translation>&lt;b&gt;BlackCoin&lt;/b&gt;-asiakasohjelman versio</translation>
+        <translation>&lt;b&gt;ValorCoin&lt;/b&gt;-asiakasohjelman versio</translation>
     </message>
     <message>
         <location line="+41"/>
@@ -18,7 +18,7 @@ Copyright © 2012-2014 The NovaCoin developers
 Copyright © 2014 The ValorCoin developers</source>
         <translation>Copyright © 2009-2014 The Bitcoin developers
 Copyright © 2012-2014 The NovaCoin developers
-Copyright © 2014 The BlackCoin developers</translation>
+Copyright © 2014 The ValorCoin developers</translation>
     </message>
     <message>
         <location line="+15"/>
@@ -233,7 +233,7 @@ Tämä tuote sisältää OpenSSL-projektin kehittämää ohjelmistoa OpenSSL-ty�
     <message>
         <location line="+1"/>
         <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR COINS&lt;/b&gt;!</source>
-        <translation>Varoitus: Jos salaat lompakkosi ja hukkaat salasanasi, &lt;b&gt;MENETÄT KAIKKI BLACKCOINISI&lt;/b&gt;!</translation>
+        <translation>Varoitus: Jos salaat lompakkosi ja hukkaat salasanasi, &lt;b&gt;MENETÄT KAIKKI VALORCOINISI&lt;/b&gt;!</translation>
     </message>
     <message>
         <location line="+0"/>
@@ -397,7 +397,7 @@ Tämä tuote sisältää OpenSSL-projektin kehittämää ohjelmistoa OpenSSL-ty�
     <message>
         <location line="-55"/>
         <source>Send coins to a ValorCoin address</source>
-        <translation>Lähetä varoja BlackCoin-osoitteeseen</translation>
+        <translation>Lähetä varoja ValorCoin-osoitteeseen</translation>
     </message>
     <message>
         <location line="+39"/>
@@ -504,7 +504,7 @@ Tämä tuote sisältää OpenSSL-projektin kehittämää ohjelmistoa OpenSSL-ty�
         <location line="+0"/>
         <location line="+58"/>
         <source>ValorCoin client</source>
-        <translation>BlackCoin-asiakasohjelma</translation>
+        <translation>ValorCoin-asiakasohjelma</translation>
     </message>
     <message numerus="yes">
         <location line="+70"/>
@@ -726,7 +726,7 @@ Osoite: %4</translation>
     <message>
         <location filename="../bitcoin.cpp" line="+104"/>
         <source>A fatal error occurred. ValorCoin can no longer continue safely and will quit.</source>
-        <translation>Virhe kohdattu. BlackCoin-asiakasohjelma ei voi enää jatkaa turvallisesti ja se suljetaan.</translation>
+        <translation>Virhe kohdattu. ValorCoin-asiakasohjelma ei voi enää jatkaa turvallisesti ja se suljetaan.</translation>
     </message>
 </context>
 <context>
@@ -1177,7 +1177,7 @@ Tämä tarkoittaa, että ainakin %2 rahansiirtopalkkio tarvitaan.</translation>
     <message>
         <location line="+7"/>
         <source>Connect to the ValorCoin network through a SOCKS proxy (e.g. when connecting through Tor).</source>
-        <translation>Yhdistä BlackCoin-verkkoon SOCKS-välityspalvelimen lävitse. (esim. yhdistettäessä Tor:n kautta).</translation>
+        <translation>Yhdistä ValorCoin-verkkoon SOCKS-välityspalvelimen lävitse. (esim. yhdistettäessä Tor:n kautta).</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1286,7 +1286,7 @@ Tämä tarkoittaa, että ainakin %2 rahansiirtopalkkio tarvitaan.</translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>Use black visual theme (requires restart)</source>
+        <source>Use valor visual theme (requires restart)</source>
         <translation>Käytä teemana mustaa ulkoasua (vaatii uudelleenkäynnistyksen)</translation>
     </message>
     <message>
@@ -1411,7 +1411,7 @@ Tämä tarkoittaa, että ainakin %2 rahansiirtopalkkio tarvitaan.</translation>
     <name>PaymentServer</name>
     <message>
         <location filename="../paymentserver.cpp" line="+107"/>
-        <source>Cannot start blackcoin: click-to-pay handler</source>
+        <source>Cannot start valorcoin: click-to-pay handler</source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -1685,7 +1685,7 @@ Tämä tarkoittaa, että ainakin %2 rahansiirtopalkkio tarvitaan.</translation>
         <location line="+5"/>
         <location line="+5"/>
         <source>Send Coins</source>
-        <translation>Lähetä Blackcoineja</translation>
+        <translation>Lähetä Valorcoineja</translation>
     </message>
     <message>
         <location line="+76"/>
@@ -2738,13 +2738,13 @@ Tämä tarkoittaa, että ainakin %2 rahansiirtopalkkio tarvitaan.</translation>
         <source>%s, you must set a rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=blackcoinrpc
+rpcuser=valorcoinrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;BlackCoin Alert&quot; admin@foo.com
+for example: alertnotify=echo %%s | mail -s &quot;ValorCoin Alert&quot; admin@foo.com
 </source>
         <translation type="unfinished"/>
     </message>
@@ -3157,8 +3157,8 @@ for example: alertnotify=echo %%s | mail -s &quot;BlackCoin Alert&quot; admin@fo
     </message>
     <message>
         <location line="+10"/>
-        <source>Initialization sanity check failed. BlackCoin is shutting down.</source>
-        <translation>Käyttöönottotarkistus epäonnistui. BlackCoin-asiakasohjelma suljetaan.</translation>
+        <source>Initialization sanity check failed. ValorCoin is shutting down.</source>
+        <translation>Käyttöönottotarkistus epäonnistui. ValorCoin-asiakasohjelma suljetaan.</translation>
     </message>
     <message>
         <location line="+50"/>
@@ -3332,7 +3332,7 @@ for example: alertnotify=echo %%s | mail -s &quot;BlackCoin Alert&quot; admin@fo
     </message>
     <message>
         <location line="+3"/>
-        <source>Cannot obtain a lock on data directory %s. BlackCoin is probably already running.</source>
+        <source>Cannot obtain a lock on data directory %s. ValorCoin is probably already running.</source>
         <translation type="unfinished"/>
     </message>
     <message>

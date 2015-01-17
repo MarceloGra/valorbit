@@ -18,7 +18,7 @@ Copyright © 2012-2014 The NovaCoin developers
 Copyright © 2014 The ValorCoin developers</source>
         <translation>Copyright © 2009-2014 The Bitcoin developers
 Copyright © 2012-2014 The NovaCoin developers
-Copyright © 2014 The BlackCoin developers</translation>
+Copyright © 2014 The ValorCoin developers</translation>
     </message>
     <message>
         <location line="+15"/>
@@ -1136,7 +1136,7 @@ Dette betyr at det trengs en avgift på minimum %2.</translation>
     <message>
         <location line="+31"/>
         <source>Automatically start ValorCoin after logging in to the system.</source>
-        <translation>Start BlackCoin automatisk ved hver innlogging.</translation>
+        <translation>Start ValorCoin automatisk ved hver innlogging.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1246,7 +1246,7 @@ Dette betyr at det trengs en avgift på minimum %2.</translation>
     <message>
         <location line="+13"/>
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
-        <translation>Velg standard delt enhet for visning i grensesnittet og for sending av blackcoins.</translation>
+        <translation>Velg standard delt enhet for visning i grensesnittet og for sending av valorcoins.</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -1270,7 +1270,7 @@ Dette betyr at det trengs en avgift på minimum %2.</translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>Use black visual theme (requires restart)</source>
+        <source>Use valor visual theme (requires restart)</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1303,7 +1303,7 @@ Dette betyr at det trengs en avgift på minimum %2.</translation>
         <location line="-9"/>
         <location line="+9"/>
         <source>This setting will take effect after restarting ValorCoin.</source>
-        <translation>Denne innstillingen vil tre i kraft etter BlackCoin er blitt startet på nytt.</translation>
+        <translation>Denne innstillingen vil tre i kraft etter ValorCoin er blitt startet på nytt.</translation>
     </message>
     <message>
         <location line="+29"/>
@@ -1395,7 +1395,7 @@ Dette betyr at det trengs en avgift på minimum %2.</translation>
     <name>PaymentServer</name>
     <message>
         <location filename="../paymentserver.cpp" line="+107"/>
-        <source>Cannot start blackcoin: click-to-pay handler</source>
+        <source>Cannot start valorcoin: click-to-pay handler</source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -1669,7 +1669,7 @@ Dette betyr at det trengs en avgift på minimum %2.</translation>
         <location line="+5"/>
         <location line="+5"/>
         <source>Send Coins</source>
-        <translation>Send Blackcoins</translation>
+        <translation>Send Valorcoins</translation>
     </message>
     <message>
         <location line="+76"/>
@@ -2091,7 +2091,7 @@ Dette betyr at det trengs en avgift på minimum %2.</translation>
     <message>
         <location line="+3"/>
         <source>Enter ValorCoin signature</source>
-        <translation>Skriv inn BlackCoin signatur</translation>
+        <translation>Skriv inn ValorCoin signatur</translation>
     </message>
     <message>
         <location line="+82"/>
@@ -2722,13 +2722,13 @@ Dette betyr at det trengs en avgift på minimum %2.</translation>
         <source>%s, you must set a rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=blackcoinrpc
+rpcuser=valorcoinrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;BlackCoin Alert&quot; admin@foo.com
+for example: alertnotify=echo %%s | mail -s &quot;ValorCoin Alert&quot; admin@foo.com
 </source>
         <translation type="unfinished"/>
     </message>
@@ -3140,7 +3140,7 @@ for example: alertnotify=echo %%s | mail -s &quot;BlackCoin Alert&quot; admin@fo
     </message>
     <message>
         <location line="+10"/>
-        <source>Initialization sanity check failed. BlackCoin is shutting down.</source>
+        <source>Initialization sanity check failed. ValorCoin is shutting down.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -3315,7 +3315,7 @@ for example: alertnotify=echo %%s | mail -s &quot;BlackCoin Alert&quot; admin@fo
     </message>
     <message>
         <location line="+3"/>
-        <source>Cannot obtain a lock on data directory %s. BlackCoin is probably already running.</source>
+        <source>Cannot obtain a lock on data directory %s. ValorCoin is probably already running.</source>
         <translation type="unfinished"/>
     </message>
     <message>

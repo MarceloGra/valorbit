@@ -18,7 +18,7 @@ Copyright © 2012-2014 The NovaCoin developers
 Copyright © 2014 The ValorCoin developers</source>
         <translation>Telif Hakkı © 2009-2014 Bitcoin geliştiricileri
 Telif Hakkı © 2012-2014 NovaCoin geliştiricileri
-Telif Hakkı © 2014 BlackCoin geliştiricileri</translation>
+Telif Hakkı © 2014 ValorCoin geliştiricileri</translation>
     </message>
     <message>
         <location line="+15"/>
@@ -1286,7 +1286,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+7"/>
-        <source>Use black visual theme (requires restart)</source>
+        <source>Use valor visual theme (requires restart)</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1411,7 +1411,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     <name>PaymentServer</name>
     <message>
         <location filename="../paymentserver.cpp" line="+107"/>
-        <source>Cannot start blackcoin: click-to-pay handler</source>
+        <source>Cannot start valorcoin: click-to-pay handler</source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -2738,13 +2738,13 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
         <source>%s, you must set a rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=blackcoinrpc
+rpcuser=valorcoinrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;BlackCoin Alert&quot; admin@foo.com
+for example: alertnotify=echo %%s | mail -s &quot;ValorCoin Alert&quot; admin@foo.com
 </source>
         <translation type="unfinished"/>
     </message>
@@ -3157,8 +3157,8 @@ for example: alertnotify=echo %%s | mail -s &quot;BlackCoin Alert&quot; admin@fo
     </message>
     <message>
         <location line="+10"/>
-        <source>Initialization sanity check failed. BlackCoin is shutting down.</source>
-        <translation>Başlangıç uygunluk kontrolü başarısız oldu. BlackCoin kapatılıyor.</translation>
+        <source>Initialization sanity check failed. ValorCoin is shutting down.</source>
+        <translation>Başlangıç uygunluk kontrolü başarısız oldu. ValorCoin kapatılıyor.</translation>
     </message>
     <message>
         <location line="+50"/>
@@ -3223,12 +3223,12 @@ for example: alertnotify=echo %%s | mail -s &quot;BlackCoin Alert&quot; admin@fo
     <message>
         <location line="+4"/>
         <source>Error loading wallet.dat: Wallet requires newer version of ValorCoin</source>
-        <translation>wallet.dat yüklenirken hata: Cüzdan, daha yeni bir BlackCoin versiyonuna ihtiyaç duyuyor.</translation>
+        <translation>wallet.dat yüklenirken hata: Cüzdan, daha yeni bir ValorCoin versiyonuna ihtiyaç duyuyor.</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Wallet needed to be rewritten: restart ValorCoin to complete</source>
-        <translation>Cüzdanın yeniden yazılması gerekmektedir: Tamamlamak için BlackCoin&apos;i yeniden başlatın</translation>
+        <translation>Cüzdanın yeniden yazılması gerekmektedir: Tamamlamak için ValorCoin&apos;i yeniden başlatın</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -3293,7 +3293,7 @@ for example: alertnotify=echo %%s | mail -s &quot;BlackCoin Alert&quot; admin@fo
     <message>
         <location line="+125"/>
         <source>Unable to bind to %s on this computer. ValorCoin is probably already running.</source>
-        <translation>Bu bilgisayarda %s bağlanamadı. BlackCoin muhtemelen halen çalışmaktadır.</translation>
+        <translation>Bu bilgisayarda %s bağlanamadı. ValorCoin muhtemelen halen çalışmaktadır.</translation>
     </message>
     <message>
         <location line="-101"/>
@@ -3332,7 +3332,7 @@ for example: alertnotify=echo %%s | mail -s &quot;BlackCoin Alert&quot; admin@fo
     </message>
     <message>
         <location line="+3"/>
-        <source>Cannot obtain a lock on data directory %s. BlackCoin is probably already running.</source>
+        <source>Cannot obtain a lock on data directory %s. ValorCoin is probably already running.</source>
         <translation type="unfinished"/>
     </message>
     <message>

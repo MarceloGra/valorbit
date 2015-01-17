@@ -9,7 +9,7 @@
     <message>
         <location line="+39"/>
         <source>&lt;b&gt;ValorCoin&lt;/b&gt; version</source>
-        <translation>&lt;b&gt;BlackCoin&lt;/b&gt; verzia</translation>
+        <translation>&lt;b&gt;ValorCoin&lt;/b&gt; verzia</translation>
     </message>
     <message>
         <location line="+41"/>
@@ -263,7 +263,7 @@ Tento produkt obsahuje softvér vyvinutý projektom OpenSSL Project pre použiti
     </message>
     <message>
         <location line="+82"/>
-        <translation>BlackCoin sa teraz zavrie aby dokončil proces zašifrovania. Nezabudnite, že zašifrovanie vašej peňaženky nemôže plne chrániť vaše mince pred krádežou malwarom, ktorý napadol váš počítač.</translation>
+        <translation>ValorCoin sa teraz zavrie aby dokončil proces zašifrovania. Nezabudnite, že zašifrovanie vašej peňaženky nemôže plne chrániť vaše mince pred krádežou malwarom, ktorý napadol váš počítač.</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -1286,7 +1286,7 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>Use black visual theme (requires restart)</source>
+        <source>Use valor visual theme (requires restart)</source>
         <translation>Použiť čiernu vizuálnu tému (vyžaduje reštart)</translation>
     </message>
     <message>
@@ -1411,8 +1411,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     <name>PaymentServer</name>
     <message>
         <location filename="../paymentserver.cpp" line="+107"/>
-        <source>Cannot start blackcoin: click-to-pay handler</source>
-        <translation>BlackCoin sa nedá spustiť: click-to-pay handler</translation>
+        <source>Cannot start valorcoin: click-to-pay handler</source>
+        <translation>ValorCoin sa nedá spustiť: click-to-pay handler</translation>
     </message>
 </context>
 <context>
@@ -2738,24 +2738,24 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
         <source>%s, you must set a rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=blackcoinrpc
+rpcuser=valorcoinrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;BlackCoin Alert&quot; admin@foo.com
+for example: alertnotify=echo %%s | mail -s &quot;ValorCoin Alert&quot; admin@foo.com
 </source>
         <translation>%s, musíte nastaviť rpcpassword v konfiguračnom súbore:
 %s
 Doporučuje sa použiť nasledovné náhodne heslo:
-rpcuser=blackcoinrpc
+rpcuser=valorcoinrpc
 rpcpassword=%s
 (toto heslo si nemusíte pamätať)
 Užívateľské meno a heslo NESMIE byť rovnaké.
 Ak súbor neexistuje, vytvorte ho s právami &quot;môže čítať iba vlastník&quot;.
 Odporúča sa tiež nastaviť &quot;alertnotify&quot;, takže budete upozornení na problémy,
-napríklad: alertnotify=echo %%s | mail -s &quot;BlackCoin upozornenie&quot; admin@foo.com
+napríklad: alertnotify=echo %%s | mail -s &quot;ValorCoin upozornenie&quot; admin@foo.com
 </translation>
     </message>
     <message>
@@ -3167,8 +3167,8 @@ napríklad: alertnotify=echo %%s | mail -s &quot;BlackCoin upozornenie&quot; adm
     </message>
     <message>
         <location line="+10"/>
-        <source>Initialization sanity check failed. BlackCoin is shutting down.</source>
-        <translation>Úvodné kontrolné testy zlyhali. BlackCoin sa teraz zatvori.</translation>
+        <source>Initialization sanity check failed. ValorCoin is shutting down.</source>
+        <translation>Úvodné kontrolné testy zlyhali. ValorCoin sa teraz zatvori.</translation>
     </message>
     <message>
         <location line="+50"/>
@@ -3342,8 +3342,8 @@ napríklad: alertnotify=echo %%s | mail -s &quot;BlackCoin upozornenie&quot; adm
     </message>
     <message>
         <location line="+3"/>
-        <source>Cannot obtain a lock on data directory %s. BlackCoin is probably already running.</source>
-        <translation>Nedá sa zamknúť dátová zložka %s. BlackCoin je pravdepodobne už spustený</translation>
+        <source>Cannot obtain a lock on data directory %s. ValorCoin is probably already running.</source>
+        <translation>Nedá sa zamknúť dátová zložka %s. ValorCoin je pravdepodobne už spustený</translation>
     </message>
     <message>
         <location line="+4"/>

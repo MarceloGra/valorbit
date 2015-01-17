@@ -390,9 +390,9 @@
         </widget>
        </item>
        <item>
-        <widget class="QCheckBox" name="useBlackTheme">
+        <widget class="QCheckBox" name="useValorTheme">
          <property name="text">
-          <string>Use black visual theme (requires restart)</string>
+          <string>Use valor visual theme (requires restart)</string>
          </property>
         </widget>
        </item>

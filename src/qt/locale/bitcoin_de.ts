@@ -59,7 +59,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="-43"/>
         <source>These are your ValorCoin addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
-        <translation>Das sind Ihre BlackCoin Adressen um Zahlungen zu erhalten. Sie werden vielleicht verschiedene an jeden Sender vergeben, damit Sie im Auge behalten können wer Sie bezahlt.</translation>
+        <translation>Das sind Ihre ValorCoin Adressen um Zahlungen zu erhalten. Sie werden vielleicht verschiedene an jeden Sender vergeben, damit Sie im Auge behalten können wer Sie bezahlt.</translation>
     </message>
     <message>
         <location line="+53"/>
@@ -74,7 +74,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="+7"/>
         <source>Sign a message to prove you own a ValorCoin address</source>
-        <translation>Signieren Sie eine Nachricht um zu beweisen, dass Sie eine BlackCoin Adresse besitzen</translation>
+        <translation>Signieren Sie eine Nachricht um zu beweisen, dass Sie eine ValorCoin Adresse besitzen</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -89,7 +89,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="-10"/>
         <source>Verify a message to ensure it was signed with a specified ValorCoin address</source>
-        <translation>Verifizieren Sie ob eine Nachricht einer bestimmten BlackCoin Adresse signiert wurde</translation>
+        <translation>Verifizieren Sie ob eine Nachricht einer bestimmten ValorCoin Adresse signiert wurde</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -256,8 +256,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+82"/>
-        <source>BlackCoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
-        <translation>BlackCoin wird sich schließen um den Verschlüsselungsvorgang abzuschließen. Beachten Sie, dass die Verschlüsselung Ihrer Wallet keinen vollständigen Schutz vor Diebstahl Ihrer Coins duch auf Ihrem Computer installierte Malware gewährleistet</translation>
+        <source>ValorCoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
+        <translation>ValorCoin wird sich schließen um den Verschlüsselungsvorgang abzuschließen. Beachten Sie, dass die Verschlüsselung Ihrer Wallet keinen vollständigen Schutz vor Diebstahl Ihrer Coins duch auf Ihrem Computer installierte Malware gewährleistet</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -351,7 +351,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="+4"/>
         <source>Show information about ValorCoin</source>
-        <translation>Informationen über BlackCoin anzeigen</translation>
+        <translation>Informationen über ValorCoin anzeigen</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -391,12 +391,12 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="-55"/>
         <source>Send coins to a ValorCoin address</source>
-        <translation>Senden Sie Coins an eine BlackCoin Adresse</translation>
+        <translation>Senden Sie Coins an eine ValorCoin Adresse</translation>
     </message>
     <message>
         <location line="+39"/>
         <source>Modify configuration options for ValorCoin</source>
-        <translation>Konfigurationsoptionen für BlackCoin ändern</translation>
+        <translation>Konfigurationsoptionen für ValorCoin ändern</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -436,7 +436,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="-214"/>
         <location line="+551"/>
-        <translation>BlackCoin</translation>
+        <translation>ValorCoin</translation>
     </message>
     <message>
         <location line="-551"/>
@@ -446,7 +446,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="+193"/>
         <source>&amp;About ValorCoin</source>
-        <translation>&amp;Über BlackCoin</translation>
+        <translation>&amp;Über ValorCoin</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -503,7 +503,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message numerus="yes">
         <location line="+70"/>
         <source>%n active connection(s) to ValorCoin network</source>
-        <translation><numerusform>%n aktive Verbindung zum BlackCoin Netzwerk</numerusform><numerusform>%n aktive Verbindungen zum BlackCoin Netzwerk</numerusform></translation>
+        <translation><numerusform>%n aktive Verbindung zum ValorCoin Netzwerk</numerusform><numerusform>%n aktive Verbindungen zum ValorCoin Netzwerk</numerusform></translation>
     </message>
     <message>
         <location line="+488"/>
@@ -597,7 +597,7 @@ Adresse: %4</translation>
         <location line="-15"/>
         <location line="+15"/>
         <source>URI can not be parsed! This can be caused by an invalid ValorCoin address or malformed URI parameters.</source>
-        <translation>Die URI kann nicht erkannt werden! Die Ursache hierfür kann eine ungültige BlackCoin Adresse oder eine fehlerhafte Angabe der URI Parameter sein.</translation>
+        <translation>Die URI kann nicht erkannt werden! Die Ursache hierfür kann eine ungültige ValorCoin Adresse oder eine fehlerhafte Angabe der URI Parameter sein.</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -720,7 +720,7 @@ Adresse: %4</translation>
     <message>
         <location filename="../bitcoin.cpp" line="+104"/>
         <source>A fatal error occurred. ValorCoin can no longer continue safely and will quit.</source>
-        <translation>Ein fataler Fehler ist aufgetreten. BlackCoin kann nicht fortgesetzt werden und wird beendet.</translation>
+        <translation>Ein fataler Fehler ist aufgetreten. ValorCoin kann nicht fortgesetzt werden und wird beendet.</translation>
     </message>
 </context>
 <context>
@@ -1242,7 +1242,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     <message>
         <location line="+13"/>
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
-        <translation>Wählen Sie die Standarduntereinheit, die in der Benutzeroberfläche und beim Überweisen von BlackCoins angezeigt werden soll.</translation>
+        <translation>Wählen Sie die Standarduntereinheit, die in der Benutzeroberfläche und beim Überweisen von ValorCoins angezeigt werden soll.</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -1266,7 +1266,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+7"/>
-        <source>Use black visual theme (requires restart)</source>
+        <source>Use valor visual theme (requires restart)</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1391,7 +1391,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     <name>PaymentServer</name>
     <message>
         <location filename="../paymentserver.cpp" line="+107"/>
-        <source>Cannot start blackcoin: click-to-pay handler</source>
+        <source>Cannot start valorcoin: click-to-pay handler</source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -1899,7 +1899,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     <message>
         <location line="+247"/>
         <source>WARNING: Invalid ValorCoin address</source>
-        <translation>Warnung: Ungültige BlackCoin Adresse</translation>
+        <translation>Warnung: Ungültige ValorCoin Adresse</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -2718,13 +2718,13 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
         <source>%s, you must set a rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=blackcoinrpc
+rpcuser=valorcoinrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;BlackCoin Alert&quot; admin@foo.com
+for example: alertnotify=echo %%s | mail -s &quot;ValorCoin Alert&quot; admin@foo.com
 </source>
         <translation type="unfinished"/>
     </message>
@@ -2831,7 +2831,7 @@ for example: alertnotify=echo %%s | mail -s &quot;BlackCoin Alert&quot; admin@fo
     <message>
         <location line="-103"/>
         <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong ValorCoin will not work properly.</source>
-        <translation>Wanung : Bitte prüfen Sie ob Datum und Uhrzeit richtig eingestellt sind. Wenn das Datum falsch ist wird BlackCoin nicht richtig funktionieren.</translation>
+        <translation>Wanung : Bitte prüfen Sie ob Datum und Uhrzeit richtig eingestellt sind. Wenn das Datum falsch ist wird ValorCoin nicht richtig funktionieren.</translation>
     </message>
     <message>
         <location line="+132"/>
@@ -3137,7 +3137,7 @@ for example: alertnotify=echo %%s | mail -s &quot;BlackCoin Alert&quot; admin@fo
     </message>
     <message>
         <location line="+10"/>
-        <source>Initialization sanity check failed. BlackCoin is shutting down.</source>
+        <source>Initialization sanity check failed. ValorCoin is shutting down.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -3312,7 +3312,7 @@ for example: alertnotify=echo %%s | mail -s &quot;BlackCoin Alert&quot; admin@fo
     </message>
     <message>
         <location line="+3"/>
-        <source>Cannot obtain a lock on data directory %s. BlackCoin is probably already running.</source>
+        <source>Cannot obtain a lock on data directory %s. ValorCoin is probably already running.</source>
         <translation type="unfinished"/>
     </message>
     <message>

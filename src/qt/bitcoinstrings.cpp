@@ -26,7 +26,7 @@ QT_TRANSLATE_NOOP("bitcoin-core", ""
 "An error occurred while setting up the RPC port %u for listening on IPv4: %s"),
 QT_TRANSLATE_NOOP("bitcoin-core", ""
 "Warning: Please check that your computer's date and time are correct! If "
-"your clock is wrong BlackCoin will not work properly."),
+"your clock is wrong ValorCoin will not work properly."),
 QT_TRANSLATE_NOOP("bitcoin-core", "Options:"),
 QT_TRANSLATE_NOOP("bitcoin-core", "This help message"),
 QT_TRANSLATE_NOOP("bitcoin-core", "Specify configuration file (default: valorcoin.conf)"),
@@ -133,7 +133,7 @@ QT_TRANSLATE_NOOP("bitcoin-core", "Invalid amount for -mininput=<amount>: '%s'")
 QT_TRANSLATE_NOOP("bitcoin-core", "Initialization sanity check failed. ValorCoin is shutting down."),
 QT_TRANSLATE_NOOP("bitcoin-core", "Wallet %s resides outside data directory %s."),
 QT_TRANSLATE_NOOP("bitcoin-core", ""
-"Cannot obtain a lock on data directory %s. BlackCoin is probably already "
+"Cannot obtain a lock on data directory %s. ValorCoin is probably already "
 "running."),
 QT_TRANSLATE_NOOP("bitcoin-core", "Verifying database integrity..."),
 QT_TRANSLATE_NOOP("bitcoin-core", "Error initializing wallet database environment %s!"),
@@ -169,9 +169,9 @@ QT_TRANSLATE_NOOP("bitcoin-core", "Done loading"),
 QT_TRANSLATE_NOOP("bitcoin-core", ""
 "Unable to bind to %s on this computer. ValorCoin is probably already running."),
 QT_TRANSLATE_NOOP("bitcoin-core", "Unable to bind to %s on this computer (bind returned error %d, %s)"),
-QT_TRANSLATE_NOOP("bitcoin-core", "BlackCoin version"),
+QT_TRANSLATE_NOOP("bitcoin-core", "ValorCoin version"),
 QT_TRANSLATE_NOOP("bitcoin-core", "Usage:"),
-QT_TRANSLATE_NOOP("bitcoin-core", "Send command to -server or blackcoind"),
+QT_TRANSLATE_NOOP("bitcoin-core", "Send command to -server or valorcoind"),
 QT_TRANSLATE_NOOP("bitcoin-core", "List commands"),
 QT_TRANSLATE_NOOP("bitcoin-core", "Get help for a command"),
 QT_TRANSLATE_NOOP("bitcoin-core", ""
