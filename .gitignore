@@ -3,6 +3,8 @@ src/valorcoin
 src/valorcoind
 src/test_valorcoin
 src/build.h
+src/core
+core
 .*.swp
 *.*~*
 *.bak
@@ -28,3 +30,4 @@ Makefile.Debug
 Valorcoin*.app
 !src/leveldb/Makefile
 .idea/
+object_script.Valorcoin.*

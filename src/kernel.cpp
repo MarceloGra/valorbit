@@ -431,11 +431,3 @@ bool CheckCoinStakeTimestamp(int nHeight, int64_t nTimeBlock, int64_t nTimeTx)
     else
         return (nTimeBlock == nTimeTx);
 }
-
-    {
-
-        if (!matching) 
-          cout << "CheckStakeModifierCheckpoints : computed: 0x" << std::hex << nStakeModifierChecksum << " != expected: " << checkpoints[nHeight] << endl; // valorcoin
-
-        return matching;
-    }
