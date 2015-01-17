@@ -44,21 +44,21 @@
         <file alias="staking_off">res/icons/staking_off.png</file>
         <file alias="staking_on">res/icons/staking_on.png</file>
     </qresource>
-    <qresource prefix="/icons/black">
-        <file alias="connect_0">res/icons/black/connect0_16.png</file>
-        <file alias="connect_1">res/icons/black/connect1_16.png</file>
-        <file alias="connect_2">res/icons/black/connect2_16.png</file>
-        <file alias="connect_3">res/icons/black/connect3_16.png</file>
-        <file alias="connect_4">res/icons/black/connect4_16.png</file>
-        <file alias="synced">res/icons/black/synced.png</file>
-        <file alias="tx_mined">res/icons/black/tx_mined.png</file>
-        <file alias="tx_input">res/icons/black/tx_input.png</file>
-        <file alias="tx_output">res/icons/black/tx_output.png</file>
-        <file alias="tx_inout">res/icons/black/tx_inout.png</file>
-        <file alias="lock_closed">res/icons/black/lock_closed.png</file>
-        <file alias="lock_open">res/icons/black/lock_open.png</file>
-        <file alias="staking_off">res/icons/black/staking_off.png</file>
-        <file alias="staking_on">res/icons/black/staking_on.png</file>
+    <qresource prefix="/icons/valor">
+        <file alias="connect_0">res/icons/valor/connect0_16.png</file>
+        <file alias="connect_1">res/icons/valor/connect1_16.png</file>
+        <file alias="connect_2">res/icons/valor/connect2_16.png</file>
+        <file alias="connect_3">res/icons/valor/connect3_16.png</file>
+        <file alias="connect_4">res/icons/valor/connect4_16.png</file>
+        <file alias="synced">res/icons/valor/synced.png</file>
+        <file alias="tx_mined">res/icons/valor/tx_mined.png</file>
+        <file alias="tx_input">res/icons/valor/tx_input.png</file>
+        <file alias="tx_output">res/icons/valor/tx_output.png</file>
+        <file alias="tx_inout">res/icons/valor/tx_inout.png</file>
+        <file alias="lock_closed">res/icons/valor/lock_closed.png</file>
+        <file alias="lock_open">res/icons/valor/lock_open.png</file>
+        <file alias="staking_off">res/icons/valor/staking_off.png</file>
+        <file alias="staking_on">res/icons/valor/staking_on.png</file>
     </qresource>
     <qresource prefix="/images">
         <file alias="about">res/images/about.png</file>
@@ -67,7 +67,7 @@
     </qresource>
     <qresource prefix="/movies">
         <file alias="update_spinner">res/movies/update_spinner.mng</file>
-        <file alias="update_spinner_black">res/movies/update_spinner_black.mng</file>
+        <file alias="update_spinner_valor">res/movies/update_spinner_valor.mng</file>
     </qresource>
     <qresource prefix="/translations">
         <file alias="ar">locale/bitcoin_ar.qm</file>

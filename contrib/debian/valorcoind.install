@@ -1,0 +1,2 @@
+debian/bin/valorcoind usr/bin
+src/valorcoind usr/lib/valorcoin
