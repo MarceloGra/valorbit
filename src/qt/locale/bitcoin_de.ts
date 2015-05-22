@@ -503,7 +503,7 @@ Dieses Produkt enthält Software, die vom OpenSSL-Projekt zur Verwendung im Open
         <location line="+0"/>
         <location line="+58"/>
         <source>ValorCoin client</source>
-        <translation>BlackCoin Anwendung</translation>
+        <translation>ValorCoin Anwendung</translation>
     </message>
     <message numerus="yes">
         <location line="+70"/>
@@ -1065,7 +1065,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
         <location filename="../guiutil.cpp" line="+426"/>
         <location line="+12"/>
         <source>ValorCoin-Qt</source>
-        <translation>BlackCoin-Qt
+        <translation>ValorCoin-Qt
 </translation>
     </message>
     <message>
@@ -1183,7 +1183,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="-57"/>
-        <source>Connect to the BlackCoin network through a SOCKS5 proxy (e.g. when connecting through Tor).</source>
+        <source>Connect to the ValorCoin network through a SOCKS5 proxy (e.g. when connecting through Tor).</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1264,7 +1264,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     <message>
         <location line="+7"/>
         <source>Use valor visual theme (requires restart)</source>
-        <translation>Verwende das schwarze Blackcoin Wallet Design (Neustart erforderlich)</translation>
+        <translation>Verwende das schwarze Valorcoin Wallet Design (Neustart erforderlich)</translation>
     </message>
     <message>
         <location line="+71"/>
@@ -1592,7 +1592,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     <message>
         <location line="+7"/>
         <source>Open the ValorCoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Offne die Blackcoin Fehlerlogs aus dem Datenverzeichnis. Diese Funktion kann bei größeren Log-Files länger benötigen.</translation>
+        <translation>Offne die Valorcoin Fehlerlogs aus dem Datenverzeichnis. Diese Funktion kann bei größeren Log-Files länger benötigen.</translation>
     </message>
     <message>
         <location line="+102"/>
@@ -1602,7 +1602,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     <message>
         <location filename="../rpcconsole.cpp" line="+325"/>
         <source>Welcome to the ValorCoin RPC console.</source>
-        <translation>Willkommen zur Blackcoin RPC Anwendung.</translation>
+        <translation>Willkommen zur Valorcoin RPC Anwendung.</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2651,7 +2651,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     <message>
         <location filename="../bitcoinstrings.cpp" line="+173"/>
         <source>ValorCoin version</source>
-        <translation>BlackCoin Version</translation>
+        <translation>ValorCoin Version</translation>
     </message>
     <message>
         <location line="+1"/>

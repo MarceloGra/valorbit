@@ -4,12 +4,12 @@
     <message>
         <location filename="../forms/aboutdialog.ui" line="+14"/>
         <source>About ValorCoin</source>
-        <translation>O BlackCoin</translation>
+        <translation>O ValorCoin</translation>
     </message>
     <message>
         <location line="+39"/>
         <source>&lt;b&gt;ValorCoin&lt;/b&gt; version</source>
-        <translation>Verzia &lt;b&gt;BlackCoin&lt;/b&gt;</translation>
+        <translation>Verzia &lt;b&gt;ValorCoin&lt;/b&gt;</translation>
     </message>
     <message>
         <location line="+41"/>
@@ -1196,7 +1196,7 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     </message>
     <message>
         <location line="-57"/>
-        <source>Connect to the BlackCoin network through a SOCKS5 proxy (e.g. when connecting through Tor).</source>
+        <source>Connect to the ValorCoin network through a SOCKS5 proxy (e.g. when connecting through Tor).</source>
         <translation type="unfinished"/>
     </message>
     <message>

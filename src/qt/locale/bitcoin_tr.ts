@@ -1196,7 +1196,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="-57"/>
-        <source>Connect to the BlackCoin network through a SOCKS5 proxy (e.g. when connecting through Tor).</source>
+        <source>Connect to the ValorCoin network through a SOCKS5 proxy (e.g. when connecting through Tor).</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1402,7 +1402,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     <message>
         <location filename="../paymentserver.cpp" line="+107"/>
         <source>Cannot start valorcoin: click-to-pay handler</source>
-        <translation>Blackcoin: tıkla-ve-öde işleyicisi başlatılamıyor</translation>
+        <translation>Valorcoin: tıkla-ve-öde işleyicisi başlatılamıyor</translation>
     </message>
 </context>
 <context>
@@ -2726,13 +2726,13 @@ for example: alertnotify=echo %%s | mail -s &quot;ValorCoin Alert&quot; admin@fo
         <translation>%s, konfigürasyon dosyasında bir rpcpassword belirlemelisiniz: 
 %s
 Aşağıdaki rastgele şifreyi kullanmanız tavsiye edilir:
-rpcuser=blackcoinrpc
+rpcuser=valorcoinrpc
 rpcpassword=%s
 (bu şifreyi hatırlamanız gerekmemektedir)
 Kullanıcı adı ve şifre aynı OLMAMALIDIR.
 Dosya mevcut değilse, sadece sahibi tarafından okunabilir yetkiyle yaratın.
 Ayrıca sorunlardan haberdar edilmek için alertnotify parametresini doldurmanız önerilir;
-örneğin: alertnotify=echo %%s | mail -s &quot;BlackCoin Alarmı&quot; admin@foo.com
+örneğin: alertnotify=echo %%s | mail -s &quot;ValorCoin Alarmı&quot; admin@foo.com
 </translation>
     </message>
     <message>
@@ -3308,7 +3308,7 @@ Ayrıca sorunlardan haberdar edilmek için alertnotify parametresini doldurmanı
     <message>
         <location line="+3"/>
         <source>Cannot obtain a lock on data directory %s. ValorCoin is probably already running.</source>
-        <translation>Veri klasörü %s üzerinde kilit elde edilemedi. BlackCoin muhtemelen halen çalışmaktadır.</translation>
+        <translation>Veri klasörü %s üzerinde kilit elde edilemedi. ValorCoin muhtemelen halen çalışmaktadır.</translation>
     </message>
     <message>
         <location line="+4"/>

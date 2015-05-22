@@ -4,7 +4,7 @@
     <message>
         <location filename="../forms/aboutdialog.ui" line="+14"/>
         <source>About ValorCoin</source>
-        <translation>Tietoa BlackCoinista</translation>
+        <translation>Tietoa ValorCoinista</translation>
     </message>
     <message>
         <location line="+39"/>
@@ -397,7 +397,7 @@ Tämä tuote sisältää OpenSSL-projektin kehittämää ohjelmistoa OpenSSL-ty�
     <message>
         <location line="-55"/>
         <source>Send coins to a ValorCoin address</source>
-        <translation>Lähetä kolikoita BlackCoin-osoitteeseen</translation>
+        <translation>Lähetä kolikoita ValorCoin-osoitteeseen</translation>
     </message>
     <message>
         <location line="+39"/>
@@ -1196,7 +1196,7 @@ Tämä tarkoittaa, että ainakin %2 rahansiirtopalkkio tarvitaan.</translation>
     </message>
     <message>
         <location line="-57"/>
-        <source>Connect to the BlackCoin network through a SOCKS5 proxy (e.g. when connecting through Tor).</source>
+        <source>Connect to the ValorCoin network through a SOCKS5 proxy (e.g. when connecting through Tor).</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1402,7 +1402,7 @@ Tämä tarkoittaa, että ainakin %2 rahansiirtopalkkio tarvitaan.</translation>
     <message>
         <location filename="../paymentserver.cpp" line="+107"/>
         <source>Cannot start valorcoin: click-to-pay handler</source>
-        <translation>Blackcoin-asiakasohjelmaa ei voida käynnistää: klikkaa maksaaksesi-käsittelijä</translation>
+        <translation>Valorcoin-asiakasohjelmaa ei voida käynnistää: klikkaa maksaaksesi-käsittelijä</translation>
     </message>
 </context>
 <context>
@@ -2725,11 +2725,11 @@ for example: alertnotify=echo %%s | mail -s &quot;ValorCoin Alert&quot; admin@fo
 </source>
         <translation>%s, sinun on asetettava rpcpassword asetustiedostoon:
 %s
-On suositeltavaa, että käytät seuraavaa arvottua salasanaa: rpcuser=blackcoinrpc
+On suositeltavaa, että käytät seuraavaa arvottua salasanaa: rpcuser=valorcoinrpc
 rpcpassword=%s
 (Sinun ei tarvitse muistaa tätä salasanaa) Käyttäjänimen ja salasanan EI TULE OLLA SAMOJA.
 Jos tiedostoa ei ole olemassa, luo se asettaen samalla omistajan lukuoikeudet.
-On myös suositeltavaa asettaa alertnotify jolloin olet tiedotettu ongelmista; esimerkiksi: alertnotify=echo %%s | mail -s &quot;BlackCoin Alert&quot; admin@foo.com
+On myös suositeltavaa asettaa alertnotify jolloin olet tiedotettu ongelmista; esimerkiksi: alertnotify=echo %%s | mail -s &quot;ValorCoin Alert&quot; admin@foo.com
 </translation>
     </message>
     <message>
@@ -3305,7 +3305,7 @@ On myös suositeltavaa asettaa alertnotify jolloin olet tiedotettu ongelmista; e
     <message>
         <location line="+3"/>
         <source>Cannot obtain a lock on data directory %s. ValorCoin is probably already running.</source>
-        <translation>Lukkotiedostoa ei voida saada haltuun datahakemistossa %s. BlackCoin on ehkä jo käynnissä.</translation>
+        <translation>Lukkotiedostoa ei voida saada haltuun datahakemistossa %s. ValorCoin on ehkä jo käynnissä.</translation>
     </message>
     <message>
         <location line="+4"/>
