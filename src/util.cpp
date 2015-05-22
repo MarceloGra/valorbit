@@ -132,6 +132,7 @@ instance_of_cinit;
 
 
 
+/*
 void RandAddSeed()
 {
     // Seed with CPU performance counter
@@ -193,6 +194,7 @@ uint256 GetRandHash()
     RAND_bytes((unsigned char*)&hash, sizeof(hash));
     return hash;
 }
+*/
 
 // LogPrintf() has been broken a couple of times now
 // by well-meaning people adding mutexes in the most straightforward way.
@@ -317,7 +319,7 @@ string FormatMoney(int64_t n, bool fPlus)
     int64_t quotient = n_abs/COIN;
     int64_t remainder = n_abs%COIN;
 // TODO : Fix this
-    string str = strprintf("%d.%08d", quotient, remainder);
+    string str = strprintf("%d.%02d", quotient, remainder);
 //    string str = strprintf("%"PRId64".%02"PRId64, quotient, remainder);
 
     // Right-trim excess zeros before the decimal point:
@@ -1126,7 +1128,7 @@ void SetMockTime(int64_t nMockTimeIn)
 {
     nMockTime = nMockTimeIn;
 }
-
+/*
 uint32_t insecure_rand_Rz = 11;
 uint32_t insecure_rand_Rw = 11;
 void seed_insecure_rand(bool fDeterministic)
@@ -1147,7 +1149,7 @@ void seed_insecure_rand(bool fDeterministic)
         insecure_rand_Rw=tmp;
     }
 }
-
+*/
 string FormatVersion(int nVersion)
 {
     if (nVersion%100 == 0)

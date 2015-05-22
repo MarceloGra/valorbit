@@ -782,6 +782,7 @@ void ServiceConnection(AcceptedConnection *conn)
         if (mapHeaders["connection"] == "close")
             fRun = false;
 
+        
         JSONRequest jreq;
         try
         {

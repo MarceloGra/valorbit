@@ -125,7 +125,11 @@ CBlock* CreateNewBlock(CReserveKey& reservekey, bool fProofOfStake, int64_t* pFe
     else
     {
         // Height first in coinbase required for block.version=2
+        cout<<"create blk with height first\n"<<nHeight;
         txNew.vin[0].scriptSig = (CScript() << nHeight) + COINBASE_FLAGS;
+cout<<"\nscriptSig = "<<txNew.vin[0].scriptSig.ToString();
+cout<<"\nscriptSig size = "<<txNew.vin[0].scriptSig.size();
+cout<<"\n";
         assert(txNew.vin[0].scriptSig.size() <= 100);
 
         txNew.vout[0].SetEmpty();
@@ -367,6 +371,8 @@ CBlock* CreateNewBlock(CReserveKey& reservekey, bool fProofOfStake, int64_t* pFe
         if (!fProofOfStake)
             pblock->UpdateTime(pindexPrev);
         pblock->nNonce         = 0;
+
+        cout<<"Create new block:\n"<<pblock->ToString();
     }
 
     return pblock.release();
@@ -483,9 +489,11 @@ bool CheckStake(CBlock* pblock, CWallet& wallet)
     uint256 proofHash = 0, hashTarget = 0;
     uint256 hashBlock = pblock->GetHash();
 
+cout<<"CheckStake check is proof of stake\n";
     if(!pblock->IsProofOfStake())
         return error("CheckStake() : %s is not a proof-of-stake block", hashBlock.GetHex());
 
+cout<<"CheckStake verify hash\n";
     // verify hash target and signature of coinstake tx
     if (!CheckProofOfStake(mapBlockIndex[pblock->hashPrevBlock], pblock->vtx[1], pblock->nBits, proofHash, hashTarget))
         return error("CheckStake() : proof-of-stake checking failed");
@@ -528,6 +536,7 @@ void ThreadStakeMiner(CWallet *pwallet)
 
     while (true)
     {
+        cout<<"valorcoin stake miner thread\n";
         while (pwallet->IsLocked())
         {
             nLastCoinStakeSearchInterval = 0;

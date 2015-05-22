@@ -1769,6 +1769,9 @@ uint64_t CWallet::GetStakeWeight() const
     // Choose coins to use
     int64_t nBalance = GetBalance();
 
+cout<<"\nnReserveBalance= "<<nReserveBalance;
+
+
     if (nBalance <= nReserveBalance)
         return 0;
 
@@ -1807,6 +1810,8 @@ bool CWallet::CreateCoinStake(const CKeyStore& keystore, unsigned int nBits, int
     CBlockIndex* pindexPrev = pindexBest;
     CBigNum bnTargetPerCoinDay;
     bnTargetPerCoinDay.SetCompact(nBits);
+        cout<<"\nreserve "<<nReserveBalance;
+    printf("printf reserve %li \n",nReserveBalance);
 
     txNew.vin.clear();
     txNew.vout.clear();
@@ -1816,11 +1821,14 @@ bool CWallet::CreateCoinStake(const CKeyStore& keystore, unsigned int nBits, int
     scriptEmpty.clear();
     txNew.vout.push_back(CTxOut(0, scriptEmpty));
 
+        cout<<"\nreserve "<<nReserveBalance;
     // Choose coins to use
     int64_t nBalance = GetBalance();
 
     if (nBalance <= nReserveBalance)
         return false;
+
+        cout<<"\nreserve "<<nReserveBalance;
 
     vector<const CWalletTx*> vwtxPrev;
 
@@ -1870,6 +1878,7 @@ bool CWallet::CreateCoinStake(const CKeyStore& keystore, unsigned int nBits, int
             {
                 // Found a kernel
                 LogPrint("coinstake", "CreateCoinStake : kernel found\n");
+        cout<<"\nreserve "<<nReserveBalance;
                 vector<valtype> vSolutions;
                 txnouttype whichType;
                 CScript scriptPubKeyOut;
@@ -1931,8 +1940,15 @@ bool CWallet::CreateCoinStake(const CKeyStore& keystore, unsigned int nBits, int
             break; // if kernel is found stop searching
     }
 
+        cout<<"\nCredit  "<<nCredit;
+        cout<<"\nbalance "<<nBalance;
+        cout<<"\nreserve "<<nReserveBalance;
+
     if (nCredit == 0 || nCredit > nBalance - nReserveBalance)
+{
+cout<<"no stake crd";
         return false;
+}
 
     BOOST_FOREACH(PAIRTYPE(const CWalletTx*, unsigned int) pcoin, setCoins)
     {
@@ -1964,6 +1980,7 @@ bool CWallet::CreateCoinStake(const CKeyStore& keystore, unsigned int nBits, int
             vwtxPrev.push_back(pcoin.first);
         }
     }
+cout<<"calculate coin age reward";
 
     // Calculate coin age reward
     {
@@ -1978,6 +1995,7 @@ bool CWallet::CreateCoinStake(const CKeyStore& keystore, unsigned int nBits, int
 
         nCredit += nReward;
     }
+cout<<"set output amount";
 
     // Set output amount
     if (txNew.vout.size() == 3)
@@ -1988,6 +2006,8 @@ bool CWallet::CreateCoinStake(const CKeyStore& keystore, unsigned int nBits, int
     else
         txNew.vout[1].nValue = nCredit;
 
+cout<<"sign coinstake";
+
     // Sign
     int nIn = 0;
     BOOST_FOREACH(const CWalletTx* pcoin, vwtxPrev)
@@ -1996,11 +2016,14 @@ bool CWallet::CreateCoinStake(const CKeyStore& keystore, unsigned int nBits, int
             return error("CreateCoinStake : failed to sign coinstake");
     }
 
+cout<<"check limit size";
+
     // Limit size
     unsigned int nBytes = ::GetSerializeSize(txNew, SER_NETWORK, PROTOCOL_VERSION);
     if (nBytes >= MAX_BLOCK_SIZE_GEN/5)
         return error("CreateCoinStake : exceeded coinstake size limit");
 
+cout<<"success gen coinstke";
     // Successfully generated coinstake
     return true;
 }

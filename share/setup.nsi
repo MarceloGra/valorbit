@@ -1,34 +1,38 @@
-Name ValorCoin
+Name "Valorcoin Core (-bit)"
 
 RequestExecutionLevel highest
 SetCompressor /SOLID lzma
 
 # General Symbol Definitions
 !define REGKEY "SOFTWARE\$(^Name)"
+!define VERSION 1.4.10
 !define NAME "ValorCoin"
-!define VERSION 1.0.0
+!define lcNAME "valorcoin"
 !define COMPANY "ValorVault"
 !define URL http://www.valorcoin.com/
 
 # MUI Symbol Definitions
-!define MUI_ICON "../share/pixmaps/bitcoin.ico"
-!define MUI_WELCOMEFINISHPAGE_BITMAP "../share/pixmaps/nsis-wizard.bmp"
+!define MUI_ICON "/home/sysadmin/valor/valorcoin.bc.auto/share/pixmaps/bitcoin.ico"
+!define MUI_WELCOMEFINISHPAGE_BITMAP "/home/sysadmin/valor/valorcoin.bc.auto/share/pixmaps/nsis-wizard.bmp"
 !define MUI_HEADERIMAGE
 !define MUI_HEADERIMAGE_RIGHT
-!define MUI_HEADERIMAGE_BITMAP "../share/pixmaps/nsis-header.bmp"
+!define MUI_HEADERIMAGE_BITMAP "/home/sysadmin/valor/valorcoin.bc.auto/share/pixmaps/nsis-header.bmp"
 !define MUI_FINISHPAGE_NOAUTOCLOSE
 !define MUI_STARTMENUPAGE_REGISTRY_ROOT HKLM
 !define MUI_STARTMENUPAGE_REGISTRY_KEY ${REGKEY}
 !define MUI_STARTMENUPAGE_REGISTRY_VALUENAME StartMenuGroup
-!define MUI_STARTMENUPAGE_DEFAULTFOLDER ${NAME}
-!define MUI_FINISHPAGE_RUN $INSTDIR\Valorcoin.exe
+!define MUI_STARTMENUPAGE_DEFAULTFOLDER "Valorcoin Core"
+!define MUI_FINISHPAGE_RUN $INSTDIR\valorcoin.exe
 !define MUI_UNICON "${NSISDIR}\Contrib\Graphics\Icons\modern-uninstall.ico"
-!define MUI_UNWELCOMEFINISHPAGE_BITMAP "../share/pixmaps/nsis-wizard.bmp"
+!define MUI_UNWELCOMEFINISHPAGE_BITMAP "/home/sysadmin/valor/valorcoin.bc.auto/share/pixmaps/nsis-wizard.bmp"
 !define MUI_UNFINISHPAGE_NOAUTOCLOSE
 
 # Included files
 !include Sections.nsh
 !include MUI2.nsh
+!if "" == "64"
+!include x64.nsh
+!endif
 
 # Variables
 Var StartMenuGroup
@@ -46,14 +50,19 @@ Var StartMenuGroup
 !insertmacro MUI_LANGUAGE English
 
 # Installer attributes
-OutFile ${NAME}-${VERSION}-win32-setup.exe
-InstallDir $PROGRAMFILES\ValorCoin
+OutFile /home/sysadmin/valor/valorcoin.bc.auto/${NAME}-${VERSION}-win-setup.exe
+!if "" == "64"
+InstallDir $PROGRAMFILES64\${NAME}
+!else
+InstallDir $PROGRAMFILES\${NAME}
+!endif
 CRCCheck on
 XPStyle on
-BrandingText "ValorVault 2014 http://valorvault.com"
+BrandingText "ValorVault 2015 http://valorvault.com"
+
 ShowInstDetails show
-VIProductVersion 1.0.0.0
-VIAddVersionKey ProductName ValorCoin
+VIProductVersion ${VERSION}.0
+VIAddVersionKey ProductName "${NAME} Client"
 VIAddVersionKey ProductVersion "${VERSION}"
 VIAddVersionKey CompanyName "${COMPANY}"
 VIAddVersionKey CompanyWebsite "${URL}"
@@ -67,13 +76,13 @@ ShowUninstDetails show
 Section -Main SEC0000
     SetOutPath $INSTDIR
     SetOverwrite on
-    File ../release/Valorcoin.exe
-#    File /oname=license.txt ../COPYING
-#    File /oname=readme.txt ../doc/README_windows.txt
-#    SetOutPath $INSTDIR\daemon
-    File ../src/valorcoind.exe
-#    SetOutPath $INSTDIR\src
-#    File /r /x *.exe /x *.o ../src\*.*
+    File /home/sysadmin/valor/valorcoin.bc.auto/release/${NAME}.exe
+    File /oname=COPYING.txt /home/sysadmin/valor/valorcoin.bc.auto/COPYING
+    File /oname=readme.txt /home/sysadmin/valor/valorcoin.bc.auto/doc/README_windows.txt
+    SetOutPath $INSTDIR\daemon
+    File /home/sysadmin/valor/valorcoin.bc.auto/release/valorcoind.exe
+    SetOutPath $INSTDIR\doc
+    File /r /home/sysadmin/valor/valorcoin.bc.auto/doc\*.*
     SetOutPath $INSTDIR
     WriteRegStr HKCU "${REGKEY}\Components" Main 1
 
@@ -88,12 +97,11 @@ Section -post SEC0001
     WriteUninstaller $INSTDIR\uninstall.exe
     !insertmacro MUI_STARTMENU_WRITE_BEGIN Application
     CreateDirectory $SMPROGRAMS\$StartMenuGroup
-    CreateShortcut "$SMPROGRAMS\$StartMenuGroup\ValorCoin.lnk" $INSTDIR\Valorcoin.exe
-    CreateShortcut "$SMPROGRAMS\$StartMenuGroup\ValorCoin Console.lnk" "$INSTDIR\valorcoind.exe"
-    CreateShortcut "$SMPROGRAMS\$StartMenuGroup\ValorCoin Debug Console.lnk" "$INSTDIR\valorcoind.exe" "-debug -printtoconsole -daemon=0"
-    CreateShortcut "$SMPROGRAMS\$StartMenuGroup\Uninstall ValorCoin.lnk" $INSTDIR\uninstall.exe
-    CreateShortcut "$DESKTOP\ValorCoin.lnk" $INSTDIR\Valorcoin.exe
-    CreateShortcut "$QUICKLAUNCH\ValorCoin.lnk" $INSTDIR\Valorcoin.exe
+    CreateShortcut "$SMPROGRAMS\$StartMenuGroup\$(^Name).lnk" $INSTDIR\${NAME}.exe
+    CreateShortcut "$SMPROGRAMS\$StartMenuGroup\ValorCoin Console.lnk" "$INSTDIR\${lcNAME}d.exe"
+    CreateShortcut "$SMPROGRAMS\$StartMenuGroup\ValorCoin Debug Console.lnk" "$INSTDIR\${lcNAME}d.exe" "-debug -printtoconsole -daemon=0"
+
+    CreateShortcut "$SMPROGRAMS\$StartMenuGroup\Uninstall $(^Name).lnk" $INSTDIR\uninstall.exe
     !insertmacro MUI_STARTMENU_WRITE_END
     WriteRegStr HKCU "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$(^Name)" DisplayName "$(^Name)"
     WriteRegStr HKCU "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$(^Name)" DisplayVersion "${VERSION}"
@@ -103,12 +111,10 @@ Section -post SEC0001
     WriteRegStr HKCU "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$(^Name)" UninstallString $INSTDIR\uninstall.exe
     WriteRegDWORD HKCU "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$(^Name)" NoModify 1
     WriteRegDWORD HKCU "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$(^Name)" NoRepair 1
-
-    # bitcoin: URI handling disabled for 0.6.0
-    #    WriteRegStr HKCR "bitcoin" "URL Protocol" ""
-    #    WriteRegStr HKCR "bitcoin" "" "URL:Bitcoin"
-    #    WriteRegStr HKCR "bitcoin\DefaultIcon" "" $INSTDIR\bitcoin-qt.exe
-    #    WriteRegStr HKCR "bitcoin\shell\open\command" "" '"$INSTDIR\bitcoin-qt.exe" "$$1"'
+    WriteRegStr HKCR "" "URL Protocol" ""
+    WriteRegStr HKCR "valorcoin" "" "URL:Valorcoin"
+    WriteRegStr HKCR "valorcoin\DefaultIcon" "" $INSTDIR\valorcoin.exe
+    WriteRegStr HKCR "valorcoin\shell\open\command" "" '"$INSTDIR\valorcoin.exe" "%1"'
 SectionEnd
 
 # Macro for selecting uninstaller sections
@@ -126,26 +132,22 @@ done${UNSECTION_ID}:
 
 # Uninstaller sections
 Section /o -un.Main UNSEC0000
-    Delete /REBOOTOK $INSTDIR\Valorcoin.exe
+    Delete /REBOOTOK $INSTDIR\valorcoin.exe
     Delete /REBOOTOK $INSTDIR\valorcoind.exe
-#    Delete /REBOOTOK $INSTDIR\license.txt
+#    Delete /REBOOTOK $INSTDIR\COPYING.txt
 #    Delete /REBOOTOK $INSTDIR\readme.txt
-    #RMDir /r /REBOOTOK $INSTDIR\daemon
-    #RMDir /r /REBOOTOK $INSTDIR\src
+#    RMDir /r /REBOOTOK $INSTDIR\daemon
+#    RMDir /r /REBOOTOK $INSTDIR\doc
     DeleteRegValue HKCU "${REGKEY}\Components" Main
 SectionEnd
 
 Section -un.post UNSEC0001
     DeleteRegKey HKCU "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$(^Name)"
-    Delete /REBOOTOK "$SMPROGRAMS\$StartMenuGroup\Uninstall ValorCoin.lnk"
-    Delete /REBOOTOK "$SMPROGRAMS\$StartMenuGroup\ValorCoin.lnk"
-    Delete /REBOOTOK "$DESKTOP\ValorCoin.lnk"
-    Delete /REBOOTOK "$QUICKLAUNCH\ValorCoin.lnk"
-    Delete /REBOOTOK "$SMPROGRAMS\$StartMenuGroup\ValorCoinDaemon.lnk"
-    Delete /REBOOTOK "$SMPROGRAMS\$StartMenuGroup\ValorCoinConsole.lnk"
-    #Delete /REBOOTOK "$SMSTARTUP\Bitcoin.lnk"
+    Delete /REBOOTOK "$SMPROGRAMS\$StartMenuGroup\Uninstall $(^Name).lnk"
+    Delete /REBOOTOK "$SMPROGRAMS\$StartMenuGroup\$(^Name).lnk"
+    Delete /REBOOTOK "$SMSTARTUP\$(^Name).lnk"
     Delete /REBOOTOK $INSTDIR\uninstall.exe
-    Delete /REBOOTOK $INSTDIR\Valorcoin.exe
+    Delete /REBOOTOK $INSTDIR\valorcoin.exe
     Delete /REBOOTOK $INSTDIR\valorcoind.exe
     Delete /REBOOTOK $INSTDIR\debug.log
     Delete /REBOOTOK $INSTDIR\db.log
@@ -166,6 +168,15 @@ SectionEnd
 # Installer functions
 Function .onInit
     InitPluginsDir
+!if "" == "64"
+    ${If} ${RunningX64}
+      ; disable registry redirection (enable access to 64-bit portion of registry)
+      SetRegView 64
+    ${Else}
+      MessageBox MB_OK|MB_ICONSTOP "Cannot install 64-bit version on a 32-bit system."
+      Abort
+    ${EndIf}
+!endif
 FunctionEnd
 
 # Uninstaller functions
