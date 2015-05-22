@@ -52,8 +52,8 @@ public:
                 // start with this nonce
                 block.nNonce   =  0;
 
-                cout<<block.ToString();
-                printf("Figure out valid hash and Nonce for block\n");
+                //cout<<block.ToString();
+                printf("Figure out valid hash and Nonce for block 3.3 \n");
                 printf("block.GetHash() == %s\n", block.GetHash().ToString().c_str());
                 printf("block.hashMerkleRoot == %s\n", block.hashMerkleRoot.ToString().c_str());
                 printf("block.nTime = %u \n", block.nTime);
@@ -83,12 +83,15 @@ public:
                            }
                        }
 
+                   cout<<"Mining target met!!!\n";
+                   cout<<block.ToString();
+
                     if (CheckProofOfWork(block.GetHash(), block.nBits)) {
                        printf("* Solved genesis block! nonce %u hash 0x%s time %u\n",
                          block.nNonce, block.GetHash().ToString().c_str(), block.nTime);
                        printf("* Mining took %lu minutes\n", (GetTimeMillis() - nStart)/60000);
                     }
-                cout<<block.ToString();
+                    //cout<<block.ToString();
         }
 
     CMainParams() {
@@ -102,48 +105,52 @@ public:
         pchMessageStart[3] = 0xea;
         vAlertPubKey = ParseHex("");
         nDefaultPort = 7654;
-        nRPCPort = 18765;
+        nRPCPort = 17654;
         bnProofOfWorkLimit = CBigNum(~uint256(0) >> 20);
 
         static const char* hash160SeedAddress = "055372147866f59ecaf625f8577d39b4015c8780"; // 1VALs3VmH24rHYiPgwKD897w2FjdvVfUk
-        static const char* hash160GenesisAddress = "0553716e9c88172a42c19529d14a51e650047a34"; //1VALgqxbb66Vwr98RqnYkncksCQAKM9dy
-        static const uint256 _hashGenesisBlockMerkleRoot("0xbee97d6f97d46e697ed7478213778a8f6ffe4b59023853d42ccfefde55dfcd2c");
-        static const uint256 _hashGenesisBlock("0x0000082f5a41526b57ff1c844f0319e3158cf78e47b5aa37ff5826c717a50820");
-        static const uint256 _hashSeedBlockMerkleRoot("0x0487e12ce39bfd05b0cfa6e3663018ba1ab224fc53d2618ebad1c66ad3c67bfc");
-        static const uint256 _hashSeedBlock("0x00000caf1fed688614351c273a6f9039d50b891bd9a0513303e789ed4d34d70b");
+        //static const char* hash160GenesisAddress = "0553716e9c88172a42c19529d14a51e650047a34"; //1VALgqxbb66Vwr98RqnYkncksCQAKM9dy
+        static const uint256 _hashGenesisBlockMerkleRoot("0xbd5ba50e6d20f38fdda75cd525574e9847f81f6592fb24a417ba9f07956d452f");
+        static const uint256 _hashGenesisBlock("0x00000b34c4eba95817c9884657e325925a19bba5d39f70a81e911e1fb9f1a535");
+        static const uint256 _hashSeedBlockMerkleRoot("0xd6497c87e3b9645815a83a96de31a8845689aae8b8eb96dab06389369e3c91ef");
+        static const uint256 _hashSeedBlock("0x000009e5a674bfc1df69c34a152ddca5758c2ee9dde1204f0ff1af947abcec00");
 
 
         // Build the genesis block. Note that the output of the genesis coinbase cannot
         // be spent as it did not originally exist in the database.
         //
-        const char* pszTimestamp = "ValorCoin:online.wsj.com/articles/facebook-results-keep-surging-on-mobile-ad-growth-1406146246";
+        const char* pszTimestamp = "ValorCoin:www.wired.com/2015/05/internet-anything-brain-monitors-going-mainstream-despite-skepticism/";
         std::vector<CTxIn> vin;
-        vin.resize(1);
+        
         vin[0].scriptSig = CScript() << 0 << CBigNum(42) << vector<unsigned char>((const unsigned char*)pszTimestamp, (const unsigned char*)pszTimestamp + strlen(pszTimestamp));
         std::vector<CTxOut> vout;
         vout.resize(1);
         vout[0].SetEmpty();
-        CTransaction txNew(1, 1393221600, vin, vout, 0);
+        CTransaction txNew(1, 1430830000, vin, vout, 0);
         genesis.vtx.push_back(txNew);
         genesis.hashPrevBlock = 0;
         genesis.hashMerkleRoot = genesis.BuildMerkleTree();
         genesis.nVersion = 1;
         genesis.nTime    = txNew.nTime;
         genesis.nBits    = bnProofOfWorkLimit.GetCompact();
-        genesis.nNonce   = 294798;
+        genesis.nNonce   = 2530046;
 
-        cout<< genesis.ToString();
+        if (genesis.hashMerkleRoot != _hashGenesisBlockMerkleRoot)
+        {
+           cout<<"GENESIS block:\n"<<genesis.ToString();
+        }
 
-        hashGenesisBlock = genesis.GetHash();
         assert(genesis.hashMerkleRoot == _hashGenesisBlockMerkleRoot);
 
+        hashGenesisBlock = genesis.GetHash();
         if (true  && (hashGenesisBlock != _hashGenesisBlock )) {
+                cout<<"Mining GENESIS block ...............\n";
                 Mine(&genesis);
             }
 
         assert(hashGenesisBlock == _hashGenesisBlock);
 
-        const char* pszTimestampSeed = "24-Jul-2014@seed.valorcoin";
+        const char* pszTimestampSeed = "05-May-2015@seed.valorcoin.com";
         CTransaction txSeed;
         txSeed.nTime = genesis.nTime + 1;
         txSeed.vin.resize(1);
@@ -159,13 +166,18 @@ public:
         seed.nVersion = 1;
         seed.nTime    = txSeed.nTime;
         seed.nBits    = bnProofOfWorkLimit.GetCompact();
-        seed.nNonce   = 926623;
+        seed.nNonce   = 320794;
 
-        cout<< seed.ToString();
-        hashSeedBlock = seed.GetHash();
+        if (seed.hashMerkleRoot != _hashSeedBlockMerkleRoot)
+        {
+           cout<<"SEED block:\n"<<seed.ToString();
+        }
+
         assert(seed.hashMerkleRoot == _hashSeedBlockMerkleRoot);
 
+        hashSeedBlock = seed.GetHash();
         if (true  && (hashSeedBlock != _hashSeedBlock )) {
+           cout<<"Mining SEED block ...............\n";
            Mine(&seed);
         }
 
@@ -219,16 +231,17 @@ public:
         nDefaultPort = 8765;
         nRPCPort = 18765;
         strDataDir = "testnet";
-        static const uint256 _hashGenesisBlock("0x0000082f5a41526b57ff1c844f0319e3158cf78e47b5aa37ff5826c717a50820");
+        static const uint256 _hashGenesisBlock("0x00003b270ba0f623a8815eb0c7f0d33b1976159df2f1a14d8f207a515b406f80");
 
         // Modify the testnet genesis block so the timestamp is valid for a later start.
         genesis.nBits  = bnProofOfWorkLimit.GetCompact();
-        genesis.nNonce = 1809003;
+        genesis.nNonce = 182094;
         hashGenesisBlock = genesis.GetHash();
-        cout<<genesis.ToString();
+        //cout<<genesis.ToString();
         if (true  && (hashGenesisBlock != _hashGenesisBlock )) {
+                printf("Mining GENESIS block on TestNet ...............\n");
                 Mine(&genesis);
-            }
+        }
 
         assert(hashGenesisBlock == _hashGenesisBlock);
 
@@ -261,13 +274,21 @@ public:
         pchMessageStart[2] = 0xd9;
         pchMessageStart[3] = 0xc8;
         bnProofOfWorkLimit = CBigNum(~uint256(0) >> 1);
-        genesis.nTime = 1411111111;
+        //genesis.nTime = 1411111111;
         genesis.nBits  = bnProofOfWorkLimit.GetCompact();
-        genesis.nNonce = 2;
-        hashGenesisBlock = genesis.GetHash();
-        nDefaultPort = 18444;
+        genesis.nNonce = 4;
+        nDefaultPort = 18766;
         strDataDir = "regtest";
-        assert(hashGenesisBlock == uint256("0x523dda6d336047722cbaf1c5dce622298af791bac21b33bf6e2d5048b2a13e3d"));
+        static const uint256 _hashGenesisBlock("0x30ecba39552219d81ee85776a2b27e61189d554e99e38020f462930d12f496fc");
+
+        hashGenesisBlock = genesis.GetHash();
+        //cout<<genesis.ToString();
+        if (true  && (hashGenesisBlock != _hashGenesisBlock )) {
+                printf("Mining GENESIS block on RegNet ...............\n");
+                Mine(&genesis);
+        }
+
+        assert(hashGenesisBlock == _hashGenesisBlock);
 
         vSeeds.clear();  // Regtest mode doesn't have any DNS seeds.
     }

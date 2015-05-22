@@ -37,8 +37,9 @@
 #include "macdockiconhandler.h"
 #endif
 
-#include <QMenuBar>
+#include <QDebug>
 #include <QMenu>
+#include <QMenuBar>
 #include <QIcon>
 #include <QVBoxLayout>
 #include <QToolBar>
@@ -57,6 +58,9 @@
 #include <QUrl>
 #include <QMimeData>
 #include <QStyle>
+#include <QInputDialog>
+#include <QPushButton>
+#include <QSettings>
 
 #include <iostream>
 
@@ -915,7 +919,11 @@ void BitcoinGUI::encryptWallet()
 
 void BitcoinGUI::backupWallet()
 {
+#if QT_VERSION < 0x050000
     QString saveDir = QDesktopServices::storageLocation(QDesktopServices::DocumentsLocation);
+#else
+    QString saveDir = QStandardPaths::standardLocations(QStandardPaths::DocumentsLocation).first();
+#endif
     QString filename = QFileDialog::getSaveFileName(this, tr("Backup Wallet"), saveDir, tr("Wallet Data (*.dat)"));
     if(!filename.isEmpty()) {
         if(!walletModel->backupWallet(filename)) {

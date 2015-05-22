@@ -51,24 +51,19 @@ inline bool MoneyRange(int64_t nValue) { return (nValue >= 0 && nValue <= MAX_MO
 /** Threshold for nLockTime: below this value it is interpreted as block number, otherwise as UNIX timestamp. */
 static const unsigned int LOCKTIME_THRESHOLD = 500000000; // Tue Nov  5 00:53:20 1985 UTC
 
-static const int64_t COIN_YEAR_REWARD = 3 * CENT; // 2% per year
-static const int LAST_POW_BLOCK = 11;
+static const int64_t COIN_YEAR_REWARD = 2 * CENT; // 2% per year
 inline bool IsProtocolV2(int nHeight) { return nHeight > 0  ; }
-inline bool IsProtocolV1RetargetingFixed(int nHeight) { return TestNet() || nHeight > 38423; }
+inline bool IsProtocolV1RetargetingFixed(int nHeight) { return TestNet() || nHeight > 1; }
+
 /** Number of blocks with Proof-Of-Work **/
+static const int LAST_POW_BLOCK = 21;
 
 static const int64_t SEED_MONEY = MAX_MONEY/100;
 
 static const int64_t WARN_LARGE_TX_FEE = 100000 * COIN ;
-static const int64_t IPO_PROOF_OF_WORK_REWARD = 500 * COIN ;
+static const int64_t IPO_PROOF_OF_WORK_REWARD = 10000 * COIN ;
+static const int BLOCKS_PER_DAY = 1440;
 
-// genesis : mainnet
-static const unsigned int timeGenesisBlock = 1396911600;
-
-// genesis : testnet
-static const unsigned int timeGenesisBlockTestNet = 1396911600;
-
-// seed : testnet
 inline int64_t FutureDriftV1(int64_t nTime) { return nTime + 10 * 60; }
 inline int64_t FutureDriftV2(int64_t nTime) { return nTime + 5 * 60; }
 

@@ -42,10 +42,10 @@ set<pair<COutPoint, unsigned int> > setStakeSeen;
 CBigNum bnProofOfStakeLimit(~uint256(0) >> 20);
 CBigNum bnProofOfStakeLimitV2(~uint256(0) >> 48);
 
-unsigned int nStakeMinAge = 10 * 60; // 8 hours // TODO : set back to 8
+unsigned int nStakeMinAge = 1 * 60; // 8 hours // TODO : set back to 8
 unsigned int nModifierInterval = 3 * 60; // time to elapse before new modifier is computed
 
-int nCoinbaseMaturity = 10; // TODO : Revert to 500
+int nCoinbaseMaturity = 5; // TODO : Revert to 500
 CBlockIndex* pindexGenesisBlock = NULL;
 int nBestHeight = -1;
 
@@ -2293,6 +2293,7 @@ bool CBlock::SignBlock(CWallet& wallet, int64_t nFees)
         {
             if (txCoinStake.nTime >= pindexBest->GetPastTimeLimit()+1)
             {
+                cout<<"SignBlock: 2\n";
                 // make sure coinstake would meet timestamp protocol
                 //    as it would be the same as the block timestamp
                 vtx[0].nTime = nTime = txCoinStake.nTime;
@@ -2308,6 +2309,7 @@ bool CBlock::SignBlock(CWallet& wallet, int64_t nFees)
                 // append a signature to our block
                 return key.Sign(GetHash(), vchBlockSig);
             }
+            cout<<"SignBlock: 3\n";
         }
         nLastCoinStakeSearchInterval = nSearchTime - nLastCoinStakeSearchTime;
         nLastCoinStakeSearchTime = nSearchTime;
