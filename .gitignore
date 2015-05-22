@@ -31,3 +31,11 @@ Valorcoin*.app
 !src/leveldb/Makefile
 .idea/
 object_script.Valorcoin.*
+autom4te.cache/
+config.log
+src/.deps/
+src/libbitcoin_*.a
+src/qt/.deps/
+src/qt/test/.deps/
+src/support/.deps/
+src/test/.deps/

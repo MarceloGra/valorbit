@@ -1173,7 +1173,7 @@ To znamená, že je potřebný poplatek ve výši nejméně %2.</translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>Connect to the BlackCoin network through a SOCKS proxy (e.g. when connecting through Tor).</source>
+        <source>Connect to the ValorCoin network through a SOCKS proxy (e.g. when connecting through Tor).</source>
         <translation>Připoj se do sítě ValorCoin přes SOCKS proxy (např. při připojení přes Tor)</translation>
     </message>
     <message>
@@ -1730,7 +1730,7 @@ To znamená, že je potřebný poplatek ve výši nejméně %2.</translation>
         <location line="+86"/>
         <location line="+86"/>
         <location line="+32"/>
-        <source>0.00 BC</source>
+        <source>0.00 VAL</source>
         <translation>123.456 BC {0.00 ?}</translation>
     </message>
     <message>
@@ -1800,7 +1800,7 @@ To znamená, že je potřebný poplatek ve výši nejméně %2.</translation>
     </message>
     <message>
         <location line="+16"/>
-        <source>123.456 BC</source>
+        <source>123.456 VAL</source>
         <translation>123.456 BC</translation>
     </message>
     <message>
