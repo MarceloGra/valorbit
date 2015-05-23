@@ -129,7 +129,7 @@ public:
         font1.setWeight(75);
         labelBalance->setFont(font1);
         labelBalance->setCursor(QCursor(Qt::IBeamCursor));
-        labelBalance->setText(QStringLiteral("0 BC"));
+        labelBalance->setText(QStringLiteral("0 VAL"));
         labelBalance->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
         labelBalance->setTextInteractionFlags(Qt::LinksAccessibleByMouse|Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse);
 
@@ -144,7 +144,7 @@ public:
         labelStake->setObjectName(QStringLiteral("labelStake"));
         labelStake->setFont(font1);
         labelStake->setCursor(QCursor(Qt::IBeamCursor));
-        labelStake->setText(QStringLiteral("0 BC"));
+        labelStake->setText(QStringLiteral("0 VAL"));
         labelStake->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
         labelStake->setTextInteractionFlags(Qt::LinksAccessibleByMouse|Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse);
 
@@ -159,7 +159,7 @@ public:
         labelUnconfirmed->setObjectName(QStringLiteral("labelUnconfirmed"));
         labelUnconfirmed->setFont(font1);
         labelUnconfirmed->setCursor(QCursor(Qt::IBeamCursor));
-        labelUnconfirmed->setText(QStringLiteral("0 BC"));
+        labelUnconfirmed->setText(QStringLiteral("0 VAL"));
         labelUnconfirmed->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
         labelUnconfirmed->setTextInteractionFlags(Qt::LinksAccessibleByMouse|Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse);
 
@@ -173,7 +173,7 @@ public:
         labelImmature = new QLabel(widget);
         labelImmature->setObjectName(QStringLiteral("labelImmature"));
         labelImmature->setFont(font1);
-        labelImmature->setText(QStringLiteral("0 BC"));
+        labelImmature->setText(QStringLiteral("0 VAL"));
         labelImmature->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
         labelImmature->setTextInteractionFlags(Qt::LinksAccessibleByMouse|Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse);
 

@@ -121,7 +121,7 @@ public:
         //
         const char* pszTimestamp = "ValorCoin:www.wired.com/2015/05/internet-anything-brain-monitors-going-mainstream-despite-skepticism/";
         std::vector<CTxIn> vin;
-        
+        vin.resize(1); 
         vin[0].scriptSig = CScript() << 0 << CBigNum(42) << vector<unsigned char>((const unsigned char*)pszTimestamp, (const unsigned char*)pszTimestamp + strlen(pszTimestamp));
         std::vector<CTxOut> vout;
         vout.resize(1);

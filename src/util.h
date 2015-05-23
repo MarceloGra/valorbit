@@ -57,17 +57,6 @@ static const int64_t CENT = 1;
 #endif
 #endif
 
-#if defined(_MSC_VER) || defined(__MSVCRT__)
-#define PRI64d  "I64d"
-#define PRI64u  "I64u"
-#define PRI64x  "I64x"
-#else
-#define PRI64d  "lld"
-#define PRI64u  "llu"
-#define PRI64x  "llx"
-#endif
-#endif
-
 // This is needed because the foreach macro can't get over the comma in pair<t1, t2>
 #define PAIRTYPE(t1, t2)    std::pair<t1, t2>
 
