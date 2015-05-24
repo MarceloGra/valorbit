@@ -2293,7 +2293,6 @@ bool CBlock::SignBlock(CWallet& wallet, int64_t nFees)
         {
             if (txCoinStake.nTime >= pindexBest->GetPastTimeLimit()+1)
             {
-                cout<<"SignBlock: 2\n";
                 // make sure coinstake would meet timestamp protocol
                 //    as it would be the same as the block timestamp
                 vtx[0].nTime = nTime = txCoinStake.nTime;
@@ -2309,7 +2308,6 @@ bool CBlock::SignBlock(CWallet& wallet, int64_t nFees)
                 // append a signature to our block
                 return key.Sign(GetHash(), vchBlockSig);
             }
-            cout<<"SignBlock: 3\n";
         }
         nLastCoinStakeSearchInterval = nSearchTime - nLastCoinStakeSearchTime;
         nLastCoinStakeSearchTime = nSearchTime;
