@@ -110,7 +110,7 @@ obj/build.h: FORCE
 	@$(MKDIR_P) $(builddir)/obj
 	@$(top_srcdir)/share/genbuild.sh $(abs_top_builddir)/src/obj/build.h \
 	  $(abs_top_srcdir)
-#libbitcoin_util_a-clientversion.$(OBJEXT): obj/build.h
+libbitcoin_util_a-clientversion.$(OBJEXT): obj/build.h
 
 # server: shared between bitcoind and bitcoin-qt
 libbitcoin_server_a_CPPFLAGS = $(BITCOIN_INCLUDES) $(MINIUPNPC_CPPFLAGS)
@@ -167,10 +167,10 @@ libbitcoin_common_a_SOURCES = \
 # This library *must* be included to make sure that the glibc
 # backward-compatibility objects and their sanity checks are linked.
 
-  #clientversion.cpp 
 
 libbitcoin_util_a_CPPFLAGS = $(BITCOIN_INCLUDES)
 libbitcoin_util_a_SOURCES = \
+  clientversion.cpp \
   random.cpp \
   rpcprotocol.cpp \
   support/cleanse.cpp \
@@ -178,8 +178,6 @@ libbitcoin_util_a_SOURCES = \
   version.cpp \
   util.cpp \
   $(BITCOIN_CORE_H)
-
-#clamspeech.cpp 
 
 nodist_libbitcoin_util_a_SOURCES = $(srcdir)/obj/build.h
 #

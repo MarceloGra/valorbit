@@ -1,4 +1,6 @@
 src/*.exe
+src/qt/test/test_bitcoin-qt.exe
+src/test/test_bitcoin.exe
 src/valorcoin
 src/valorcoind
 src/test_valorcoin
@@ -34,6 +36,7 @@ object_script.Valorcoin.*
 autom4te.cache/
 config.log
 src/.deps/
+src/qt/res/.deps
 src/libbitcoin_*.a
 src/qt/.deps/
 src/qt/test/.deps/

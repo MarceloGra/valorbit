@@ -1149,7 +1149,6 @@ void seed_insecure_rand(bool fDeterministic)
         insecure_rand_Rw=tmp;
     }
 }
-*/
 string FormatVersion(int nVersion)
 {
     if (nVersion%100 == 0)
@@ -1174,6 +1173,7 @@ std::string FormatSubVersion(const std::string& name, int nClientVersion, const 
     ss << "/";
     return ss.str();
 }
+*/
 
 #ifdef WIN32
 boost::filesystem::path GetSpecialFolderPath(int nFolder, bool fCreate)
