@@ -198,6 +198,9 @@ public:
     int64_t nLastSend;
     int64_t nLastRecv;
     int64_t nTimeConnected;
+    int nHighestHeightRequested;  /* CDC v1.3.3 */
+    int nHeightBackwards;  /* CDC v1.3.3 */
+    int64 nHeightBackwardsLast;  /* CDC v1.3.3 */
     CAddress addr;
     std::string addrName;
     CService addrLocal;
@@ -258,6 +261,9 @@ public:
         nLastRecv = 0;
         nSendBytes = 0;
         nRecvBytes = 0;
+        nHighestHeightRequested = 0;  /* CDC v1.3.3 */
+        nHeightBackwards = 0;  /* CDC v1.3.3 */
+        nHeightBackwardsLast = GetTime();  /* CDC v1.3.3 */
         nTimeConnected = GetTime();
         addr = addrIn;
         addrName = addrNameIn == "" ? addr.ToStringIPPort() : addrNameIn;
