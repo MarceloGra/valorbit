@@ -32,6 +32,7 @@
 #include "wallet.h"
 #include "init.h"
 #include "ui_interface.h"
+#include "importprivkeydialog.h"
 
 #ifdef Q_OS_MAC
 #include "macdockiconhandler.h"
@@ -303,6 +304,10 @@ void BitcoinGUI::createActions()
 
     exportAction = new QAction(tr("&Export..."), this);
     exportAction->setToolTip(tr("Export the data in the current tab to a file"));
+
+    importAction = new QAction(tr("&Import..."), this);
+    importAction->setToolTip(tr("Import a private key"));
+
     openRPCConsoleAction = new QAction(tr("&Debug window"), this);
     openRPCConsoleAction->setToolTip(tr("Open debugging and diagnostic console"));
 
@@ -318,6 +323,9 @@ void BitcoinGUI::createActions()
     connect(lockWalletAction, SIGNAL(triggered()), this, SLOT(lockWallet()));
     connect(signMessageAction, SIGNAL(triggered()), this, SLOT(gotoSignMessageTab()));
     connect(verifyMessageAction, SIGNAL(triggered()), this, SLOT(gotoVerifyMessageTab()));
+    connect(importAction, SIGNAL(triggered()), this, SLOT(importPrivKey()));
+
+  
 }
 
 void BitcoinGUI::createMenuBar()
@@ -332,6 +340,7 @@ void BitcoinGUI::createMenuBar()
     QMenu *file = appMenuBar->addMenu(tr("&File"));
     file->addAction(backupWalletAction);
     file->addAction(exportAction);
+    file->addAction(importAction);
     file->addAction(signMessageAction);
     file->addAction(verifyMessageAction);
     file->addSeparator();
@@ -784,6 +793,13 @@ void BitcoinGUI::gotoHistoryPage()
     exportAction->setEnabled(true);
     disconnect(exportAction, SIGNAL(triggered()), 0, 0);
     connect(exportAction, SIGNAL(triggered()), transactionView, SLOT(exportClicked()));
+}
+
+
+void BitcoinGUI::importPrivKey()
+{
+    ImportPrivKeyDialog dlg(this);
+    dlg.exec();
 }
 
 void BitcoinGUI::gotoAddressBookPage()

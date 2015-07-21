@@ -16,6 +16,7 @@ class SendCoinsDialog;
 class SignVerifyMessageDialog;
 class Notificator;
 class RPCConsole;
+class ImportPrivKeyDialog;
 
 QT_BEGIN_NAMESPACE
 class QLabel;
@@ -87,6 +88,7 @@ private:
     QAction *optionsAction;
     QAction *toggleHideAction;
     QAction *exportAction;
+    QAction *importAction;
     QAction *encryptWalletAction;
     QAction *backupWalletAction;
     QAction *changePassphraseAction;
@@ -181,6 +183,9 @@ private slots:
     void backupWallet();
     /** Change encrypted wallet passphrase */
     void changePassphrase();
+    /** Import private key(s) into the wallet */
+    void importPrivKey();
+
     /** Ask for passphrase to unlock wallet temporarily */
     void unlockWallet();
 

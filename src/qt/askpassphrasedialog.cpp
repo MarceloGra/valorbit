@@ -268,3 +268,4 @@ void AskPassphraseDialog::secureClearPassFields()
     ui->passEdit2->clear();
     ui->passEdit3->clear();
 }
+

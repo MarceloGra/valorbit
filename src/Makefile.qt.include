@@ -88,7 +88,8 @@ QT_FORMS_UI = \
   qt/forms/sendcoinsdialog.ui \
   qt/forms/sendcoinsentry.ui \
   qt/forms/signverifymessagedialog.ui \
-  qt/forms/transactiondescdialog.ui
+  qt/forms/transactiondescdialog.ui \
+  qt/forms/importprivkeydialog.ui
 
 QT_MOC_CPP = \
   qt/moc_aboutdialog.cpp \
@@ -126,7 +127,8 @@ QT_MOC_CPP = \
   qt/moc_transactionfilterproxy.cpp \
   qt/moc_transactiontablemodel.cpp \
   qt/moc_transactionview.cpp \
-  qt/moc_walletmodel.cpp
+  qt/moc_walletmodel.cpp \
+  qt/moc_importprivkeydialog.cpp
 
 BITCOIN_MM = \
   qt/macdockiconhandler.mm \
@@ -179,7 +181,8 @@ BITCOIN_QT_H = \
   qt/transactionrecord.h \
   qt/transactiontablemodel.h \
   qt/transactionview.h \
-  qt/walletmodel.h
+  qt/walletmodel.h \
+  qt/importprivkeydialog.h
 
 #  qt/res/icons/valorcoin.png \
 #  qt/res/icons/valorcoin.ico \
@@ -249,7 +252,7 @@ BITCOIN_QT_CPP = \
   qt/qvaluecombobox.cpp \
   qt/rpcconsole.cpp \
   qt/trafficgraphwidget.cpp \
-  qt/walletmodel.cpp
+  qt/walletmodel.cpp 
 
 if ENABLE_WALLET
 BITCOIN_QT_CPP += \
@@ -269,7 +272,8 @@ BITCOIN_QT_CPP += \
   qt/transactionfilterproxy.cpp \
   qt/transactionrecord.cpp \
   qt/transactiontablemodel.cpp \
-  qt/transactionview.cpp
+  qt/transactionview.cpp \
+  qt/importprivkeydialog.cpp
 endif
 
 RES_IMAGES = \
