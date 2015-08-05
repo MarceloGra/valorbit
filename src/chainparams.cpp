@@ -53,7 +53,7 @@ public:
                 block.nNonce   =  0;
 
                 //cout<<block.ToString();
-                printf("Figure out valid hash and Nonce for block 3.3 \n");
+                printf("Figure out valid hash and nonce for block\n");
                 printf("block.GetHash() == %s\n", block.GetHash().ToString().c_str());
                 printf("block.hashMerkleRoot == %s\n", block.hashMerkleRoot.ToString().c_str());
                 printf("block.nTime = %u \n", block.nTime);
@@ -110,10 +110,10 @@ public:
 
         static const char* hash160SeedAddress = "055372147866f59ecaf625f8577d39b4015c8780"; // 1VALs3VmH24rHYiPgwKD897w2FjdvVfUk
         //static const char* hash160GenesisAddress = "0553716e9c88172a42c19529d14a51e650047a34"; //1VALgqxbb66Vwr98RqnYkncksCQAKM9dy
-        static const uint256 _hashGenesisBlockMerkleRoot("0xbd5ba50e6d20f38fdda75cd525574e9847f81f6592fb24a417ba9f07956d452f");
-        static const uint256 _hashGenesisBlock("0x00000b34c4eba95817c9884657e325925a19bba5d39f70a81e911e1fb9f1a535");
-        static const uint256 _hashSeedBlockMerkleRoot("0xd6497c87e3b9645815a83a96de31a8845689aae8b8eb96dab06389369e3c91ef");
-        static const uint256 _hashSeedBlock("0x000009e5a674bfc1df69c34a152ddca5758c2ee9dde1204f0ff1af947abcec00");
+        static const uint256 _hashGenesisBlockMerkleRoot("0x16c94d92e890ebb5d44b1970d71fb112804940b013860ae6b73c551d362ff89b");
+        static const uint256 _hashGenesisBlock("0x0000016a8d9d8b596d73684e89344394c9b5e2e52f294c92200da01f944b343b");
+        static const uint256 _hashSeedBlockMerkleRoot("0x63a2791157bbe9e32331e1692d4f0cc4ed8a76f194dec6a2de2d9e31f043b294");
+        static const uint256 _hashSeedBlock("0x000001abfc02e970d4d7cb74d12b85ea191a5ab58e0bd4e864cf0aa9412539e6");
 
 
         // Build the genesis block. Note that the output of the genesis coinbase cannot
@@ -133,7 +133,7 @@ public:
         genesis.nVersion = 1;
         genesis.nTime    = txNew.nTime;
         genesis.nBits    = bnProofOfWorkLimit.GetCompact();
-        genesis.nNonce   = 2530046;
+        genesis.nNonce   = 317183;
 
         if (genesis.hashMerkleRoot != _hashGenesisBlockMerkleRoot)
         {
@@ -150,7 +150,7 @@ public:
 
         assert(hashGenesisBlock == _hashGenesisBlock);
 
-        const char* pszTimestampSeed = "05-May-2015@seed.valorbit.com";
+        const char* pszTimestampSeed = "05-Aug-2015@seed.valorbit.com";
         CTransaction txSeed;
         txSeed.nTime = genesis.nTime + 1;
         txSeed.vin.resize(1);
@@ -166,7 +166,7 @@ public:
         seed.nVersion = 1;
         seed.nTime    = txSeed.nTime;
         seed.nBits    = bnProofOfWorkLimit.GetCompact();
-        seed.nNonce   = 320794;
+        seed.nNonce   = 107899;
 
         if (seed.hashMerkleRoot != _hashSeedBlockMerkleRoot)
         {
@@ -231,11 +231,11 @@ public:
         nDefaultPort = 8765;
         nRPCPort = 18765;
         strDataDir = "testnet";
-        static const uint256 _hashGenesisBlock("0x00003b270ba0f623a8815eb0c7f0d33b1976159df2f1a14d8f207a515b406f80");
+        static const uint256 _hashGenesisBlock("0x000074316a92dc5fdfa60b193ed2dd81300ac6c6edbc4c27a265f210a90127c4");
 
         // Modify the testnet genesis block so the timestamp is valid for a later start.
         genesis.nBits  = bnProofOfWorkLimit.GetCompact();
-        genesis.nNonce = 182094;
+        genesis.nNonce = 35913;
         hashGenesisBlock = genesis.GetHash();
         //cout<<genesis.ToString();
         if (true  && (hashGenesisBlock != _hashGenesisBlock )) {
@@ -276,10 +276,10 @@ public:
         bnProofOfWorkLimit = CBigNum(~uint256(0) >> 1);
         //genesis.nTime = 1411111111;
         genesis.nBits  = bnProofOfWorkLimit.GetCompact();
-        genesis.nNonce = 4;
+        genesis.nNonce = 0;
         nDefaultPort = 18766;
         strDataDir = "regtest";
-        static const uint256 _hashGenesisBlock("0x30ecba39552219d81ee85776a2b27e61189d554e99e38020f462930d12f496fc");
+        static const uint256 _hashGenesisBlock("0x6caec79ad70b169207ffeaf35f7f91e7271a11ea91c96ba58209aaaf2d360d1e");
 
         hashGenesisBlock = genesis.GetHash();
         //cout<<genesis.ToString();
