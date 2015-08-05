@@ -3,22 +3,22 @@
     <name>AboutDialog</name>
     <message>
         <location filename="../forms/aboutdialog.ui" line="+14"/>
-        <source>About ValorCoin</source>
-        <translation>Tietoa ValorCoinista</translation>
+        <source>About Valorbit</source>
+        <translation>Tietoa Valorbitista</translation>
     </message>
     <message>
         <location line="+39"/>
-        <source>&lt;b&gt;ValorCoin&lt;/b&gt; version</source>
-        <translation>&lt;b&gt;ValorCoin&lt;/b&gt;-asiakasohjelman versio</translation>
+        <source>&lt;b&gt;Valorbit&lt;/b&gt; version</source>
+        <translation>&lt;b&gt;Valorbit&lt;/b&gt;-asiakasohjelman versio</translation>
     </message>
     <message>
         <location line="+41"/>
         <source>Copyright © 2009-2014 The Bitcoin developers
 Copyright © 2012-2014 The NovaCoin developers
-Copyright © 2014 The ValorCoin developers</source>
+Copyright © 2014 The Valorbit developers</source>
         <translation>Copyright © 2009-2014 The Bitcoin developers
 Copyright © 2012-2014 The NovaCoin developers
-Copyright © 2014 The ValorCoin developers</translation>
+Copyright © 2014 The Valorbit developers</translation>
     </message>
     <message>
         <location line="+15"/>
@@ -66,8 +66,8 @@ Tämä tuote sisältää OpenSSL-projektin kehittämää ohjelmistoa OpenSSL-ty�
     </message>
     <message>
         <location line="-43"/>
-        <source>These are your ValorCoin addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
-        <translation>Nämä ovat ValorCoin-osoitteesi rahansiirtojen vastaanottoa varten. Jos haluat, voit antaa jokaiselle lähettäjälle oman osoitteen jotta voit pitää kirjaa sinulle rahaa siirtäneistä henkilöistä.</translation>
+        <source>These are your Valorbit addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
+        <translation>Nämä ovat Valorbit-osoitteesi rahansiirtojen vastaanottoa varten. Jos haluat, voit antaa jokaiselle lähettäjälle oman osoitteen jotta voit pitää kirjaa sinulle rahaa siirtäneistä henkilöistä.</translation>
     </message>
     <message>
         <location line="+53"/>
@@ -81,8 +81,8 @@ Tämä tuote sisältää OpenSSL-projektin kehittämää ohjelmistoa OpenSSL-ty�
     </message>
     <message>
         <location line="+7"/>
-        <source>Sign a message to prove you own a ValorCoin address</source>
-        <translation>Allekirjoita viesti osoittaaksesi ValorCoin-osoitteesi omistajuus</translation>
+        <source>Sign a message to prove you own a Valorbit address</source>
+        <translation>Allekirjoita viesti osoittaaksesi Valorbit-osoitteesi omistajuus</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -96,8 +96,8 @@ Tämä tuote sisältää OpenSSL-projektin kehittämää ohjelmistoa OpenSSL-ty�
     </message>
     <message>
         <location line="-10"/>
-        <source>Verify a message to ensure it was signed with a specified ValorCoin address</source>
-        <translation>Vahvista viesti varmistaaksesi että kyseinen ValorCoin-osoitteesi on allekirjoittanut sen</translation>
+        <source>Verify a message to ensure it was signed with a specified Valorbit address</source>
+        <translation>Vahvista viesti varmistaaksesi että kyseinen Valorbit-osoitteesi on allekirjoittanut sen</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -233,7 +233,7 @@ Tämä tuote sisältää OpenSSL-projektin kehittämää ohjelmistoa OpenSSL-ty�
     <message>
         <location line="+1"/>
         <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR COINS&lt;/b&gt;!</source>
-        <translation>Varoitus: Jos salaat lompakkosi ja hukkaat salasanasi, &lt;b&gt;MENETÄT KAIKKI VALORCOINISI&lt;/b&gt;!</translation>
+        <translation>Varoitus: Jos salaat lompakkosi ja hukkaat salasanasi, &lt;b&gt;MENETÄT KAIKKI VALORBITISI&lt;/b&gt;!</translation>
     </message>
     <message>
         <location line="+0"/>
@@ -356,8 +356,8 @@ Tämä tuote sisältää OpenSSL-projektin kehittämää ohjelmistoa OpenSSL-ty�
     </message>
     <message>
         <location line="+4"/>
-        <source>Show information about ValorCoin</source>
-        <translation>Näytä tietoja ValorCoinista</translation>
+        <source>Show information about Valorbit</source>
+        <translation>Näytä tietoja Valorbitista</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -396,12 +396,12 @@ Tämä tuote sisältää OpenSSL-projektin kehittämää ohjelmistoa OpenSSL-ty�
     </message>
     <message>
         <location line="-55"/>
-        <source>Send coins to a ValorCoin address</source>
-        <translation>Lähetä kolikoita ValorCoin-osoitteeseen</translation>
+        <source>Send coins to a Valorbit address</source>
+        <translation>Lähetä kolikoita Valorbit-osoitteeseen</translation>
     </message>
     <message>
         <location line="+39"/>
-        <source>Modify configuration options for ValorCoin</source>
+        <source>Modify configuration options for Valorbit</source>
         <translation>Mukauta asiakasohjelman asetuksia</translation>
     </message>
     <message>
@@ -442,7 +442,7 @@ Tämä tuote sisältää OpenSSL-projektin kehittämää ohjelmistoa OpenSSL-ty�
     <message>
         <location line="-214"/>
         <location line="+555"/>
-        <translation>ValorCoin</translation>
+        <translation>Valorbit</translation>
     </message>
     <message>
         <location line="-555"/>
@@ -451,8 +451,8 @@ Tämä tuote sisältää OpenSSL-projektin kehittämää ohjelmistoa OpenSSL-ty�
     </message>
     <message>
         <location line="+193"/>
-        <source>&amp;About ValorCoin</source>
-        <translation>&amp;Tietoa ValorCoinista</translation>
+        <source>&amp;About Valorbit</source>
+        <translation>&amp;Tietoa Valorbitista</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -503,13 +503,13 @@ Tämä tuote sisältää OpenSSL-projektin kehittämää ohjelmistoa OpenSSL-ty�
     <message>
         <location line="+0"/>
         <location line="+58"/>
-        <source>ValorCoin client</source>
-        <translation>ValorCoin-asiakasohjelma</translation>
+        <source>Valorbit client</source>
+        <translation>Valorbit-asiakasohjelma</translation>
     </message>
     <message numerus="yes">
         <location line="+70"/>
-        <source>%n active connection(s) to ValorCoin network</source>
-        <translation><numerusform>%n aktiivinen yhteys ValorCoin-verkkoon</numerusform><numerusform>%n aktiivista yhteyttä ValorCoin-verkkoon</numerusform></translation>
+        <source>%n active connection(s) to Valorbit network</source>
+        <translation><numerusform>%n aktiivinen yhteys Valorbit-verkkoon</numerusform><numerusform>%n aktiivista yhteyttä Valorbit-verkkoon</numerusform></translation>
     </message>
     <message>
         <location line="+488"/>
@@ -602,8 +602,8 @@ Osoite: %4</translation>
     <message>
         <location line="-15"/>
         <location line="+15"/>
-        <source>URI can not be parsed! This can be caused by an invalid ValorCoin address or malformed URI parameters.</source>
-        <translation>URI-merkkijonoa ei voida jäsentää! Tämä voi johtua väärästä ValorCoin-osoitteesta tai väärässä muodossa olevista URI-parametreistä.</translation>
+        <source>URI can not be parsed! This can be caused by an invalid Valorbit address or malformed URI parameters.</source>
+        <translation>URI-merkkijonoa ei voida jäsentää! Tämä voi johtua väärästä Valorbit-osoitteesta tai väärässä muodossa olevista URI-parametreistä.</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -725,8 +725,8 @@ Osoite: %4</translation>
     </message>
     <message>
         <location filename="../bitcoin.cpp" line="+104"/>
-        <source>A fatal error occurred. ValorCoin can no longer continue safely and will quit.</source>
-        <translation>Virhe kohdattu. ValorCoin-asiakasohjelma ei voi enää jatkaa turvallisesti ja se suljetaan.</translation>
+        <source>A fatal error occurred. Valorbit can no longer continue safely and will quit.</source>
+        <translation>Virhe kohdattu. Valorbit-asiakasohjelma ei voi enää jatkaa turvallisesti ja se suljetaan.</translation>
     </message>
 </context>
 <context>
@@ -1059,8 +1059,8 @@ Tämä tarkoittaa, että ainakin %2 rahansiirtopalkkio tarvitaan.</translation>
     </message>
     <message>
         <location line="-5"/>
-        <source>The entered address &quot;%1&quot; is not a valid ValorCoin address.</source>
-        <translation>Syöttämäsi osoite &quot;%1&quot; ei ole hyväksytty ValorCoin-osoite.</translation>
+        <source>The entered address &quot;%1&quot; is not a valid Valorbit address.</source>
+        <translation>Syöttämäsi osoite &quot;%1&quot; ei ole hyväksytty Valorbit-osoite.</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -1078,8 +1078,8 @@ Tämä tarkoittaa, että ainakin %2 rahansiirtopalkkio tarvitaan.</translation>
     <message>
         <location filename="../guiutil.cpp" line="+426"/>
         <location line="+12"/>
-        <source>ValorCoin-Qt</source>
-        <translation>ValorCoin-Qt</translation>
+        <source>Valorbit-Qt</source>
+        <translation>Valorbit-Qt</translation>
     </message>
     <message>
         <location line="-12"/>
@@ -1151,13 +1151,13 @@ Tämä tarkoittaa, että ainakin %2 rahansiirtopalkkio tarvitaan.</translation>
     </message>
     <message>
         <location line="+31"/>
-        <source>Automatically start ValorCoin after logging in to the system.</source>
-        <translation>Käynnistä ValorCoin-asiakasohjelma automaattisesti kun olet kirjautunut järjestelmään.</translation>
+        <source>Automatically start Valorbit after logging in to the system.</source>
+        <translation>Käynnistä Valorbit-asiakasohjelma automaattisesti kun olet kirjautunut järjestelmään.</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Start ValorCoin on system login</source>
-        <translation>%Käynnistä ValorCoin-asiakasohjelma kirjautuessasi</translation>
+        <source>&amp;Start Valorbit on system login</source>
+        <translation>%Käynnistä Valorbit-asiakasohjelma kirjautuessasi</translation>
     </message>
     <message>
         <location line="+21"/>
@@ -1166,8 +1166,8 @@ Tämä tarkoittaa, että ainakin %2 rahansiirtopalkkio tarvitaan.</translation>
     </message>
     <message>
         <location line="+6"/>
-        <source>Automatically open the ValorCoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Avaa ValorCoin-asiakkaalle automaattisesti portti reitittimestä. Tämä toimii vain, kun reitittimesi tukee UPnP:tä ja se on aktivoituna.</translation>
+        <source>Automatically open the Valorbit client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Avaa Valorbit-asiakkaalle automaattisesti portti reitittimestä. Tämä toimii vain, kun reitittimesi tukee UPnP:tä ja se on aktivoituna.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1196,7 +1196,7 @@ Tämä tarkoittaa, että ainakin %2 rahansiirtopalkkio tarvitaan.</translation>
     </message>
     <message>
         <location line="-57"/>
-        <source>Connect to the ValorCoin network through a SOCKS5 proxy (e.g. when connecting through Tor).</source>
+        <source>Connect to the Valorbit network through a SOCKS5 proxy (e.g. when connecting through Tor).</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1241,8 +1241,8 @@ Tämä tarkoittaa, että ainakin %2 rahansiirtopalkkio tarvitaan.</translation>
     </message>
     <message>
         <location line="+13"/>
-        <source>The user interface language can be set here. This setting will take effect after restarting ValorCoin.</source>
-        <translation>Käyttöliittymän kieli voidaan valita tästä. Tämä asetus tulee voimaan vasta ValorCoin-asiakasohjelman uudelleenkäynnistyksen jälkeen.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting Valorbit.</source>
+        <translation>Käyttöliittymän kieli voidaan valita tästä. Tämä asetus tulee voimaan vasta Valorbit-asiakasohjelman uudelleenkäynnistyksen jälkeen.</translation>
     </message>
     <message>
         <location line="+11"/>
@@ -1308,8 +1308,8 @@ Tämä tarkoittaa, että ainakin %2 rahansiirtopalkkio tarvitaan.</translation>
     <message>
         <location line="-9"/>
         <location line="+9"/>
-        <source>This setting will take effect after restarting ValorCoin.</source>
-        <translation>Tämä asetus tulee voimaan vasta ValorCoin-asiakasohjelman uudelleenkäynnistyksen jälkeen.</translation>
+        <source>This setting will take effect after restarting Valorbit.</source>
+        <translation>Tämä asetus tulee voimaan vasta Valorbit-asiakasohjelman uudelleenkäynnistyksen jälkeen.</translation>
     </message>
     <message>
         <location line="+29"/>
@@ -1327,8 +1327,8 @@ Tämä tarkoittaa, että ainakin %2 rahansiirtopalkkio tarvitaan.</translation>
     <message>
         <location line="+46"/>
         <location line="+247"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the ValorCoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>Näytettävät tiedot voivat olla vanhentuneet. Lompakkosi synkronoituu automaattisesti ValorCoin-verkon kanssa kun yhteys on muodostettu, mutta tätä prosessia ei ole viety vielä päätökseen.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Valorbit network after a connection is established, but this process has not completed yet.</source>
+        <translation>Näytettävät tiedot voivat olla vanhentuneet. Lompakkosi synkronoituu automaattisesti Valorbit-verkon kanssa kun yhteys on muodostettu, mutta tätä prosessia ei ole viety vielä päätökseen.</translation>
     </message>
     <message>
         <location line="-173"/>
@@ -1401,8 +1401,8 @@ Tämä tarkoittaa, että ainakin %2 rahansiirtopalkkio tarvitaan.</translation>
     <name>PaymentServer</name>
     <message>
         <location filename="../paymentserver.cpp" line="+107"/>
-        <source>Cannot start valorcoin: click-to-pay handler</source>
-        <translation>Valorcoin-asiakasohjelmaa ei voida käynnistää: klikkaa maksaaksesi-käsittelijä</translation>
+        <source>Cannot start valorbit: click-to-pay handler</source>
+        <translation>Valorbit-asiakasohjelmaa ei voida käynnistää: klikkaa maksaaksesi-käsittelijä</translation>
     </message>
 </context>
 <context>
@@ -1569,8 +1569,8 @@ Tämä tarkoittaa, että ainakin %2 rahansiirtopalkkio tarvitaan.</translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>Show the ValorCoin-Qt help message to get a list with possible ValorCoin command-line options.</source>
-        <translation>Näytä ValorCoin-Qt:n avustusohje saadaksesi listan käytettävistä ValorCoinin komentokehotteen määritteistä.</translation>
+        <source>Show the Valorbit-Qt help message to get a list with possible Valorbit command-line options.</source>
+        <translation>Näytä Valorbit-Qt:n avustusohje saadaksesi listan käytettävistä Valorbitin komentokehotteen määritteistä.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1589,13 +1589,13 @@ Tämä tarkoittaa, että ainakin %2 rahansiirtopalkkio tarvitaan.</translation>
     </message>
     <message>
         <location line="-104"/>
-        <source>ValorCoin - Debug window</source>
-        <translation>ValorCoin - Debug-ikkuna</translation>
+        <source>Valorbit - Debug window</source>
+        <translation>Valorbit - Debug-ikkuna</translation>
     </message>
     <message>
         <location line="+25"/>
-        <source>ValorCoin Core</source>
-        <translation>ValorCoinin ydin</translation>
+        <source>Valorbit Core</source>
+        <translation>Valorbitin ydin</translation>
     </message>
     <message>
         <location line="+256"/>
@@ -1604,8 +1604,8 @@ Tämä tarkoittaa, että ainakin %2 rahansiirtopalkkio tarvitaan.</translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>Open the ValorCoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Avaa ValorCoin-asiakasohjelman debug-lokitiedosto nykyisestä hakemistostaan. Tämä voi kestää muutaman sekunnin avattaessa suuria lokitiedostoja.</translation>
+        <source>Open the Valorbit debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Avaa Valorbit-asiakasohjelman debug-lokitiedosto nykyisestä hakemistostaan. Tämä voi kestää muutaman sekunnin avattaessa suuria lokitiedostoja.</translation>
     </message>
     <message>
         <location line="+102"/>
@@ -1614,8 +1614,8 @@ Tämä tarkoittaa, että ainakin %2 rahansiirtopalkkio tarvitaan.</translation>
     </message>
     <message>
         <location filename="../rpcconsole.cpp" line="+325"/>
-        <source>Welcome to the ValorCoin RPC console.</source>
-        <translation>Tervetuloa ValorCoinin RPC-konsoliin.</translation>
+        <source>Welcome to the Valorbit RPC console.</source>
+        <translation>Tervetuloa Valorbitin RPC-konsoliin.</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1675,7 +1675,7 @@ Tämä tarkoittaa, että ainakin %2 rahansiirtopalkkio tarvitaan.</translation>
         <location line="+5"/>
         <location line="+5"/>
         <source>Send Coins</source>
-        <translation>Lähetä Valorcoineja</translation>
+        <translation>Lähetä Valorbiteja</translation>
     </message>
     <message>
         <location line="+76"/>
@@ -1795,8 +1795,8 @@ Tämä tarkoittaa, että ainakin %2 rahansiirtopalkkio tarvitaan.</translation>
     </message>
     <message>
         <location filename="../sendcoinsdialog.cpp" line="-174"/>
-        <source>Enter a ValorCoin address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
-        <translation>Syötä ValorCoin-osoite (esim. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
+        <source>Enter a Valorbit address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
+        <translation>Syötä Valorbit-osoite (esim. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
     </message>
     <message>
         <location line="+15"/>
@@ -1895,8 +1895,8 @@ Tämä tarkoittaa, että ainakin %2 rahansiirtopalkkio tarvitaan.</translation>
     </message>
     <message>
         <location line="+247"/>
-        <source>WARNING: Invalid ValorCoin address</source>
-        <translation>VAROITUS: Epäkelpo ValorCoin-osoite</translation>
+        <source>WARNING: Invalid Valorbit address</source>
+        <translation>VAROITUS: Epäkelpo Valorbit-osoite</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -1969,8 +1969,8 @@ Tämä tarkoittaa, että ainakin %2 rahansiirtopalkkio tarvitaan.</translation>
     </message>
     <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
-        <source>Enter a ValorCoin address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
-        <translation>Syötä ValorCoin-osoite (esim. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
+        <source>Enter a Valorbit address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
+        <translation>Syötä Valorbit-osoite (esim. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
     </message>
 </context>
 <context>
@@ -2030,8 +2030,8 @@ Tämä tarkoittaa, että ainakin %2 rahansiirtopalkkio tarvitaan.</translation>
     </message>
     <message>
         <location line="+21"/>
-        <source>Sign the message to prove you own this ValorCoin address</source>
-        <translation>Allekirjoita viesti vahvistaaksesi, että omistat tämän ValorCoin-osoitteen</translation>
+        <source>Sign the message to prove you own this Valorbit address</source>
+        <translation>Allekirjoita viesti vahvistaaksesi, että omistat tämän Valorbit-osoitteen</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -2062,8 +2062,8 @@ Tämä tarkoittaa, että ainakin %2 rahansiirtopalkkio tarvitaan.</translation>
     </message>
     <message>
         <location line="+40"/>
-        <source>Verify the message to ensure it was signed with the specified ValorCoin address</source>
-        <translation>Vahvista viesti varmistaaksesi että se on allekirjoitettu kyseisellä ValorCoin-osoitteella</translation>
+        <source>Verify the message to ensure it was signed with the specified Valorbit address</source>
+        <translation>Vahvista viesti varmistaaksesi että se on allekirjoitettu kyseisellä Valorbit-osoitteella</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -2073,8 +2073,8 @@ Tämä tarkoittaa, että ainakin %2 rahansiirtopalkkio tarvitaan.</translation>
     <message>
         <location filename="../signverifymessagedialog.cpp" line="+27"/>
         <location line="+3"/>
-        <source>Enter a ValorCoin address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
-        <translation>Syötä ValorCoin-osoite (esim. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
+        <source>Enter a Valorbit address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
+        <translation>Syötä Valorbit-osoite (esim. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
     </message>
     <message>
         <location line="-2"/>
@@ -2083,8 +2083,8 @@ Tämä tarkoittaa, että ainakin %2 rahansiirtopalkkio tarvitaan.</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Enter ValorCoin signature</source>
-        <translation>Syötä ValorCoin-allekirjoitus</translation>
+        <source>Enter Valorbit signature</source>
+        <translation>Syötä Valorbit-allekirjoitus</translation>
     </message>
     <message>
         <location line="+85"/>
@@ -2662,8 +2662,8 @@ Tämä tarkoittaa, että ainakin %2 rahansiirtopalkkio tarvitaan.</translation>
     <name>bitcoin-core</name>
     <message>
         <location filename="../bitcoinstrings.cpp" line="+173"/>
-        <source>ValorCoin version</source>
-        <translation>ValorCoinin versio</translation>
+        <source>Valorbit version</source>
+        <translation>Valorbitin versio</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2672,8 +2672,8 @@ Tämä tarkoittaa, että ainakin %2 rahansiirtopalkkio tarvitaan.</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Send command to -server or valorcoind</source>
-        <translation>Syötä komento kohteeseen -server tai valorcoind</translation>
+        <source>Send command to -server or valorbitd</source>
+        <translation>Syötä komento kohteeseen -server tai valorbitd</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2692,13 +2692,13 @@ Tämä tarkoittaa, että ainakin %2 rahansiirtopalkkio tarvitaan.</translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Specify configuration file (default: valorcoin.conf)</source>
-        <translation>Määritä asetustiedosto (oletus: valorcoin.conf)</translation>
+        <source>Specify configuration file (default: valorbit.conf)</source>
+        <translation>Määritä asetustiedosto (oletus: valorbit.conf)</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Specify pid file (default: valorcoind.pid)</source>
-        <translation>Määritä prosessitiedosto (oletus: valorcoin.pid)</translation>
+        <source>Specify pid file (default: valorbitd.pid)</source>
+        <translation>Määritä prosessitiedosto (oletus: valorbit.pid)</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -2715,21 +2715,21 @@ Tämä tarkoittaa, että ainakin %2 rahansiirtopalkkio tarvitaan.</translation>
         <source>%s, you must set a rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=valorcoinrpc
+rpcuser=valorbitrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;ValorCoin Alert&quot; admin@foo.com
+for example: alertnotify=echo %%s | mail -s &quot;Valorbit Alert&quot; admin@foo.com
 </source>
         <translation>%s, sinun on asetettava rpcpassword asetustiedostoon:
 %s
-On suositeltavaa, että käytät seuraavaa arvottua salasanaa: rpcuser=valorcoinrpc
+On suositeltavaa, että käytät seuraavaa arvottua salasanaa: rpcuser=valorbitrpc
 rpcpassword=%s
 (Sinun ei tarvitse muistaa tätä salasanaa) Käyttäjänimen ja salasanan EI TULE OLLA SAMOJA.
 Jos tiedostoa ei ole olemassa, luo se asettaen samalla omistajan lukuoikeudet.
-On myös suositeltavaa asettaa alertnotify jolloin olet tiedotettu ongelmista; esimerkiksi: alertnotify=echo %%s | mail -s &quot;ValorCoin Alert&quot; admin@foo.com
+On myös suositeltavaa asettaa alertnotify jolloin olet tiedotettu ongelmista; esimerkiksi: alertnotify=echo %%s | mail -s &quot;Valorbit Alert&quot; admin@foo.com
 </translation>
     </message>
     <message>
@@ -2834,8 +2834,8 @@ On myös suositeltavaa asettaa alertnotify jolloin olet tiedotettu ongelmista; e
     </message>
     <message>
         <location line="-104"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong ValorCoin will not work properly.</source>
-        <translation>Varoitus: Tarkista, että tietokoneesi aika ja päivämäärä ovat oikeassa! Jos kellosi on väärässä, ValorCoin ei toimi oikein.</translation>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Valorbit will not work properly.</source>
+        <translation>Varoitus: Tarkista, että tietokoneesi aika ja päivämäärä ovat oikeassa! Jos kellosi on väärässä, Valorbit ei toimi oikein.</translation>
     </message>
     <message>
         <location line="+132"/>
@@ -3199,13 +3199,13 @@ On myös suositeltavaa asettaa alertnotify jolloin olet tiedotettu ongelmista; e
     </message>
     <message>
         <location line="+4"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of ValorCoin</source>
-        <translation>Virhe ladattaessa wallet.dat-tiedostoa: Lompakko tarvitsee uudemman version ValorCoin-asiakasohjelmasta</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of Valorbit</source>
+        <translation>Virhe ladattaessa wallet.dat-tiedostoa: Lompakko tarvitsee uudemman version Valorbit-asiakasohjelmasta</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Wallet needed to be rewritten: restart ValorCoin to complete</source>
-        <translation>Lompakko on kirjoitettava uudelleen: käynnistä ValorCoin-asiakasohjelma uudelleen päättääksesi toiminnon</translation>
+        <source>Wallet needed to be rewritten: restart Valorbit to complete</source>
+        <translation>Lompakko on kirjoitettava uudelleen: käynnistä Valorbit-asiakasohjelma uudelleen päättääksesi toiminnon</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -3264,8 +3264,8 @@ On myös suositeltavaa asettaa alertnotify jolloin olet tiedotettu ongelmista; e
     </message>
     <message>
         <location line="+126"/>
-        <source>Unable to bind to %s on this computer. ValorCoin is probably already running.</source>
-        <translation>Ei voitu liittää %s tällä tietokoneella. ValorCoin-asiakasohjelma on jo ehkä päällä.</translation>
+        <source>Unable to bind to %s on this computer. Valorbit is probably already running.</source>
+        <translation>Ei voitu liittää %s tällä tietokoneella. Valorbit-asiakasohjelma on jo ehkä päällä.</translation>
     </message>
     <message>
         <location line="-102"/>
@@ -3304,8 +3304,8 @@ On myös suositeltavaa asettaa alertnotify jolloin olet tiedotettu ongelmista; e
     </message>
     <message>
         <location line="+3"/>
-        <source>Cannot obtain a lock on data directory %s. ValorCoin is probably already running.</source>
-        <translation>Lukkotiedostoa ei voida saada haltuun datahakemistossa %s. ValorCoin on ehkä jo käynnissä.</translation>
+        <source>Cannot obtain a lock on data directory %s. Valorbit is probably already running.</source>
+        <translation>Lukkotiedostoa ei voida saada haltuun datahakemistossa %s. Valorbit on ehkä jo käynnissä.</translation>
     </message>
     <message>
         <location line="+4"/>

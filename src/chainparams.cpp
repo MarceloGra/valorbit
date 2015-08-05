@@ -119,7 +119,7 @@ public:
         // Build the genesis block. Note that the output of the genesis coinbase cannot
         // be spent as it did not originally exist in the database.
         //
-        const char* pszTimestamp = "ValorCoin:www.wired.com/2015/05/internet-anything-brain-monitors-going-mainstream-despite-skepticism/";
+        const char* pszTimestamp = "Valorbit http://www.wired.com/2015/07/brinks-super-secure-smart-safes-not-secure/";
         std::vector<CTxIn> vin;
         vin.resize(1); 
         vin[0].scriptSig = CScript() << 0 << CBigNum(42) << vector<unsigned char>((const unsigned char*)pszTimestamp, (const unsigned char*)pszTimestamp + strlen(pszTimestamp));
@@ -150,7 +150,7 @@ public:
 
         assert(hashGenesisBlock == _hashGenesisBlock);
 
-        const char* pszTimestampSeed = "05-May-2015@seed.valorcoin.com";
+        const char* pszTimestampSeed = "05-May-2015@seed.valorbit.com";
         CTransaction txSeed;
         txSeed.nTime = genesis.nTime + 1;
         txSeed.vin.resize(1);
@@ -183,8 +183,8 @@ public:
 
         assert(hashSeedBlock == _hashSeedBlock);
 
-        vSeeds.push_back(CDNSSeedData("seed.valorcoin.com", "seed.valorcoin.com"));
-        vSeeds.push_back(CDNSSeedData("seed2.valorcoin.com", "seed2.valorcoin.com"));
+        vSeeds.push_back(CDNSSeedData("seed.valorbit.com", "seed.valorbit.com"));
+        vSeeds.push_back(CDNSSeedData("seed2.valorbit.com", "seed2.valorbit.com"));
 
         base58Prefixes[PUBKEY_ADDRESS] = list_of(0);
         base58Prefixes[SCRIPT_ADDRESS] = list_of(5);

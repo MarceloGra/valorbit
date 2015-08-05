@@ -3,22 +3,22 @@
     <name>AboutDialog</name>
     <message>
         <location filename="../forms/aboutdialog.ui" line="+14"/>
-        <source>About ValorCoin</source>
-        <translation>Om ValorCoin</translation>
+        <source>About Valorbit</source>
+        <translation>Om Valorbit</translation>
     </message>
     <message>
         <location line="+39"/>
-        <source>&lt;b&gt;ValorCoin&lt;/b&gt; version</source>
-        <translation>&lt;b&gt;ValorCoin&lt;/b&gt; versjon</translation>
+        <source>&lt;b&gt;Valorbit&lt;/b&gt; version</source>
+        <translation>&lt;b&gt;Valorbit&lt;/b&gt; versjon</translation>
     </message>
     <message>
         <location line="+41"/>
         <source>Copyright © 2009-2014 The Bitcoin developers
 Copyright © 2012-2014 The NovaCoin developers
-Copyright © 2014 The ValorCoin developers</source>
+Copyright © 2014 The Valorbit developers</source>
         <translation>Copyright © 2009-2014 The Bitcoin developers
 Copyright © 2012-2014 The NovaCoin developers
-Copyright © 2014 The ValorCoin developers</translation>
+Copyright © 2014 The Valorbit developers</translation>
     </message>
     <message>
         <location line="+15"/>
@@ -60,7 +60,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-43"/>
-        <source>These are your ValorCoin addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
+        <source>These are your Valorbit addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
         <translation>Dette er adressene for å motta betalinger. Du ønsker kanskje å gi ulike adresser til hver avsender så du lettere kan holde øye med hvem som betaler deg.</translation>
     </message>
     <message>
@@ -75,8 +75,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+7"/>
-        <source>Sign a message to prove you own a ValorCoin address</source>
-        <translation>Signer en melding for å bevise din egen ValorCoin adresse.</translation>
+        <source>Sign a message to prove you own a Valorbit address</source>
+        <translation>Signer en melding for å bevise din egen Valorbit adresse.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -90,8 +90,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-10"/>
-        <source>Verify a message to ensure it was signed with a specified ValorCoin address</source>
-        <translation>Verifiser en melding får å forsikre deg om at den er signert med en spesifikk ValorCoin adresse</translation>
+        <source>Verify a message to ensure it was signed with a specified Valorbit address</source>
+        <translation>Verifiser en melding får å forsikre deg om at den er signert med en spesifikk Valorbit adresse</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -351,8 +351,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+4"/>
-        <source>Show information about ValorCoin</source>
-        <translation>Vis info om ValorCoin</translation>
+        <source>Show information about Valorbit</source>
+        <translation>Vis info om Valorbit</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -391,13 +391,13 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-55"/>
-        <source>Send coins to a ValorCoin address</source>
-        <translation>Send coins til en ValorCoin adresse</translation>
+        <source>Send coins to a Valorbit address</source>
+        <translation>Send coins til en Valorbit adresse</translation>
     </message>
     <message>
         <location line="+39"/>
-        <source>Modify configuration options for ValorCoin</source>
-        <translation>Endre innstillingene til ValorCoin</translation>
+        <source>Modify configuration options for Valorbit</source>
+        <translation>Endre innstillingene til Valorbit</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -437,7 +437,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="-214"/>
         <location line="+555"/>
-        <translation>ValorCoin</translation>
+        <translation>Valorbit</translation>
     </message>
     <message>
         <location line="-555"/>
@@ -446,8 +446,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+193"/>
-        <source>&amp;About ValorCoin</source>
-        <translation>&amp;Om ValorCoin</translation>
+        <source>&amp;About Valorbit</source>
+        <translation>&amp;Om Valorbit</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -498,13 +498,13 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="+0"/>
         <location line="+58"/>
-        <source>ValorCoin client</source>
-        <translation>ValorCoin klient</translation>
+        <source>Valorbit client</source>
+        <translation>Valorbit klient</translation>
     </message>
     <message numerus="yes">
         <location line="+70"/>
-        <source>%n active connection(s) to ValorCoin network</source>
-        <translation><numerusform>%n aktiv tilkobling til ValorCoin nettverket</numerusform><numerusform>%n aktive tilkoblinger til ValorCoin nettverket</numerusform></translation>
+        <source>%n active connection(s) to Valorbit network</source>
+        <translation><numerusform>%n aktiv tilkobling til Valorbit nettverket</numerusform><numerusform>%n aktive tilkoblinger til Valorbit nettverket</numerusform></translation>
     </message>
     <message>
         <location line="+488"/>
@@ -598,7 +598,7 @@ Adresse: %4
     <message>
         <location line="-15"/>
         <location line="+15"/>
-        <source>URI can not be parsed! This can be caused by an invalid ValorCoin address or malformed URI parameters.</source>
+        <source>URI can not be parsed! This can be caused by an invalid Valorbit address or malformed URI parameters.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -721,7 +721,7 @@ Adresse: %4
     </message>
     <message>
         <location filename="../bitcoin.cpp" line="+104"/>
-        <source>A fatal error occurred. ValorCoin can no longer continue safely and will quit.</source>
+        <source>A fatal error occurred. Valorbit can no longer continue safely and will quit.</source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -1043,8 +1043,8 @@ Dette betyr at det trengs en avgift på minimum %2.</translation>
     </message>
     <message>
         <location line="-5"/>
-        <source>The entered address &quot;%1&quot; is not a valid ValorCoin address.</source>
-        <translation>Den angitte adressen &quot;%1&quot; er ikke en gyldig ValorCoin adresse.</translation>
+        <source>The entered address &quot;%1&quot; is not a valid Valorbit address.</source>
+        <translation>Den angitte adressen &quot;%1&quot; er ikke en gyldig Valorbit adresse.</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -1062,8 +1062,8 @@ Dette betyr at det trengs en avgift på minimum %2.</translation>
     <message>
         <location filename="../guiutil.cpp" line="+426"/>
         <location line="+12"/>
-        <source>ValorCoin-Qt</source>
-        <translation>ValorCoin-Qt</translation>
+        <source>Valorbit-Qt</source>
+        <translation>Valorbit-Qt</translation>
     </message>
     <message>
         <location line="-12"/>
@@ -1135,13 +1135,13 @@ Dette betyr at det trengs en avgift på minimum %2.</translation>
     </message>
     <message>
         <location line="+31"/>
-        <source>Automatically start ValorCoin after logging in to the system.</source>
-        <translation>Start ValorCoin automatisk ved hver innlogging.</translation>
+        <source>Automatically start Valorbit after logging in to the system.</source>
+        <translation>Start Valorbit automatisk ved hver innlogging.</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Start ValorCoin on system login</source>
-        <translation>&amp;Start Valorcoin ved innlogging</translation>
+        <source>&amp;Start Valorbit on system login</source>
+        <translation>&amp;Start Valorbit ved innlogging</translation>
     </message>
     <message>
         <location line="+21"/>
@@ -1150,7 +1150,7 @@ Dette betyr at det trengs en avgift på minimum %2.</translation>
     </message>
     <message>
         <location line="+6"/>
-        <source>Automatically open the ValorCoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <source>Automatically open the Valorbit client port on the router. This only works when your router supports UPnP and it is enabled.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1180,7 +1180,7 @@ Dette betyr at det trengs en avgift på minimum %2.</translation>
     </message>
     <message>
         <location line="-57"/>
-        <source>Connect to the ValorCoin network through a SOCKS5 proxy (e.g. when connecting through Tor).</source>
+        <source>Connect to the Valorbit network through a SOCKS5 proxy (e.g. when connecting through Tor).</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1225,7 +1225,7 @@ Dette betyr at det trengs en avgift på minimum %2.</translation>
     </message>
     <message>
         <location line="+13"/>
-        <source>The user interface language can be set here. This setting will take effect after restarting ValorCoin.</source>
+        <source>The user interface language can be set here. This setting will take effect after restarting Valorbit.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1236,7 +1236,7 @@ Dette betyr at det trengs en avgift på minimum %2.</translation>
     <message>
         <location line="+13"/>
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
-        <translation>Velg standard delt enhet for visning i grensesnittet og for sending av valorcoins.</translation>
+        <translation>Velg standard delt enhet for visning i grensesnittet og for sending av valorbits.</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -1292,8 +1292,8 @@ Dette betyr at det trengs en avgift på minimum %2.</translation>
     <message>
         <location line="-9"/>
         <location line="+9"/>
-        <source>This setting will take effect after restarting ValorCoin.</source>
-        <translation>Denne innstillingen vil tre i kraft etter ValorCoin er blitt startet på nytt.</translation>
+        <source>This setting will take effect after restarting Valorbit.</source>
+        <translation>Denne innstillingen vil tre i kraft etter Valorbit er blitt startet på nytt.</translation>
     </message>
     <message>
         <location line="+29"/>
@@ -1311,7 +1311,7 @@ Dette betyr at det trengs en avgift på minimum %2.</translation>
     <message>
         <location line="+46"/>
         <location line="+247"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the ValorCoin network after a connection is established, but this process has not completed yet.</source>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Valorbit network after a connection is established, but this process has not completed yet.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1385,7 +1385,7 @@ Dette betyr at det trengs en avgift på minimum %2.</translation>
     <name>PaymentServer</name>
     <message>
         <location filename="../paymentserver.cpp" line="+107"/>
-        <source>Cannot start valorcoin: click-to-pay handler</source>
+        <source>Cannot start valorbit: click-to-pay handler</source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -1553,7 +1553,7 @@ Dette betyr at det trengs en avgift på minimum %2.</translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>Show the ValorCoin-Qt help message to get a list with possible ValorCoin command-line options.</source>
+        <source>Show the Valorbit-Qt help message to get a list with possible Valorbit command-line options.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1573,12 +1573,12 @@ Dette betyr at det trengs en avgift på minimum %2.</translation>
     </message>
     <message>
         <location line="-104"/>
-        <source>ValorCoin - Debug window</source>
+        <source>Valorbit - Debug window</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location line="+25"/>
-        <source>ValorCoin Core</source>
+        <source>Valorbit Core</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1588,7 +1588,7 @@ Dette betyr at det trengs en avgift på minimum %2.</translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>Open the ValorCoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <source>Open the Valorbit debug log file from the current data directory. This can take a few seconds for large log files.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1598,7 +1598,7 @@ Dette betyr at det trengs en avgift på minimum %2.</translation>
     </message>
     <message>
         <location filename="../rpcconsole.cpp" line="+325"/>
-        <source>Welcome to the ValorCoin RPC console.</source>
+        <source>Welcome to the Valorbit RPC console.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1659,7 +1659,7 @@ Dette betyr at det trengs en avgift på minimum %2.</translation>
         <location line="+5"/>
         <location line="+5"/>
         <source>Send Coins</source>
-        <translation>Send Valorcoins</translation>
+        <translation>Send Valorbits</translation>
     </message>
     <message>
         <location line="+76"/>
@@ -1779,7 +1779,7 @@ Dette betyr at det trengs en avgift på minimum %2.</translation>
     </message>
     <message>
         <location filename="../sendcoinsdialog.cpp" line="-174"/>
-        <source>Enter a ValorCoin address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
+        <source>Enter a Valorbit address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1879,8 +1879,8 @@ Dette betyr at det trengs en avgift på minimum %2.</translation>
     </message>
     <message>
         <location line="+247"/>
-        <source>WARNING: Invalid ValorCoin address</source>
-        <translation>ADVARSEL: Ugyldig ValorCoin adresse</translation>
+        <source>WARNING: Invalid Valorbit address</source>
+        <translation>ADVARSEL: Ugyldig Valorbit adresse</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -1953,7 +1953,7 @@ Dette betyr at det trengs en avgift på minimum %2.</translation>
     </message>
     <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
-        <source>Enter a ValorCoin address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
+        <source>Enter a Valorbit address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -2014,7 +2014,7 @@ Dette betyr at det trengs en avgift på minimum %2.</translation>
     </message>
     <message>
         <location line="+21"/>
-        <source>Sign the message to prove you own this ValorCoin address</source>
+        <source>Sign the message to prove you own this Valorbit address</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2046,7 +2046,7 @@ Dette betyr at det trengs en avgift på minimum %2.</translation>
     </message>
     <message>
         <location line="+40"/>
-        <source>Verify the message to ensure it was signed with the specified ValorCoin address</source>
+        <source>Verify the message to ensure it was signed with the specified Valorbit address</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2057,7 +2057,7 @@ Dette betyr at det trengs en avgift på minimum %2.</translation>
     <message>
         <location filename="../signverifymessagedialog.cpp" line="+27"/>
         <location line="+3"/>
-        <source>Enter a ValorCoin address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
+        <source>Enter a Valorbit address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2067,8 +2067,8 @@ Dette betyr at det trengs en avgift på minimum %2.</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Enter ValorCoin signature</source>
-        <translation>Skriv inn ValorCoin signatur</translation>
+        <source>Enter Valorbit signature</source>
+        <translation>Skriv inn Valorbit signatur</translation>
     </message>
     <message>
         <location line="+85"/>
@@ -2646,8 +2646,8 @@ Dette betyr at det trengs en avgift på minimum %2.</translation>
     <name>bitcoin-core</name>
     <message>
         <location filename="../bitcoinstrings.cpp" line="+173"/>
-        <source>ValorCoin version</source>
-        <translation>ValorCoin versjon</translation>
+        <source>Valorbit version</source>
+        <translation>Valorbit versjon</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2656,7 +2656,7 @@ Dette betyr at det trengs en avgift på minimum %2.</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Send command to -server or valorcoind</source>
+        <source>Send command to -server or valorbitd</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2676,12 +2676,12 @@ Dette betyr at det trengs en avgift på minimum %2.</translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Specify configuration file (default: valorcoin.conf)</source>
+        <source>Specify configuration file (default: valorbit.conf)</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location line="+1"/>
-        <source>Specify pid file (default: valorcoind.pid)</source>
+        <source>Specify pid file (default: valorbitd.pid)</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2699,13 +2699,13 @@ Dette betyr at det trengs en avgift på minimum %2.</translation>
         <source>%s, you must set a rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=valorcoinrpc
+rpcuser=valorbitrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;ValorCoin Alert&quot; admin@foo.com
+for example: alertnotify=echo %%s | mail -s &quot;Valorbit Alert&quot; admin@foo.com
 </source>
         <translation type="unfinished"/>
     </message>
@@ -2811,7 +2811,7 @@ for example: alertnotify=echo %%s | mail -s &quot;ValorCoin Alert&quot; admin@fo
     </message>
     <message>
         <location line="-104"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong ValorCoin will not work properly.</source>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Valorbit will not work properly.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -3176,12 +3176,12 @@ for example: alertnotify=echo %%s | mail -s &quot;ValorCoin Alert&quot; admin@fo
     </message>
     <message>
         <location line="+4"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of ValorCoin</source>
+        <source>Error loading wallet.dat: Wallet requires newer version of Valorbit</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location line="+1"/>
-        <source>Wallet needed to be rewritten: restart ValorCoin to complete</source>
+        <source>Wallet needed to be rewritten: restart Valorbit to complete</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -3241,7 +3241,7 @@ for example: alertnotify=echo %%s | mail -s &quot;ValorCoin Alert&quot; admin@fo
     </message>
     <message>
         <location line="+126"/>
-        <source>Unable to bind to %s on this computer. ValorCoin is probably already running.</source>
+        <source>Unable to bind to %s on this computer. Valorbit is probably already running.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -3281,7 +3281,7 @@ for example: alertnotify=echo %%s | mail -s &quot;ValorCoin Alert&quot; admin@fo
     </message>
     <message>
         <location line="+3"/>
-        <source>Cannot obtain a lock on data directory %s. ValorCoin is probably already running.</source>
+        <source>Cannot obtain a lock on data directory %s. Valorbit is probably already running.</source>
         <translation type="unfinished"/>
     </message>
     <message>

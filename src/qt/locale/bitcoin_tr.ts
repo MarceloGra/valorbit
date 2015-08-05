@@ -3,22 +3,22 @@
     <name>AboutDialog</name>
     <message>
         <location filename="../forms/aboutdialog.ui" line="+14"/>
-        <source>About ValorCoin</source>
-        <translation>ValorCoin Hakkında</translation>
+        <source>About Valorbit</source>
+        <translation>Valorbit Hakkında</translation>
     </message>
     <message>
         <location line="+39"/>
-        <source>&lt;b&gt;ValorCoin&lt;/b&gt; version</source>
-        <translation>&lt;b&gt;ValorCoin&lt;/b&gt; versiyonu</translation>
+        <source>&lt;b&gt;Valorbit&lt;/b&gt; version</source>
+        <translation>&lt;b&gt;Valorbit&lt;/b&gt; versiyonu</translation>
     </message>
     <message>
         <location line="+41"/>
         <source>Copyright © 2009-2014 The Bitcoin developers
 Copyright © 2012-2014 The NovaCoin developers
-Copyright © 2014 The ValorCoin developers</source>
+Copyright © 2014 The Valorbit developers</source>
         <translation>Telif Hakkı © 2009-2014 Bitcoin geliştiricileri
 Telif Hakkı © 2012-2014 NovaCoin geliştiricileri
-Telif Hakkı © 2014 ValorCoin geliştiricileri</translation>
+Telif Hakkı © 2014 Valorbit geliştiricileri</translation>
     </message>
     <message>
         <location line="+15"/>
@@ -65,8 +65,8 @@ Bu ürün, OpenSSL projesi tarafından OpenSSL araç takımıThis product includ
     </message>
     <message>
         <location line="-43"/>
-        <source>These are your ValorCoin addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
-        <translation>Bunlar, ödeme almak için ValorCoin adreslerinizdir. Her bir göndericiye farklı birini verebilir, böylece size kimin ödeme yaptığını takip edebilirsiniz.</translation>
+        <source>These are your Valorbit addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
+        <translation>Bunlar, ödeme almak için Valorbit adreslerinizdir. Her bir göndericiye farklı birini verebilir, böylece size kimin ödeme yaptığını takip edebilirsiniz.</translation>
     </message>
     <message>
         <location line="+53"/>
@@ -80,8 +80,8 @@ Bu ürün, OpenSSL projesi tarafından OpenSSL araç takımıThis product includ
     </message>
     <message>
         <location line="+7"/>
-        <source>Sign a message to prove you own a ValorCoin address</source>
-        <translation>Bir ValorCoin adresine sahip olduğunu ispatlamak için bir mesaj imzala</translation>
+        <source>Sign a message to prove you own a Valorbit address</source>
+        <translation>Bir Valorbit adresine sahip olduğunu ispatlamak için bir mesaj imzala</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -95,8 +95,8 @@ Bu ürün, OpenSSL projesi tarafından OpenSSL araç takımıThis product includ
     </message>
     <message>
         <location line="-10"/>
-        <source>Verify a message to ensure it was signed with a specified ValorCoin address</source>
-        <translation>Mesajın, belirli bir ValorCoin adresiyle imzalandığından emin olmak için onu doğrula</translation>
+        <source>Verify a message to ensure it was signed with a specified Valorbit address</source>
+        <translation>Mesajın, belirli bir Valorbit adresiyle imzalandığından emin olmak için onu doğrula</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -355,8 +355,8 @@ Bu ürün, OpenSSL projesi tarafından OpenSSL araç takımıThis product includ
     </message>
     <message>
         <location line="+4"/>
-        <source>Show information about ValorCoin</source>
-        <translation>ValorCoin hakkındaki bilgiyi göster</translation>
+        <source>Show information about Valorbit</source>
+        <translation>Valorbit hakkındaki bilgiyi göster</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -395,13 +395,13 @@ Bu ürün, OpenSSL projesi tarafından OpenSSL araç takımıThis product includ
     </message>
     <message>
         <location line="-55"/>
-        <source>Send coins to a ValorCoin address</source>
-        <translation>Bir ValorCoin adresine coin gönder</translation>
+        <source>Send coins to a Valorbit address</source>
+        <translation>Bir Valorbit adresine coin gönder</translation>
     </message>
     <message>
         <location line="+39"/>
-        <source>Modify configuration options for ValorCoin</source>
-        <translation>ValorCoin yapılandırma seçeneklerini değiştir</translation>
+        <source>Modify configuration options for Valorbit</source>
+        <translation>Valorbit yapılandırma seçeneklerini değiştir</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -441,7 +441,7 @@ Bu ürün, OpenSSL projesi tarafından OpenSSL araç takımıThis product includ
     <message>
         <location line="-214"/>
         <location line="+555"/>
-        <translation>ValorCoin</translation>
+        <translation>Valorbit</translation>
     </message>
     <message>
         <location line="-555"/>
@@ -450,8 +450,8 @@ Bu ürün, OpenSSL projesi tarafından OpenSSL araç takımıThis product includ
     </message>
     <message>
         <location line="+193"/>
-        <source>&amp;About ValorCoin</source>
-        <translation>ValorCoin &amp;Hakkında</translation>
+        <source>&amp;About Valorbit</source>
+        <translation>Valorbit &amp;Hakkında</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -502,13 +502,13 @@ Bu ürün, OpenSSL projesi tarafından OpenSSL araç takımıThis product includ
     <message>
         <location line="+0"/>
         <location line="+58"/>
-        <source>ValorCoin client</source>
-        <translation>ValorCoin istemcisi</translation>
+        <source>Valorbit client</source>
+        <translation>Valorbit istemcisi</translation>
     </message>
     <message numerus="yes">
         <location line="+70"/>
-        <source>%n active connection(s) to ValorCoin network</source>
-        <translation><numerusform>ValorCoin ağına %n etkin bağlantı</numerusform><numerusform>ValorCoin ağına %n etkin bağlantı</numerusform></translation>
+        <source>%n active connection(s) to Valorbit network</source>
+        <translation><numerusform>Valorbit ağına %n etkin bağlantı</numerusform><numerusform>Valorbit ağına %n etkin bağlantı</numerusform></translation>
     </message>
     <message>
         <location line="+488"/>
@@ -602,8 +602,8 @@ Adres: %4
     <message>
         <location line="-15"/>
         <location line="+15"/>
-        <source>URI can not be parsed! This can be caused by an invalid ValorCoin address or malformed URI parameters.</source>
-        <translation>URI ayrıştırılamadı! Bu, geçersiz bir ValorCoin adresi veya hatalı URI parametreleri nedeniyle olabilir.</translation>
+        <source>URI can not be parsed! This can be caused by an invalid Valorbit address or malformed URI parameters.</source>
+        <translation>URI ayrıştırılamadı! Bu, geçersiz bir Valorbit adresi veya hatalı URI parametreleri nedeniyle olabilir.</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -725,8 +725,8 @@ Adres: %4
     </message>
     <message>
         <location filename="../bitcoin.cpp" line="+104"/>
-        <source>A fatal error occurred. ValorCoin can no longer continue safely and will quit.</source>
-        <translation>Önemli bir hata oluştu. ValorCoin artık güvenli bir şekilde devam edemez ve şimdi kapatılacak.</translation>
+        <source>A fatal error occurred. Valorbit can no longer continue safely and will quit.</source>
+        <translation>Önemli bir hata oluştu. Valorbit artık güvenli bir şekilde devam edemez ve şimdi kapatılacak.</translation>
     </message>
 </context>
 <context>
@@ -1059,8 +1059,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="-5"/>
-        <source>The entered address &quot;%1&quot; is not a valid ValorCoin address.</source>
-        <translation>Girilen %1 adresi, geçerli bir ValorCoin adresi değildir.</translation>
+        <source>The entered address &quot;%1&quot; is not a valid Valorbit address.</source>
+        <translation>Girilen %1 adresi, geçerli bir Valorbit adresi değildir.</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -1078,8 +1078,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     <message>
         <location filename="../guiutil.cpp" line="+426"/>
         <location line="+12"/>
-        <source>ValorCoin-Qt</source>
-        <translation>ValorCoin-Qt</translation>
+        <source>Valorbit-Qt</source>
+        <translation>Valorbit-Qt</translation>
     </message>
     <message>
         <location line="-12"/>
@@ -1151,13 +1151,13 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+31"/>
-        <source>Automatically start ValorCoin after logging in to the system.</source>
-        <translation>Sisteme giriş yaptıktan sonra ValorCoin&apos;i otomatik olarak başlat</translation>
+        <source>Automatically start Valorbit after logging in to the system.</source>
+        <translation>Sisteme giriş yaptıktan sonra Valorbit&apos;i otomatik olarak başlat</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Start ValorCoin on system login</source>
-        <translation>Sisteme girişte ValorCoin&apos;i &amp;başlat</translation>
+        <source>&amp;Start Valorbit on system login</source>
+        <translation>Sisteme girişte Valorbit&apos;i &amp;başlat</translation>
     </message>
     <message>
         <location line="+21"/>
@@ -1166,8 +1166,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+6"/>
-        <source>Automatically open the ValorCoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Yönelticide ValorCoin istemci portunu otomatik olarak aç. Bu, sadece yönelticiniz UPnP&apos;i desteklediğinde ve etkin olduğunda çalışır.</translation>
+        <source>Automatically open the Valorbit client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Yönelticide Valorbit istemci portunu otomatik olarak aç. Bu, sadece yönelticiniz UPnP&apos;i desteklediğinde ve etkin olduğunda çalışır.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1196,7 +1196,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="-57"/>
-        <source>Connect to the ValorCoin network through a SOCKS5 proxy (e.g. when connecting through Tor).</source>
+        <source>Connect to the Valorbit network through a SOCKS5 proxy (e.g. when connecting through Tor).</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1241,8 +1241,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+13"/>
-        <source>The user interface language can be set here. This setting will take effect after restarting ValorCoin.</source>
-        <translation>Kullanıcı arabirimi dili buradan ayarlanabilir. Ayar, ValorCoin yeniden başlatıldığında etkin olacaktır.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting Valorbit.</source>
+        <translation>Kullanıcı arabirimi dili buradan ayarlanabilir. Ayar, Valorbit yeniden başlatıldığında etkin olacaktır.</translation>
     </message>
     <message>
         <location line="+11"/>
@@ -1308,8 +1308,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     <message>
         <location line="-9"/>
         <location line="+9"/>
-        <source>This setting will take effect after restarting ValorCoin.</source>
-        <translation>Bu ayar, ValorCoin&apos;i yeniden başlattıktan sonra etkin olacaktır.</translation>
+        <source>This setting will take effect after restarting Valorbit.</source>
+        <translation>Bu ayar, Valorbit&apos;i yeniden başlattıktan sonra etkin olacaktır.</translation>
     </message>
     <message>
         <location line="+29"/>
@@ -1327,8 +1327,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     <message>
         <location line="+46"/>
         <location line="+247"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the ValorCoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>Görüntülenen bilginin tarihi geçmiş olabilir. Cüzdanınız, bağlantı kurulduktan sonra otomatik olarak ValorCoin ağı ile senkronize olur ancak bu süreç, henüz tamamlanmamıştır.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Valorbit network after a connection is established, but this process has not completed yet.</source>
+        <translation>Görüntülenen bilginin tarihi geçmiş olabilir. Cüzdanınız, bağlantı kurulduktan sonra otomatik olarak Valorbit ağı ile senkronize olur ancak bu süreç, henüz tamamlanmamıştır.</translation>
     </message>
     <message>
         <location line="-173"/>
@@ -1401,8 +1401,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     <name>PaymentServer</name>
     <message>
         <location filename="../paymentserver.cpp" line="+107"/>
-        <source>Cannot start valorcoin: click-to-pay handler</source>
-        <translation>Valorcoin: tıkla-ve-öde işleyicisi başlatılamıyor</translation>
+        <source>Cannot start valorbit: click-to-pay handler</source>
+        <translation>Valorbit: tıkla-ve-öde işleyicisi başlatılamıyor</translation>
     </message>
 </context>
 <context>
@@ -1569,8 +1569,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+7"/>
-        <source>Show the ValorCoin-Qt help message to get a list with possible ValorCoin command-line options.</source>
-        <translation>Muhtemel ValorCoin komut satırı seçeneklerinin bir listesini getirmek için ValorCoin-Qt yardım mesajını göster</translation>
+        <source>Show the Valorbit-Qt help message to get a list with possible Valorbit command-line options.</source>
+        <translation>Muhtemel Valorbit komut satırı seçeneklerinin bir listesini getirmek için Valorbit-Qt yardım mesajını göster</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1589,13 +1589,13 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="-104"/>
-        <source>ValorCoin - Debug window</source>
-        <translation>ValorCoin - Hata ayıklama penceresi</translation>
+        <source>Valorbit - Debug window</source>
+        <translation>Valorbit - Hata ayıklama penceresi</translation>
     </message>
     <message>
         <location line="+25"/>
-        <source>ValorCoin Core</source>
-        <translation>ValorCoin Core</translation>
+        <source>Valorbit Core</source>
+        <translation>Valorbit Core</translation>
     </message>
     <message>
         <location line="+256"/>
@@ -1604,8 +1604,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+7"/>
-        <source>Open the ValorCoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>ValorCoin hata ayıklama günlük kütüğü dosyasını, mevcut veri klasöründen aç. Bu işlem, büyük günlük kütüğü dosyaları için birkaç saniye sürebilir.</translation>
+        <source>Open the Valorbit debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Valorbit hata ayıklama günlük kütüğü dosyasını, mevcut veri klasöründen aç. Bu işlem, büyük günlük kütüğü dosyaları için birkaç saniye sürebilir.</translation>
     </message>
     <message>
         <location line="+102"/>
@@ -1614,8 +1614,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location filename="../rpcconsole.cpp" line="+325"/>
-        <source>Welcome to the ValorCoin RPC console.</source>
-        <translation>ValorCoin RPC konsoluna hoş geldiniz.</translation>
+        <source>Welcome to the Valorbit RPC console.</source>
+        <translation>Valorbit RPC konsoluna hoş geldiniz.</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1795,8 +1795,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location filename="../sendcoinsdialog.cpp" line="-174"/>
-        <source>Enter a ValorCoin address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
-        <translation>Bir ValorCoin adresi gir (örn: B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
+        <source>Enter a Valorbit address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
+        <translation>Bir Valorbit adresi gir (örn: B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
     </message>
     <message>
         <location line="+15"/>
@@ -1895,8 +1895,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+247"/>
-        <source>WARNING: Invalid ValorCoin address</source>
-        <translation>UYARI: Geçersiz ValorCoin adresi</translation>
+        <source>WARNING: Invalid Valorbit address</source>
+        <translation>UYARI: Geçersiz Valorbit adresi</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -1969,8 +1969,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
-        <source>Enter a ValorCoin address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
-        <translation>Bir ValorCoin adresi girin (örn: B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
+        <source>Enter a Valorbit address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
+        <translation>Bir Valorbit adresi girin (örn: B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
     </message>
 </context>
 <context>
@@ -2030,8 +2030,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+21"/>
-        <source>Sign the message to prove you own this ValorCoin address</source>
-        <translation>Bu ValorCoin adresine sahip olduğunuzu ispatlamak için mesajı imzala</translation>
+        <source>Sign the message to prove you own this Valorbit address</source>
+        <translation>Bu Valorbit adresine sahip olduğunuzu ispatlamak için mesajı imzala</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -2062,8 +2062,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+40"/>
-        <source>Verify the message to ensure it was signed with the specified ValorCoin address</source>
-        <translation>Mesajın, belirtilen ValorCoin adresiyle imzalandığından emin olmak için onu doğrula</translation>
+        <source>Verify the message to ensure it was signed with the specified Valorbit address</source>
+        <translation>Mesajın, belirtilen Valorbit adresiyle imzalandığından emin olmak için onu doğrula</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -2073,8 +2073,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     <message>
         <location filename="../signverifymessagedialog.cpp" line="+27"/>
         <location line="+3"/>
-        <source>Enter a ValorCoin address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
-        <translation>Bir ValorCoin adresi girin (örn: B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
+        <source>Enter a Valorbit address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
+        <translation>Bir Valorbit adresi girin (örn: B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
     </message>
     <message>
         <location line="-2"/>
@@ -2083,8 +2083,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+3"/>
-        <source>Enter ValorCoin signature</source>
-        <translation>ValorCoin imzası gir</translation>
+        <source>Enter Valorbit signature</source>
+        <translation>Valorbit imzası gir</translation>
     </message>
     <message>
         <location line="+85"/>
@@ -2662,8 +2662,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     <name>bitcoin-core</name>
     <message>
         <location filename="../bitcoinstrings.cpp" line="+173"/>
-        <source>ValorCoin version</source>
-        <translation>ValorCoin versiyonu</translation>
+        <source>Valorbit version</source>
+        <translation>Valorbit versiyonu</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2672,8 +2672,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+1"/>
-        <source>Send command to -server or valorcoind</source>
-        <translation>-sunucu veya valorcoind&apos;ye komut gönder</translation>
+        <source>Send command to -server or valorbitd</source>
+        <translation>-sunucu veya valorbitd&apos;ye komut gönder</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2692,13 +2692,13 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+2"/>
-        <source>Specify configuration file (default: valorcoin.conf)</source>
-        <translation>Konfigürasyon dosyasını belirt (varsayılan: valorcoin.conf)</translation>
+        <source>Specify configuration file (default: valorbit.conf)</source>
+        <translation>Konfigürasyon dosyasını belirt (varsayılan: valorbit.conf)</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Specify pid file (default: valorcoind.pid)</source>
-        <translation>pid dosyasını belirt (varsayılan: valorcoin.pid)</translation>
+        <source>Specify pid file (default: valorbitd.pid)</source>
+        <translation>pid dosyasını belirt (varsayılan: valorbit.pid)</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -2715,24 +2715,24 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
         <source>%s, you must set a rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=valorcoinrpc
+rpcuser=valorbitrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;ValorCoin Alert&quot; admin@foo.com
+for example: alertnotify=echo %%s | mail -s &quot;Valorbit Alert&quot; admin@foo.com
 </source>
         <translation>%s, konfigürasyon dosyasında bir rpcpassword belirlemelisiniz: 
 %s
 Aşağıdaki rastgele şifreyi kullanmanız tavsiye edilir:
-rpcuser=valorcoinrpc
+rpcuser=valorbitrpc
 rpcpassword=%s
 (bu şifreyi hatırlamanız gerekmemektedir)
 Kullanıcı adı ve şifre aynı OLMAMALIDIR.
 Dosya mevcut değilse, sadece sahibi tarafından okunabilir yetkiyle yaratın.
 Ayrıca sorunlardan haberdar edilmek için alertnotify parametresini doldurmanız önerilir;
-örneğin: alertnotify=echo %%s | mail -s &quot;ValorCoin Alarmı&quot; admin@foo.com
+örneğin: alertnotify=echo %%s | mail -s &quot;Valorbit Alarmı&quot; admin@foo.com
 </translation>
     </message>
     <message>
@@ -2837,8 +2837,8 @@ Ayrıca sorunlardan haberdar edilmek için alertnotify parametresini doldurmanı
     </message>
     <message>
         <location line="-104"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong ValorCoin will not work properly.</source>
-        <translation>Uyarı: Lütfen bilgisayarınızın tarih ve saatinin doğru olduğunu kontrol ediniz! Saatiniz yanlış ise, ValorCoin düzgün çalışmayacaktır.</translation>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Valorbit will not work properly.</source>
+        <translation>Uyarı: Lütfen bilgisayarınızın tarih ve saatinin doğru olduğunu kontrol ediniz! Saatiniz yanlış ise, Valorbit düzgün çalışmayacaktır.</translation>
     </message>
     <message>
         <location line="+132"/>
@@ -3202,13 +3202,13 @@ Ayrıca sorunlardan haberdar edilmek için alertnotify parametresini doldurmanı
     </message>
     <message>
         <location line="+4"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of ValorCoin</source>
-        <translation>wallet.dat yüklenirken hata: Cüzdan, daha yeni bir ValorCoin versiyonuna ihtiyaç duyuyor.</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of Valorbit</source>
+        <translation>wallet.dat yüklenirken hata: Cüzdan, daha yeni bir Valorbit versiyonuna ihtiyaç duyuyor.</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Wallet needed to be rewritten: restart ValorCoin to complete</source>
-        <translation>Cüzdanın yeniden yazılması gerekmektedir: Tamamlamak için ValorCoin&apos;i yeniden başlatın</translation>
+        <source>Wallet needed to be rewritten: restart Valorbit to complete</source>
+        <translation>Cüzdanın yeniden yazılması gerekmektedir: Tamamlamak için Valorbit&apos;i yeniden başlatın</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -3267,8 +3267,8 @@ Ayrıca sorunlardan haberdar edilmek için alertnotify parametresini doldurmanı
     </message>
     <message>
         <location line="+126"/>
-        <source>Unable to bind to %s on this computer. ValorCoin is probably already running.</source>
-        <translation>Bu bilgisayarda %s bağlanamadı. ValorCoin muhtemelen halen çalışmaktadır.</translation>
+        <source>Unable to bind to %s on this computer. Valorbit is probably already running.</source>
+        <translation>Bu bilgisayarda %s bağlanamadı. Valorbit muhtemelen halen çalışmaktadır.</translation>
     </message>
     <message>
         <location line="-102"/>
@@ -3307,8 +3307,8 @@ Ayrıca sorunlardan haberdar edilmek için alertnotify parametresini doldurmanı
     </message>
     <message>
         <location line="+3"/>
-        <source>Cannot obtain a lock on data directory %s. ValorCoin is probably already running.</source>
-        <translation>Veri klasörü %s üzerinde kilit elde edilemedi. ValorCoin muhtemelen halen çalışmaktadır.</translation>
+        <source>Cannot obtain a lock on data directory %s. Valorbit is probably already running.</source>
+        <translation>Veri klasörü %s üzerinde kilit elde edilemedi. Valorbit muhtemelen halen çalışmaktadır.</translation>
     </message>
     <message>
         <location line="+4"/>

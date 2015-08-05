@@ -1,10 +1,5 @@
 src/*.exe
 src/qt/*.exe
-src/qt/test/test_bitcoin-qt.exe
-src/test/test_bitcoin.exe
-src/valorcoin
-src/valorcoind
-src/test_valorcoin
 src/build.h
 src/core
 core
@@ -15,12 +10,12 @@ core
 *.orig
 *.o
 *.patch
-.valorcoin
 #compilation and Qt preprocessor part
 *.qm
 Makefile
 valorcoin-qt
 Valorcoin
+Makefile.in
 #resources cpp
 qrc_*.cpp
 #qt creator
@@ -30,10 +25,8 @@ qrc_*.cpp
 build
 Makefile.Release
 Makefile.Debug
-Valorcoin*.app
 !src/leveldb/Makefile
 .idea/
-object_script.Valorcoin.*
 autom4te.cache/
 config.log
 src/.deps/
@@ -87,3 +80,33 @@ configure
 libtool
 release/
 .dirstamp
+src/qt/test/test_bitcoin-qt.exe
+src/test/test_bitcoin.exe
+src/qt/valorbit-qt.config
+src/qt/valorbit-qt.creator
+src/qt/valorbit-qt.creator.user
+src/qt/valorbit-qt.files
+src/qt/valorbit-qt.includes
+.valorbit
+src/valorbit
+src/valorbitd
+src/test_valorbit
+valorbit-qt
+Valorbit
+Valorbit*.app
+object_script.Valorbit.*
+
+src/qt/valorcoin-qt.config
+src/qt/valorcoin-qt.creator
+src/qt/valorcoin-qt.creator.user
+src/qt/valorcoin-qt.files
+src/qt/valorcoin-qt.includes
+.valorcoin
+src/valorcoin
+src/valorcoind
+src/test_valorcoin
+valorcoin-qt
+Valorcoin
+Valorcoin*.app
+object_script.Valorcoin.*
+

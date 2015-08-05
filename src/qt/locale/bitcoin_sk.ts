@@ -3,22 +3,22 @@
     <name>AboutDialog</name>
     <message>
         <location filename="../forms/aboutdialog.ui" line="+14"/>
-        <source>About ValorCoin</source>
-        <translation>O ValorCoin</translation>
+        <source>About Valorbit</source>
+        <translation>O Valorbit</translation>
     </message>
     <message>
         <location line="+39"/>
-        <source>&lt;b&gt;ValorCoin&lt;/b&gt; version</source>
-        <translation>Verzia &lt;b&gt;ValorCoin&lt;/b&gt;</translation>
+        <source>&lt;b&gt;Valorbit&lt;/b&gt; version</source>
+        <translation>Verzia &lt;b&gt;Valorbit&lt;/b&gt;</translation>
     </message>
     <message>
         <location line="+41"/>
         <source>Copyright © 2009-2014 The Bitcoin developers
 Copyright © 2012-2014 The NovaCoin developers
-Copyright © 2014 The ValorCoin developers</source>
+Copyright © 2014 The Valorbit developers</source>
         <translation>Copyright © 2009-2014 The Bitcoin developers
 Copyright © 2012-2014 The NovaCoin developers
-Copyright © 2014 The ValorCoin developers</translation>
+Copyright © 2014 The Valorbit developers</translation>
     </message>
     <message>
         <location line="+15"/>
@@ -65,8 +65,8 @@ Tento produkt obsahuje softvér vyvinutý projektom OpenSSL Project pre použiti
     </message>
     <message>
         <location line="-43"/>
-        <source>These are your ValorCoin addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
-        <translation>Toto sú vaše ValorCoin adresy pre príjem platieb. Možno budete chcieť dať inú každému odosielateľovi, aby ste mohli sledovať, kto Vám platí.</translation>
+        <source>These are your Valorbit addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
+        <translation>Toto sú vaše Valorbit adresy pre príjem platieb. Možno budete chcieť dať inú každému odosielateľovi, aby ste mohli sledovať, kto Vám platí.</translation>
     </message>
     <message>
         <location line="+53"/>
@@ -80,8 +80,8 @@ Tento produkt obsahuje softvér vyvinutý projektom OpenSSL Project pre použiti
     </message>
     <message>
         <location line="+7"/>
-        <source>Sign a message to prove you own a ValorCoin address</source>
-        <translation>Podpísať správu ako dôkaz, že vlastníte túto ValorCoin adresu</translation>
+        <source>Sign a message to prove you own a Valorbit address</source>
+        <translation>Podpísať správu ako dôkaz, že vlastníte túto Valorbit adresu</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -95,8 +95,8 @@ Tento produkt obsahuje softvér vyvinutý projektom OpenSSL Project pre použiti
     </message>
     <message>
         <location line="-10"/>
-        <source>Verify a message to ensure it was signed with a specified ValorCoin address</source>
-        <translation>Overte správu, aby ste zabezpečili, že bola podpísaná s určitou ValorCoin adresou</translation>
+        <source>Verify a message to ensure it was signed with a specified Valorbit address</source>
+        <translation>Overte správu, aby ste zabezpečili, že bola podpísaná s určitou Valorbit adresou</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -263,7 +263,7 @@ Tento produkt obsahuje softvér vyvinutý projektom OpenSSL Project pre použiti
     </message>
     <message>
         <location line="+82"/>
-        <translation>ValorCoin sa teraz zavrie aby dokončil proces zašifrovania. Nezabudnite, že zašifrovanie vašej peňaženky nemôže plne chrániť vaše mince pred krádežou malwarom, ktorý napadol váš počítač.</translation>
+        <translation>Valorbit sa teraz zavrie aby dokončil proces zašifrovania. Nezabudnite, že zašifrovanie vašej peňaženky nemôže plne chrániť vaše mince pred krádežou malwarom, ktorý napadol váš počítač.</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -356,8 +356,8 @@ Tento produkt obsahuje softvér vyvinutý projektom OpenSSL Project pre použiti
     </message>
     <message>
         <location line="+4"/>
-        <source>Show information about ValorCoin</source>
-        <translation>Zobraziť informácie o ValorCoin</translation>
+        <source>Show information about Valorbit</source>
+        <translation>Zobraziť informácie o Valorbit</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -396,13 +396,13 @@ Tento produkt obsahuje softvér vyvinutý projektom OpenSSL Project pre použiti
     </message>
     <message>
         <location line="-55"/>
-        <source>Send coins to a ValorCoin address</source>
-        <translation>Poslať mince na ValorCoin adresu</translation>
+        <source>Send coins to a Valorbit address</source>
+        <translation>Poslať mince na Valorbit adresu</translation>
     </message>
     <message>
         <location line="+39"/>
-        <source>Modify configuration options for ValorCoin</source>
-        <translation>Upraviť možnosti konfigurácie pre ValorCoin</translation>
+        <source>Modify configuration options for Valorbit</source>
+        <translation>Upraviť možnosti konfigurácie pre Valorbit</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -442,7 +442,7 @@ Tento produkt obsahuje softvér vyvinutý projektom OpenSSL Project pre použiti
     <message>
         <location line="-214"/>
         <location line="+555"/>
-        <translation>ValorCoin</translation>
+        <translation>Valorbit</translation>
     </message>
     <message>
         <location line="-555"/>
@@ -451,8 +451,8 @@ Tento produkt obsahuje softvér vyvinutý projektom OpenSSL Project pre použiti
     </message>
     <message>
         <location line="+193"/>
-        <source>&amp;About ValorCoin</source>
-        <translation>&amp;O ValorCoin</translation>
+        <source>&amp;About Valorbit</source>
+        <translation>&amp;O Valorbit</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -503,13 +503,13 @@ Tento produkt obsahuje softvér vyvinutý projektom OpenSSL Project pre použiti
     <message>
         <location line="+0"/>
         <location line="+58"/>
-        <source>ValorCoin client</source>
-        <translation>ValorCoin klient</translation>
+        <source>Valorbit client</source>
+        <translation>Valorbit klient</translation>
     </message>
     <message numerus="yes">
         <location line="+70"/>
-        <source>%n active connection(s) to ValorCoin network</source>
-        <translation><numerusform>%n aktívne spojenie s ValorCoin sieťov</numerusform><numerusform>%n aktívnych spojení s ValorCoin sieťov</numerusform><numerusform>%n aktívnych spojení s ValorCoin sieťou</numerusform></translation>
+        <source>%n active connection(s) to Valorbit network</source>
+        <translation><numerusform>%n aktívne spojenie s Valorbit sieťov</numerusform><numerusform>%n aktívnych spojení s Valorbit sieťov</numerusform><numerusform>%n aktívnych spojení s Valorbit sieťou</numerusform></translation>
     </message>
     <message>
         <location line="+488"/>
@@ -602,8 +602,8 @@ Adresa: %4</translation>
     <message>
         <location line="-15"/>
         <location line="+15"/>
-        <source>URI can not be parsed! This can be caused by an invalid ValorCoin address or malformed URI parameters.</source>
-        <translation>URI nemožno analyzovať! Toto môže byť spôsobené neplatnou ValorCoin adresu alebo chybnými URI parametrami.</translation>
+        <source>URI can not be parsed! This can be caused by an invalid Valorbit address or malformed URI parameters.</source>
+        <translation>URI nemožno analyzovať! Toto môže byť spôsobené neplatnou Valorbit adresu alebo chybnými URI parametrami.</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -725,8 +725,8 @@ Adresa: %4</translation>
     </message>
     <message>
         <location filename="../bitcoin.cpp" line="+104"/>
-        <source>A fatal error occurred. ValorCoin can no longer continue safely and will quit.</source>
-        <translation>Došlo k závažnej chybe. ValorCoin už nemôže pokračovať bezpečne a bude ukončený.</translation>
+        <source>A fatal error occurred. Valorbit can no longer continue safely and will quit.</source>
+        <translation>Došlo k závažnej chybe. Valorbit už nemôže pokračovať bezpečne a bude ukončený.</translation>
     </message>
 </context>
 <context>
@@ -1059,8 +1059,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     </message>
     <message>
         <location line="-5"/>
-        <source>The entered address &quot;%1&quot; is not a valid ValorCoin address.</source>
-        <translation>Zadaná adresa &quot;%1&quot; nie je platnou ValorCoin adresou.</translation>
+        <source>The entered address &quot;%1&quot; is not a valid Valorbit address.</source>
+        <translation>Zadaná adresa &quot;%1&quot; nie je platnou Valorbit adresou.</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -1078,8 +1078,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     <message>
         <location filename="../guiutil.cpp" line="+426"/>
         <location line="+12"/>
-        <source>ValorCoin-Qt</source>
-        <translation>ValorCoin-Qt</translation>
+        <source>Valorbit-Qt</source>
+        <translation>Valorbit-Qt</translation>
     </message>
     <message>
         <location line="-12"/>
@@ -1151,13 +1151,13 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     </message>
     <message>
         <location line="+31"/>
-        <source>Automatically start ValorCoin after logging in to the system.</source>
-        <translation>Automaticky spustiť ValorCoin po prihlásení sa do systému.</translation>
+        <source>Automatically start Valorbit after logging in to the system.</source>
+        <translation>Automaticky spustiť Valorbit po prihlásení sa do systému.</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Start ValorCoin on system login</source>
-        <translation>&amp;Spustiť ValorCoin pri prihlásení do systému</translation>
+        <source>&amp;Start Valorbit on system login</source>
+        <translation>&amp;Spustiť Valorbit pri prihlásení do systému</translation>
     </message>
     <message>
         <location line="+21"/>
@@ -1166,8 +1166,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     </message>
     <message>
         <location line="+6"/>
-        <source>Automatically open the ValorCoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Automaticky otvoriť port klienta ValorCoin na routeri. To funguje iba vtedy, ak váš router podporuje UPnP a je povolené.</translation>
+        <source>Automatically open the Valorbit client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Automaticky otvoriť port klienta Valorbit na routeri. To funguje iba vtedy, ak váš router podporuje UPnP a je povolené.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1196,7 +1196,7 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     </message>
     <message>
         <location line="-57"/>
-        <source>Connect to the ValorCoin network through a SOCKS5 proxy (e.g. when connecting through Tor).</source>
+        <source>Connect to the Valorbit network through a SOCKS5 proxy (e.g. when connecting through Tor).</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1241,8 +1241,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     </message>
     <message>
         <location line="+13"/>
-        <source>The user interface language can be set here. This setting will take effect after restarting ValorCoin.</source>
-        <translation>Tu môžete nastaviť jazyk používateľského rozhrania. Toto nastavenie sa prejaví až po reštartovaní ValorCoin.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting Valorbit.</source>
+        <translation>Tu môžete nastaviť jazyk používateľského rozhrania. Toto nastavenie sa prejaví až po reštartovaní Valorbit.</translation>
     </message>
     <message>
         <location line="+11"/>
@@ -1308,8 +1308,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     <message>
         <location line="-9"/>
         <location line="+9"/>
-        <source>This setting will take effect after restarting ValorCoin.</source>
-        <translation>Toto nastavenie sa prejaví až po reštartovaní ValorCoin.</translation>
+        <source>This setting will take effect after restarting Valorbit.</source>
+        <translation>Toto nastavenie sa prejaví až po reštartovaní Valorbit.</translation>
     </message>
     <message>
         <location line="+29"/>
@@ -1327,8 +1327,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     <message>
         <location line="+46"/>
         <location line="+247"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the ValorCoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>Zobrazené informácie môžu byť zastaralé. Vaša peňaženka sa automaticky synchronizuje so sieťou ValorCoin po nadviazaní spojenia, ale tento proces nie je ešte dokončený.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Valorbit network after a connection is established, but this process has not completed yet.</source>
+        <translation>Zobrazené informácie môžu byť zastaralé. Vaša peňaženka sa automaticky synchronizuje so sieťou Valorbit po nadviazaní spojenia, ale tento proces nie je ešte dokončený.</translation>
     </message>
     <message>
         <location line="-173"/>
@@ -1401,8 +1401,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     <name>PaymentServer</name>
     <message>
         <location filename="../paymentserver.cpp" line="+107"/>
-        <source>Cannot start valorcoin: click-to-pay handler</source>
-        <translation>ValorCoin sa nedá spustiť: click-to-pay handler</translation>
+        <source>Cannot start valorbit: click-to-pay handler</source>
+        <translation>Valorbit sa nedá spustiť: click-to-pay handler</translation>
     </message>
 </context>
 <context>
@@ -1569,8 +1569,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>Show the ValorCoin-Qt help message to get a list with possible ValorCoin command-line options.</source>
-        <translation>Zobraziť ValorCoin-Qt nápovedu k získaniu zoznamu pre možnosti  príkazového riadku ValorCoin.</translation>
+        <source>Show the Valorbit-Qt help message to get a list with possible Valorbit command-line options.</source>
+        <translation>Zobraziť Valorbit-Qt nápovedu k získaniu zoznamu pre možnosti  príkazového riadku Valorbit.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1589,13 +1589,13 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     </message>
     <message>
         <location line="-104"/>
-        <source>ValorCoin - Debug window</source>
-        <translation>ValorCoin - Ladiace okno</translation>
+        <source>Valorbit - Debug window</source>
+        <translation>Valorbit - Ladiace okno</translation>
     </message>
     <message>
         <location line="+25"/>
-        <source>ValorCoin Core</source>
-        <translation>Jadro ValorCoin</translation>
+        <source>Valorbit Core</source>
+        <translation>Jadro Valorbit</translation>
     </message>
     <message>
         <location line="+256"/>
@@ -1604,8 +1604,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>Open the ValorCoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Otvorte Valorcoin súbor denníku ladenia z aktuálneho adresára dát. To môže trvať niekoľko sekúnd pre veľké súbory denníka.</translation>
+        <source>Open the Valorbit debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Otvorte Valorbit súbor denníku ladenia z aktuálneho adresára dát. To môže trvať niekoľko sekúnd pre veľké súbory denníka.</translation>
     </message>
     <message>
         <location line="+102"/>
@@ -1614,8 +1614,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     </message>
     <message>
         <location filename="../rpcconsole.cpp" line="+325"/>
-        <source>Welcome to the ValorCoin RPC console.</source>
-        <translation>Vitajte v konzole Valorcoin RPC.</translation>
+        <source>Welcome to the Valorbit RPC console.</source>
+        <translation>Vitajte v konzole Valorbit RPC.</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1795,8 +1795,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     </message>
     <message>
         <location filename="../sendcoinsdialog.cpp" line="-174"/>
-        <source>Enter a ValorCoin address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
-        <translation>Zadajte ValorCoin adresu (napr. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
+        <source>Enter a Valorbit address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
+        <translation>Zadajte Valorbit adresu (napr. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
     </message>
     <message>
         <location line="+15"/>
@@ -1895,8 +1895,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     </message>
     <message>
         <location line="+247"/>
-        <source>WARNING: Invalid ValorCoin address</source>
-        <translation>UPOZORNENIE: Neplatná ValorCoin adresa</translation>
+        <source>WARNING: Invalid Valorbit address</source>
+        <translation>UPOZORNENIE: Neplatná Valorbit adresa</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -1969,8 +1969,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     </message>
     <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
-        <source>Enter a ValorCoin address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
-        <translation>Zadajte ValorCoin adresu (napr. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
+        <source>Enter a Valorbit address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
+        <translation>Zadajte Valorbit adresu (napr. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
     </message>
 </context>
 <context>
@@ -2030,8 +2030,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     </message>
     <message>
         <location line="+21"/>
-        <source>Sign the message to prove you own this ValorCoin address</source>
-        <translation>Podpísať správu ako dôkaz, že vlastníte túto ValorCoin adresu</translation>
+        <source>Sign the message to prove you own this Valorbit address</source>
+        <translation>Podpísať správu ako dôkaz, že vlastníte túto Valorbit adresu</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -2062,8 +2062,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     </message>
     <message>
         <location line="+40"/>
-        <source>Verify the message to ensure it was signed with the specified ValorCoin address</source>
-        <translation>Overte správu, aby ste sa ubezpečili, že bola podpísaná s danou ValorCoin adresou</translation>
+        <source>Verify the message to ensure it was signed with the specified Valorbit address</source>
+        <translation>Overte správu, aby ste sa ubezpečili, že bola podpísaná s danou Valorbit adresou</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -2073,8 +2073,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     <message>
         <location filename="../signverifymessagedialog.cpp" line="+27"/>
         <location line="+3"/>
-        <source>Enter a ValorCoin address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
-        <translation>Zadajte ValorCoin adresu (napr. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
+        <source>Enter a Valorbit address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
+        <translation>Zadajte Valorbit adresu (napr. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
     </message>
     <message>
         <location line="-2"/>
@@ -2083,8 +2083,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Enter ValorCoin signature</source>
-        <translation>Zadajte ValorCoin podpis</translation>
+        <source>Enter Valorbit signature</source>
+        <translation>Zadajte Valorbit podpis</translation>
     </message>
     <message>
         <location line="+85"/>
@@ -2662,8 +2662,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     <name>bitcoin-core</name>
     <message>
         <location filename="../bitcoinstrings.cpp" line="+173"/>
-        <source>ValorCoin version</source>
-        <translation>ValorCoin verzia</translation>
+        <source>Valorbit version</source>
+        <translation>Valorbit verzia</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2672,8 +2672,8 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Send command to -server or valorcoind</source>
-        <translation>Pošli príkaz na -server alebo valorcoind</translation>
+        <source>Send command to -server or valorbitd</source>
+        <translation>Pošli príkaz na -server alebo valorbitd</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2692,13 +2692,13 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Specify configuration file (default: valorcoin.conf)</source>
-        <translation>Zadajte konfiguračný súbor (predvolené: valorcoin.conf)</translation>
+        <source>Specify configuration file (default: valorbit.conf)</source>
+        <translation>Zadajte konfiguračný súbor (predvolené: valorbit.conf)</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Specify pid file (default: valorcoind.pid)</source>
-        <translation>Zadajte pid súbor (predvolené: valorcoind.pid)</translation>
+        <source>Specify pid file (default: valorbitd.pid)</source>
+        <translation>Zadajte pid súbor (predvolené: valorbitd.pid)</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -2715,24 +2715,24 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
         <source>%s, you must set a rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=valorcoinrpc
+rpcuser=valorbitrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;ValorCoin Alert&quot; admin@foo.com
+for example: alertnotify=echo %%s | mail -s &quot;Valorbit Alert&quot; admin@foo.com
 </source>
         <translation>%s, musíte nastaviť rpcpassword v konfiguračnom súbore:
 %s
 Doporučuje sa použiť nasledovné náhodne heslo:
-rpcuser=valorcoinrpc
+rpcuser=valorbitrpc
 rpcpassword=%s
 (toto heslo si nemusíte pamätať)
 Užívateľské meno a heslo NESMIE byť rovnaké.
 Ak súbor neexistuje, vytvorte ho s právami &quot;môže čítať iba vlastník&quot;.
 Odporúča sa tiež nastaviť &quot;alertnotify&quot;, takže budete upozornení na problémy,
-napríklad: alertnotify=echo %%s | mail -s &quot;ValorCoin upozornenie&quot; admin@foo.com
+napríklad: alertnotify=echo %%s | mail -s &quot;Valorbit upozornenie&quot; admin@foo.com
 </translation>
     </message>
     <message>
@@ -2837,8 +2837,8 @@ napríklad: alertnotify=echo %%s | mail -s &quot;ValorCoin upozornenie&quot; adm
     </message>
     <message>
         <location line="-104"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong ValorCoin will not work properly.</source>
-        <translation>Upozornenie: Skontrolujte, že dátum a čas počítača sú správne! Ak je Váš čas nesprávny ValorCoin nebude pracovať správne.</translation>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Valorbit will not work properly.</source>
+        <translation>Upozornenie: Skontrolujte, že dátum a čas počítača sú správne! Ak je Váš čas nesprávny Valorbit nebude pracovať správne.</translation>
     </message>
     <message>
         <location line="+132"/>
@@ -3202,13 +3202,13 @@ napríklad: alertnotify=echo %%s | mail -s &quot;ValorCoin upozornenie&quot; adm
     </message>
     <message>
         <location line="+4"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of ValorCoin</source>
-        <translation>Chyba pri načítaní wallet.dat: Peňaženka vyžaduje novšiu verziu ValorCoin</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of Valorbit</source>
+        <translation>Chyba pri načítaní wallet.dat: Peňaženka vyžaduje novšiu verziu Valorbit</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Wallet needed to be rewritten: restart ValorCoin to complete</source>
-        <translation>Peňaženka potrebuje byť prepísaná: reštartujte ValorCoin k dokončeniu</translation>
+        <source>Wallet needed to be rewritten: restart Valorbit to complete</source>
+        <translation>Peňaženka potrebuje byť prepísaná: reštartujte Valorbit k dokončeniu</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -3267,8 +3267,8 @@ napríklad: alertnotify=echo %%s | mail -s &quot;ValorCoin upozornenie&quot; adm
     </message>
     <message>
         <location line="+126"/>
-        <source>Unable to bind to %s on this computer. ValorCoin is probably already running.</source>
-        <translation>Nemôžem sa pripojiť na %s na tomto počítači. ValorCoin je pravdepodobne už beží.</translation>
+        <source>Unable to bind to %s on this computer. Valorbit is probably already running.</source>
+        <translation>Nemôžem sa pripojiť na %s na tomto počítači. Valorbit je pravdepodobne už beží.</translation>
     </message>
     <message>
         <location line="-102"/>
@@ -3307,8 +3307,8 @@ napríklad: alertnotify=echo %%s | mail -s &quot;ValorCoin upozornenie&quot; adm
     </message>
     <message>
         <location line="+3"/>
-        <source>Cannot obtain a lock on data directory %s. ValorCoin is probably already running.</source>
-        <translation>Nedá sa zamknúť dátová zložka %s. ValorCoin je pravdepodobne už spustený</translation>
+        <source>Cannot obtain a lock on data directory %s. Valorbit is probably already running.</source>
+        <translation>Nedá sa zamknúť dátová zložka %s. Valorbit je pravdepodobne už spustený</translation>
     </message>
     <message>
         <location line="+4"/>

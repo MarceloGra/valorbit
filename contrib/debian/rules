@@ -5,29 +5,29 @@
 #build/bitcoind::
 #	$(if $(filter nocheck,$(DEB_BUILD_OPTIONS)),,src/test_bitcoin)
 
-DEB_INSTALL_EXAMPLES_valorcoind += debian/examples/*
-DEB_INSTALL_MANPAGES_valorcoind += debian/manpages/*
+DEB_INSTALL_EXAMPLES_valorbitd += debian/examples/*
+DEB_INSTALL_MANPAGES_valorbitd += debian/manpages/*
 
 %:
 	dh --with bash-completion $@
 
 override_dh_auto_build:
-	cd src; $(MAKE) -f makefile.unix valorcoind
+	cd src; $(MAKE) -f makefile.unix valorbitd
 	$(MAKE)
 
 override_dh_auto_clean:
-	if [ -f Makefile ]; then $(MAKE) clean; else rm -rf build/; rm -f valorcoin-qt; fi
+	if [ -f Makefile ]; then $(MAKE) clean; else rm -rf build/; rm -f valorbit-qt; fi
 	cd src; $(MAKE) -f makefile.unix clean
 
 override_dh_auto_configure:
-	qmake valorcoin-qt.pro USE_QRCODE=1
+	qmake valorbit-qt.pro USE_QRCODE=1
 
 override_dh_auto_test:
-	cd src; $(MAKE) -f makefile.unix test_valorcoin
-	src/test_valorcoin
+	cd src; $(MAKE) -f makefile.unix test_valorbit
+	src/test_valorbit
 
 # Ensure wrapper is set executable
-binary-post-install/valorcoind:
-	chmod +x $(cdbs_curdestdir)usr/bin/valorcoind
-binary-post-install/valorcoin-qt:
-	chmod +x $(cdbs_curdestdir)usr/bin/valorcoin-qt
+binary-post-install/valorbitd:
+	chmod +x $(cdbs_curdestdir)usr/bin/valorbitd
+binary-post-install/valorbit-qt:
+	chmod +x $(cdbs_curdestdir)usr/bin/valorbit-qt

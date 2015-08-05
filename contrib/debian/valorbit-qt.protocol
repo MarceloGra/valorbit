@@ -1,6 +1,6 @@
 [Protocol]
-exec=valorcoin-qt '%u'
-protocol=valorcoin
+exec=valorbit-qt '%u'
+protocol=valorbit
 input=none
 output=none
 helper=true

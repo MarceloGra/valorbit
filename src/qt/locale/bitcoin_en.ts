@@ -5,19 +5,19 @@
     <name>AboutDialog</name>
     <message>
         <location filename="../forms/aboutdialog.ui" line="+14"/>
-        <source>About ValorCoin</source>
-        <translation>About ValorCoin</translation>
+        <source>About Valorbit</source>
+        <translation>About Valorbit</translation>
     </message>
     <message>
         <location line="+39"/>
-        <source>&lt;b&gt;ValorCoin&lt;/b&gt; version</source>
-        <translation>&lt;b&gt;ValorCoin&lt;/b&gt; version</translation>
+        <source>&lt;b&gt;Valorbit&lt;/b&gt; version</source>
+        <translation>&lt;b&gt;Valorbit&lt;/b&gt; version</translation>
     </message>
     <message>
         <location line="+41"/>
         <source>Copyright © 2009-2014 The Bitcoin developers
 Copyright © 2012-2014 The NovaCoin developers
-Copyright © 2014 The ValorCoin developers</source>
+Copyright © 2014 The Valorbit developers</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -60,8 +60,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-43"/>
-        <source>These are your ValorCoin addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
-        <translation>These are your ValorCoin addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</translation>
+        <source>These are your Valorbit addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
+        <translation>These are your Valorbit addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</translation>
     </message>
     <message>
         <location line="+53"/>
@@ -75,8 +75,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+7"/>
-        <source>Sign a message to prove you own a ValorCoin address</source>
-        <translation>Sign a message to prove you own a ValorCoin address</translation>
+        <source>Sign a message to prove you own a Valorbit address</source>
+        <translation>Sign a message to prove you own a Valorbit address</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -90,8 +90,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-10"/>
-        <source>Verify a message to ensure it was signed with a specified ValorCoin address</source>
-        <translation>Verify a message to ensure it was signed with a specified ValorCoin address</translation>
+        <source>Verify a message to ensure it was signed with a specified Valorbit address</source>
+        <translation>Verify a message to ensure it was signed with a specified Valorbit address</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -258,8 +258,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+82"/>
-        <source>ValorCoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
-        <translation>ValorCoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</translation>
+        <source>Valorbit will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
+        <translation>Valorbit will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -352,8 +352,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+4"/>
-        <source>Show information about ValorCoin</source>
-        <translation>Show information about ValorCoin</translation>
+        <source>Show information about Valorbit</source>
+        <translation>Show information about Valorbit</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -392,13 +392,13 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-55"/>
-        <source>Send coins to a ValorCoin address</source>
-        <translation>Send coins to a ValorCoin address</translation>
+        <source>Send coins to a Valorbit address</source>
+        <translation>Send coins to a Valorbit address</translation>
     </message>
     <message>
         <location line="+39"/>
-        <source>Modify configuration options for ValorCoin</source>
-        <translation>Modify configuration options for ValorCoin</translation>
+        <source>Modify configuration options for Valorbit</source>
+        <translation>Modify configuration options for Valorbit</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -438,7 +438,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="-214"/>
         <location line="+555"/>
-        <translation>ValorCoin</translation>
+        <translation>Valorbit</translation>
     </message>
     <message>
         <location line="-555"/>
@@ -447,8 +447,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+193"/>
-        <source>&amp;About ValorCoin</source>
-        <translation>&amp;About ValorCoin</translation>
+        <source>&amp;About Valorbit</source>
+        <translation>&amp;About Valorbit</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -499,15 +499,15 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="+0"/>
         <location line="+58"/>
-        <source>ValorCoin client</source>
-        <translation>ValorCoin client</translation>
+        <source>Valorbit client</source>
+        <translation>Valorbit client</translation>
     </message>
     <message numerus="yes">
         <location line="+70"/>
-        <source>%n active connection(s) to ValorCoin network</source>
+        <source>%n active connection(s) to Valorbit network</source>
         <translation>
-            <numerusform>%n active connection to ValorCoin network</numerusform>
-            <numerusform>%n active connections to ValorCoin network</numerusform>
+            <numerusform>%n active connection to Valorbit network</numerusform>
+            <numerusform>%n active connections to Valorbit network</numerusform>
         </translation>
     </message>
     <message>
@@ -602,8 +602,8 @@ Address: %4
     <message>
         <location line="-15"/>
         <location line="+15"/>
-        <source>URI can not be parsed! This can be caused by an invalid ValorCoin address or malformed URI parameters.</source>
-        <translation>URI can not be parsed! This can be caused by an invalid ValorCoin address or malformed URI parameters.</translation>
+        <source>URI can not be parsed! This can be caused by an invalid Valorbit address or malformed URI parameters.</source>
+        <translation>URI can not be parsed! This can be caused by an invalid Valorbit address or malformed URI parameters.</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -743,8 +743,8 @@ Address: %4
     </message>
     <message>
         <location filename="../bitcoin.cpp" line="+104"/>
-        <source>A fatal error occurred. ValorCoin can no longer continue safely and will quit.</source>
-        <translation>A fatal error occurred. ValorCoin can no longer continue safely and will quit.</translation>
+        <source>A fatal error occurred. Valorbit can no longer continue safely and will quit.</source>
+        <translation>A fatal error occurred. Valorbit can no longer continue safely and will quit.</translation>
     </message>
 </context>
 <context>
@@ -1063,8 +1063,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="-5"/>
-        <source>The entered address &quot;%1&quot; is not a valid ValorCoin address.</source>
-        <translation>The entered address &quot;%1&quot; is not a valid ValorCoin address.</translation>
+        <source>The entered address &quot;%1&quot; is not a valid Valorbit address.</source>
+        <translation>The entered address &quot;%1&quot; is not a valid Valorbit address.</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -1082,8 +1082,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     <message>
         <location filename="../guiutil.cpp" line="+426"/>
         <location line="+12"/>
-        <source>ValorCoin-Qt</source>
-        <translation>ValorCoin-Qt</translation>
+        <source>Valorbit-Qt</source>
+        <translation>Valorbit-Qt</translation>
     </message>
     <message>
         <location line="-12"/>
@@ -1155,13 +1155,13 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+31"/>
-        <source>Automatically start ValorCoin after logging in to the system.</source>
-        <translation>Automatically start ValorCoin after logging in to the system.</translation>
+        <source>Automatically start Valorbit after logging in to the system.</source>
+        <translation>Automatically start Valorbit after logging in to the system.</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Start ValorCoin on system login</source>
-        <translation>&amp;Start ValorCoin on system login</translation>
+        <source>&amp;Start Valorbit on system login</source>
+        <translation>&amp;Start Valorbit on system login</translation>
     </message>
     <message>
         <location line="+21"/>
@@ -1170,8 +1170,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+6"/>
-        <source>Automatically open the ValorCoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Automatically open the ValorCoin client port on the router. This only works when your router supports UPnP and it is enabled.</translation>
+        <source>Automatically open the Valorbit client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Automatically open the Valorbit client port on the router. This only works when your router supports UPnP and it is enabled.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1180,8 +1180,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+7"/>
-        <source>Connect to the ValorCoin network through a SOCKS proxy (e.g. when connecting through Tor).</source>
-        <translation>Connect to the ValorCoin network through a SOCKS proxy (e.g. when connecting through Tor).</translation>
+        <source>Connect to the Valorbit network through a SOCKS proxy (e.g. when connecting through Tor).</source>
+        <translation>Connect to the Valorbit network through a SOCKS proxy (e.g. when connecting through Tor).</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1210,7 +1210,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="-57"/>
-        <source>Connect to the ValorCoin network through a SOCKS5 proxy (e.g. when connecting through Tor).</source>
+        <source>Connect to the Valorbit network through a SOCKS5 proxy (e.g. when connecting through Tor).</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1255,8 +1255,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+13"/>
-        <source>The user interface language can be set here. This setting will take effect after restarting ValorCoin.</source>
-        <translation>The user interface language can be set here. This setting will take effect after restarting ValorCoin.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting Valorbit.</source>
+        <translation>The user interface language can be set here. This setting will take effect after restarting Valorbit.</translation>
     </message>
     <message>
         <location line="+11"/>
@@ -1322,8 +1322,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     <message>
         <location line="-9"/>
         <location line="+9"/>
-        <source>This setting will take effect after restarting ValorCoin.</source>
-        <translation>This setting will take effect after restarting ValorCoin.</translation>
+        <source>This setting will take effect after restarting Valorbit.</source>
+        <translation>This setting will take effect after restarting Valorbit.</translation>
     </message>
     <message>
         <location line="+29"/>
@@ -1341,8 +1341,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     <message>
         <location line="+46"/>
         <location line="+247"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the ValorCoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>The displayed information may be out of date. Your wallet automatically synchronizes with the ValorCoin network after a connection is established, but this process has not completed yet.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Valorbit network after a connection is established, but this process has not completed yet.</source>
+        <translation>The displayed information may be out of date. Your wallet automatically synchronizes with the Valorbit network after a connection is established, but this process has not completed yet.</translation>
     </message>
     <message>
         <location line="-173"/>
@@ -1415,7 +1415,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     <name>PaymentServer</name>
     <message>
         <location filename="../paymentserver.cpp" line="+107"/>
-        <source>Cannot start valorcoin: click-to-pay handler</source>
+        <source>Cannot start valorbit: click-to-pay handler</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -1583,8 +1583,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+7"/>
-        <source>Show the ValorCoin-Qt help message to get a list with possible ValorCoin command-line options.</source>
-        <translation>Show the ValorCoin-Qt help message to get a list with possible ValorCoin command-line options.</translation>
+        <source>Show the Valorbit-Qt help message to get a list with possible Valorbit command-line options.</source>
+        <translation>Show the Valorbit-Qt help message to get a list with possible Valorbit command-line options.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1603,13 +1603,13 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="-104"/>
-        <source>ValorCoin - Debug window</source>
-        <translation>ValorCoin - Debug window</translation>
+        <source>Valorbit - Debug window</source>
+        <translation>Valorbit - Debug window</translation>
     </message>
     <message>
         <location line="+25"/>
-        <source>ValorCoin Core</source>
-        <translation>ValorCoin Core</translation>
+        <source>Valorbit Core</source>
+        <translation>Valorbit Core</translation>
     </message>
     <message>
         <location line="+256"/>
@@ -1618,8 +1618,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+7"/>
-        <source>Open the ValorCoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Open the ValorCoin debug log file from the current data directory. This can take a few seconds for large log files.</translation>
+        <source>Open the Valorbit debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Open the Valorbit debug log file from the current data directory. This can take a few seconds for large log files.</translation>
     </message>
     <message>
         <location line="+102"/>
@@ -1628,8 +1628,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location filename="../rpcconsole.cpp" line="+325"/>
-        <source>Welcome to the ValorCoin RPC console.</source>
-        <translation>Welcome to the ValorCoin RPC console.</translation>
+        <source>Welcome to the Valorbit RPC console.</source>
+        <translation>Welcome to the Valorbit RPC console.</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1822,8 +1822,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location filename="../sendcoinsdialog.cpp" line="-174"/>
-        <source>Enter a ValorCoin address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
-        <translation>Enter a ValorCoin address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
+        <source>Enter a Valorbit address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
+        <translation>Enter a Valorbit address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
     </message>
     <message>
         <location line="+15"/>
@@ -1922,7 +1922,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+247"/>
-        <source>WARNING: Invalid ValorCoin address</source>
+        <source>WARNING: Invalid Valorbit address</source>
         <translation></translation>
     </message>
     <message>
@@ -1996,8 +1996,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
-        <source>Enter a ValorCoin address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
-        <translation>Enter a ValorCoin address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
+        <source>Enter a Valorbit address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
+        <translation>Enter a Valorbit address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
     </message>
 </context>
 <context>
@@ -2057,8 +2057,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+21"/>
-        <source>Sign the message to prove you own this ValorCoin address</source>
-        <translation>Sign the message to prove you own this ValorCoin address</translation>
+        <source>Sign the message to prove you own this Valorbit address</source>
+        <translation>Sign the message to prove you own this Valorbit address</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -2089,8 +2089,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+40"/>
-        <source>Verify the message to ensure it was signed with the specified ValorCoin address</source>
-        <translation>Verify the message to ensure it was signed with the specified ValorCoin address</translation>
+        <source>Verify the message to ensure it was signed with the specified Valorbit address</source>
+        <translation>Verify the message to ensure it was signed with the specified Valorbit address</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -2100,8 +2100,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     <message>
         <location filename="../signverifymessagedialog.cpp" line="+27"/>
         <location line="+3"/>
-        <source>Enter a ValorCoin address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
-        <translation>Enter a ValorCoin address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
+        <source>Enter a Valorbit address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
+        <translation>Enter a Valorbit address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
     </message>
     <message>
         <location line="-2"/>
@@ -2110,8 +2110,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+3"/>
-        <source>Enter ValorCoin signature</source>
-        <translation>Enter ValorCoin signature</translation>
+        <source>Enter Valorbit signature</source>
+        <translation>Enter Valorbit signature</translation>
     </message>
     <message>
         <location line="+85"/>
@@ -2701,8 +2701,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     <name>bitcoin-core</name>
     <message>
         <location filename="../bitcoinstrings.cpp" line="+173"/>
-        <source>ValorCoin version</source>
-        <translation>ValorCoin version</translation>
+        <source>Valorbit version</source>
+        <translation>Valorbit version</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2711,8 +2711,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+1"/>
-        <source>Send command to -server or valorcoind</source>
-        <translation>Send command to -server or valorcoind</translation>
+        <source>Send command to -server or valorbitd</source>
+        <translation>Send command to -server or valorbitd</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2731,13 +2731,13 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+2"/>
-        <source>Specify configuration file (default: valorcoin.conf)</source>
-        <translation>Specify configuration file (default: valorcoin.conf)</translation>
+        <source>Specify configuration file (default: valorbit.conf)</source>
+        <translation>Specify configuration file (default: valorbit.conf)</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Specify pid file (default: valorcoind.pid)</source>
-        <translation>Specify pid file (default: valorcoind.pid)</translation>
+        <source>Specify pid file (default: valorbitd.pid)</source>
+        <translation>Specify pid file (default: valorbitd.pid)</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -2754,13 +2754,13 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
         <source>%s, you must set a rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=valorcoinrpc
+rpcuser=valorbitrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;ValorCoin Alert&quot; admin@foo.com
+for example: alertnotify=echo %%s | mail -s &quot;Valorbit Alert&quot; admin@foo.com
 </source>
         <translation type="unfinished"></translation>
     </message>
@@ -2866,8 +2866,8 @@ for example: alertnotify=echo %%s | mail -s &quot;ValorCoin Alert&quot; admin@fo
     </message>
     <message>
         <location line="-104"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong ValorCoin will not work properly.</source>
-        <translation>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong ValorCoin will not work properly.</translation>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Valorbit will not work properly.</source>
+        <translation>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Valorbit will not work properly.</translation>
     </message>
     <message>
         <location line="+132"/>
@@ -3231,13 +3231,13 @@ for example: alertnotify=echo %%s | mail -s &quot;ValorCoin Alert&quot; admin@fo
     </message>
     <message>
         <location line="+4"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of ValorCoin</source>
-        <translation>Error loading wallet.dat: Wallet requires newer version of ValorCoin</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of Valorbit</source>
+        <translation>Error loading wallet.dat: Wallet requires newer version of Valorbit</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Wallet needed to be rewritten: restart ValorCoin to complete</source>
-        <translation>Wallet needed to be rewritten: restart ValorCoin to complete</translation>
+        <source>Wallet needed to be rewritten: restart Valorbit to complete</source>
+        <translation>Wallet needed to be rewritten: restart Valorbit to complete</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -3296,8 +3296,8 @@ for example: alertnotify=echo %%s | mail -s &quot;ValorCoin Alert&quot; admin@fo
     </message>
     <message>
         <location line="+126"/>
-        <source>Unable to bind to %s on this computer. ValorCoin is probably already running.</source>
-        <translation>Unable to bind to %s on this computer. ValorCoin is probably already running.</translation>
+        <source>Unable to bind to %s on this computer. Valorbit is probably already running.</source>
+        <translation>Unable to bind to %s on this computer. Valorbit is probably already running.</translation>
     </message>
     <message>
         <location line="-102"/>
@@ -3336,7 +3336,7 @@ for example: alertnotify=echo %%s | mail -s &quot;ValorCoin Alert&quot; admin@fo
     </message>
     <message>
         <location line="+3"/>
-        <source>Cannot obtain a lock on data directory %s. ValorCoin is probably already running.</source>
+        <source>Cannot obtain a lock on data directory %s. Valorbit is probably already running.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

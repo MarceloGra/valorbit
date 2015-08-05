@@ -922,7 +922,7 @@ static std::string FormatException(std::exception* pex, const char* pszThread)
     char pszModule[MAX_PATH] = "";
     GetModuleFileNameA(NULL, pszModule, sizeof(pszModule));
 #else
-    const char* pszModule = "valorcoin";
+    const char* pszModule = "valorbit";
 #endif
     if (pex)
         return strprintf(
@@ -952,13 +952,13 @@ void PrintExceptionContinue(std::exception* pex, const char* pszThread)
 boost::filesystem::path GetDefaultDataDir()
 {
     namespace fs = boost::filesystem;
-    // Windows < Vista: C:\Documents and Settings\Username\Application Data\ValorCoin
-    // Windows >= Vista: C:\Users\Username\AppData\Roaming\ValorCoin
-    // Mac: ~/Library/Application Support/ValorCoin
-    // Unix: ~/.valorcoin
+    // Windows < Vista: C:\Documents and Settings\Username\Application Data\Valorbit
+    // Windows >= Vista: C:\Users\Username\AppData\Roaming\Valorbit
+    // Mac: ~/Library/Application Support/Valorbit
+    // Unix: ~/.valorbit
 #ifdef WIN32
     // Windows
-    return GetSpecialFolderPath(CSIDL_APPDATA) / "ValorCoin";
+    return GetSpecialFolderPath(CSIDL_APPDATA) / "Valorbit";
 #else
     fs::path pathRet;
     char* pszHome = getenv("HOME");
@@ -970,10 +970,10 @@ boost::filesystem::path GetDefaultDataDir()
     // Mac
     pathRet /= "Library/Application Support";
     fs::create_directory(pathRet);
-    return pathRet / "ValorCoin";
+    return pathRet / "Valorbit";
 #else
     // Unix
-    return pathRet / ".valorcoin";
+    return pathRet / ".valorbit";
 #endif
 #endif
 }
@@ -1022,7 +1022,7 @@ void ClearDatadirCache()
 
 boost::filesystem::path GetConfigFile()
 {
-    boost::filesystem::path pathConfigFile(GetArg("-conf", "valorcoin.conf"));
+    boost::filesystem::path pathConfigFile(GetArg("-conf", "valorbit.conf"));
     if (!pathConfigFile.is_complete()) pathConfigFile = GetDataDir(false) / pathConfigFile;
     return pathConfigFile;
 }
@@ -1055,7 +1055,7 @@ void ReadConfigFile(map<string, string>& mapSettingsRet,
 
 boost::filesystem::path GetPidFile()
 {
-    boost::filesystem::path pathPidFile(GetArg("-pid", "valorcoind.pid"));
+    boost::filesystem::path pathPidFile(GetArg("-pid", "valorbitd.pid"));
     if (!pathPidFile.is_complete()) pathPidFile = GetDataDir() / pathPidFile;
     return pathPidFile;
 }

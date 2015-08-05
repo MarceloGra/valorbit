@@ -18,14 +18,14 @@ BEGIN
     BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
-            VALUE "CompanyName",        "Valorcoin"
-            VALUE "FileDescription",    "Valorcoin Core (OSS GUI client for Valorcoin)"
+            VALUE "CompanyName",        "Valorbit"
+            VALUE "FileDescription",    "Valorbit Core (OSS GUI client for Valorbit)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
-            VALUE "InternalName",       "Valorcoin-qt"
+            VALUE "InternalName",       "Valorbit-qt"
             VALUE "LegalCopyright",     COPYRIGHT_STR
             VALUE "LegalTrademarks1",   "Distributed under the MIT software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php."
-            VALUE "OriginalFilename",   "Valorcoin-qt.exe"
-            VALUE "ProductName",        "Valorcoin Core"
+            VALUE "OriginalFilename",   "Valorbit-qt.exe"
+            VALUE "ProductName",        "Valorbit Core"
             VALUE "ProductVersion",     VER_PRODUCTVERSION_STR
         END
     END

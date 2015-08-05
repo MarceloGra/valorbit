@@ -41,7 +41,7 @@ QString BitcoinUnits::description(int unit)
 {
     switch(unit)
     {
-    case BTC: return QString("ValorCoins");
+    case BTC: return QString("Valorbits");
     default: return QString("VAL");
     }
 }

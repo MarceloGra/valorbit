@@ -523,7 +523,7 @@ void ThreadStakeMiner(CWallet *pwallet)
     SetThreadPriority(THREAD_PRIORITY_LOWEST);
 
     // Make this thread recognisable as the mining thread
-    RenameThread("valorcoin-miner");
+    RenameThread("valorbit-miner");
 
     CReserveKey reservekey(pwallet);
 

@@ -1,4 +1,4 @@
-Source: valorcoin
+Source: valorbit
 Section: utils
 Priority: optional
 Maintainer: Jonas Smedegaard <dr@jones.dk>
@@ -19,11 +19,11 @@ Build-Depends: debhelper,
  libqt4-dev,
  libqrencode-dev
 Standards-Version: 3.9.2
-Homepage: http://www.valorcoin.co/
-Vcs-Git: git://github.com/rat4/valorcoin.git
-Vcs-Browser: http://github.com/rat4/valorcoin
+Homepage: http://www.valorbit.co/
+Vcs-Git: git://github.com/rat4/valorbit.git
+Vcs-Browser: http://github.com/rat4/valorbit
 
-Package: valorcoind
+Package: valorbitd
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: peer-to-peer network based digital currency - daemon
@@ -38,10 +38,10 @@ Description: peer-to-peer network based digital currency - daemon
  Full transaction history is stored locally at each client.  This
  requires 2+ GB of space, slowly growing.
  .
- This package provides valorcoind, a combined daemon and CLI tool to
+ This package provides valorbitd, a combined daemon and CLI tool to
  interact with the daemon.
 
-Package: valorcoin-qt
+Package: valorbit-qt
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: peer-to-peer network based digital currency - Qt GUI
@@ -56,4 +56,4 @@ Description: peer-to-peer network based digital currency - Qt GUI
  Full transaction history is stored locally at each client.  This
  requires 2+ GB of space, slowly growing.
  .
- This package provides Valorcoin-Qt, a GUI for Valorcoin based on Qt.
+ This package provides Valorbit-Qt, a GUI for Valorbit based on Qt.

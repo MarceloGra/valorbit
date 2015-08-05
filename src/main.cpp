@@ -22,7 +22,7 @@ using namespace std;
 using namespace boost;
 
 #if defined(NDEBUG)
-# error "ValorCoin cannot be compiled without assertions."
+# error "Valorbit cannot be compiled without assertions."
 #endif
 
 //
@@ -75,7 +75,7 @@ map<uint256, set<uint256> > mapOrphanTransactionsByPrev;
 // Constant stuff for coinbase transactions we create:
 CScript COINBASE_FLAGS;
 
-const string strMessageMagic = "ValorCoin Signed Message:\n";
+const string strMessageMagic = "Valorbit Signed Message:\n";
 
 extern enum Checkpoints::CPMode CheckpointsMode;
 
@@ -2628,7 +2628,7 @@ struct CImportingNow
 
 void ThreadImport(std::vector<boost::filesystem::path> vImportFiles)
 {
-    RenameThread("valorcoin-loadblk");
+    RenameThread("valorbit-loadblk");
 
     CImportingNow imp;
 
@@ -2966,9 +2966,7 @@ bool static ProcessMessage(CNode* pfrom, string strCommand, CDataStream& vRecv, 
         pfrom->nHighestHeightRequested = 0;  /* CDC v1.3.3 */
         pfrom->nHeightBackwards = 0;  /* CDC v1.3.3 */
         pfrom->nHeightBackwardsLast = GetTime();  /* CDC v1.3.3 */
-
-        pfrom->nTimeOffset = nTime - GetTime();
-
+       
         if (GetBoolArg("-synctime", true))
             AddTimeData(pfrom->addr, nTime);
     }

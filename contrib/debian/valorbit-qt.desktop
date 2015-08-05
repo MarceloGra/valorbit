@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Valorbit
+Comment=Valorbit P2P Cryptocurrency
+Comment[fr]=Valorbit, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=Valorbit, eşten eşe kriptografik sanal para birimi
+Exec=/usr/bin/valorbit-qt
+Terminal=false
+Type=Application
+Icon=/usr/share/pixmaps/bitcoin80.xpm
+MimeType=x-scheme-handler/valorbit;
+Categories=Office;

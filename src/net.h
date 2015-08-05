@@ -200,7 +200,7 @@ public:
     int64_t nTimeConnected;
     int nHighestHeightRequested;  /* CDC v1.3.3 */
     int nHeightBackwards;  /* CDC v1.3.3 */
-    int64 nHeightBackwardsLast;  /* CDC v1.3.3 */
+    int64_t nHeightBackwardsLast;  /* CDC v1.3.3 */
     CAddress addr;
     std::string addrName;
     CService addrLocal;

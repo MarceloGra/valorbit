@@ -40,7 +40,7 @@ bin_PROGRAMS =
 TESTS =
 
 if BUILD_BITCOIND
-  bin_PROGRAMS += valorcoind
+  bin_PROGRAMS += valorbitd
 endif
 
 .PHONY: FORCE
@@ -182,8 +182,8 @@ libbitcoin_util_a_SOURCES = \
 nodist_libbitcoin_util_a_SOURCES = $(srcdir)/obj/build.h
 #
 
-# valorcoind binary #
-valorcoind_LDADD = \
+# valorbitd binary #
+valorbitd_LDADD = \
   $(LIBBITCOIN_SERVER) \
   $(LIBBITCOIN_COMMON) \
   $(LIBBITCOIN_UTIL) \
@@ -192,20 +192,20 @@ valorcoind_LDADD = \
   $(LIBMEMENV)
 
 if ENABLE_WALLET
-valorcoind_LDADD += libbitcoin_wallet.a
+valorbitd_LDADD += libbitcoin_wallet.a
 endif
-valorcoind_SOURCES = \
+valorbitd_SOURCES = \
   bitcoind.cpp \
   rpcclient.cpp
 #
 
 if TARGET_WINDOWS
-valorcoind_SOURCES += bitcoind-res.rc
+valorbitd_SOURCES += bitcoind-res.rc
 endif
 
-valorcoind_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS)
-valorcoind_CPPFLAGS = $(BITCOIN_INCLUDES)
-valorcoind_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+valorbitd_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS)
+valorbitd_CPPFLAGS = $(BITCOIN_INCLUDES)
+valorbitd_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 
 CLEANFILES = leveldb/libleveldb.a leveldb/libmemenv.a *.gcda *.gcno

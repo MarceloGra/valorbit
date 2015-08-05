@@ -1,0 +1,2 @@
+debian/bin/valorbitd usr/bin
+src/valorbitd usr/lib/valorbit

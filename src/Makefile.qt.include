@@ -1,4 +1,4 @@
-bin_PROGRAMS += qt/valorcoin-qt
+bin_PROGRAMS += qt/valorbit-qt
 noinst_LIBRARIES += qt/libbitcoinqt.a
 
 # bitcoin qt core #
@@ -184,11 +184,11 @@ BITCOIN_QT_H = \
   qt/walletmodel.h \
   qt/importprivkeydialog.h
 
-#  qt/res/icons/valorcoin.png \
-#  qt/res/icons/valorcoin.ico \
-#  qt/res/icons/valorcoin-16.png \
-#  qt/res/icons/valorcoin-80.png \
-#  qt/res/icons/valorcoin_testnet.png 
+#  qt/res/icons/valorbit.png \
+#  qt/res/icons/valorbit.ico \
+#  qt/res/icons/valorbit-16.png \
+#  qt/res/icons/valorbit-80.png \
+#  qt/res/icons/valorbit_testnet.png 
 
 RES_ICONS = \
   qt/res/icons/add.png \
@@ -316,25 +316,25 @@ $(qt_libbitcoinqt_a_OBJECTS) $(qt_bitcoin_qt_OBJECTS) : | $(QT_MOC)
 $(QT_MOC): $(PROTOBUF_H)
 $(QT_MOC_CPP): $(PROTOBUF_H)
 
-# valorcoin-qt binary #
-qt_valorcoin_qt_CPPFLAGS = $(BITCOIN_INCLUDES) $(BITCOIN_QT_INCLUDES) \
+# valorbit-qt binary #
+qt_valorbit_qt_CPPFLAGS = $(BITCOIN_INCLUDES) $(BITCOIN_QT_INCLUDES) \
   $(QT_INCLUDES) $(PROTOBUF_CFLAGS) $(QR_CFLAGS)
 
-qt_valorcoin_qt_SOURCES = qt/bitcoin.cpp
+qt_valorbit_qt_SOURCES = qt/bitcoin.cpp
 if TARGET_DARWIN
-  qt_valorcoin_qt_SOURCES += $(BITCOIN_MM)
+  qt_valorbit_qt_SOURCES += $(BITCOIN_MM)
 endif
 if TARGET_WINDOWS
-  qt_valorcoin_qt_SOURCES += $(BITCOIN_RC)
+  qt_valorbit_qt_SOURCES += $(BITCOIN_RC)
 endif
-qt_valorcoin_qt_LDADD = qt/libbitcoinqt.a $(LIBBITCOIN_SERVER)
+qt_valorbit_qt_LDADD = qt/libbitcoinqt.a $(LIBBITCOIN_SERVER)
 if ENABLE_WALLET
-qt_valorcoin_qt_LDADD += $(LIBBITCOIN_WALLET)
+qt_valorbit_qt_LDADD += $(LIBBITCOIN_WALLET)
 endif
-qt_valorcoin_qt_LDADD += $(LIBBITCOIN_COMMON) $(LIBBITCOIN_UTIL) $(LIBBITCOIN_CRYPTO) $(LIBBITCOIN_UNIVALUE) $(LIBLEVELDB) $(LIBMEMENV) \
+qt_valorbit_qt_LDADD += $(LIBBITCOIN_COMMON) $(LIBBITCOIN_UTIL) $(LIBBITCOIN_CRYPTO) $(LIBBITCOIN_UNIVALUE) $(LIBLEVELDB) $(LIBMEMENV) \
   $(BOOST_LIBS) $(QT_LIBS) $(QT_DBUS_LIBS) $(QR_LIBS) $(PROTOBUF_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(LIBSECP256K1)
-qt_valorcoin_qt_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(QT_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
-qt_valorcoin_qt_LIBTOOLFLAGS = --tag CXX
+qt_valorbit_qt_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(QT_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+qt_valorbit_qt_LIBTOOLFLAGS = --tag CXX
 
 #locale/foo.ts -> locale/foo.qm
 QT_QM=$(QT_TS:.ts=.qm)
@@ -358,10 +358,10 @@ CLEAN_QT = $(nodist_qt_libbitcoinqt_a_SOURCES) $(QT_QM) $(QT_FORMS_H) qt/*.gcda 
 
 CLEANFILES += $(CLEAN_QT)
 
-valorcoin_qt_clean: FORCE
-	rm -f $(CLEAN_QT) $(qt_libbitcoinqt_a_OBJECTS) $(qt_valorcoin_qt_OBJECTS) qt/valorcoin-qt$(EXEEXT) $(LIBBITCOINQT)
+valorbit_qt_clean: FORCE
+	rm -f $(CLEAN_QT) $(qt_libbitcoinqt_a_OBJECTS) $(qt_valorbit_qt_OBJECTS) qt/valorbit-qt$(EXEEXT) $(LIBBITCOINQT)
 
-valorcoin_qt : qt/valorcoin-qt$(EXEEXT)
+valorbit_qt : qt/valorbit-qt$(EXEEXT)
 
 ui_%.h: %.ui
 	@test -f $(UIC)
