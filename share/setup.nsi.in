@@ -4,12 +4,12 @@ RequestExecutionLevel highest
 SetCompressor /SOLID lzma
 
 # General Symbol Definitions
-!define NAME "Valorcoin"
+!define NAME "Valorbit"
 !define REGKEY "SOFTWARE\$(^Name)"
 !define VERSION @CLIENT_VERSION_MAJOR@.@CLIENT_VERSION_MINOR@.@CLIENT_VERSION_REVISION@
-!define lcNAME "valorcoin"
-!define COMPANY "ValorVault"
-!define URL http://www.valorcoin.com/
+!define lcNAME "valorbit"
+!define COMPANY "Valorbit"
+!define URL http://valorbit.com/
 
 # MUI Symbol Definitions
 !define MUI_ICON "@abs_top_srcdir@/share/pixmaps/bitcoin.ico"
@@ -58,7 +58,7 @@ InstallDir $PROGRAMFILES\${NAME}
 !endif
 CRCCheck on
 XPStyle on
-BrandingText "ValorVault 2015 http://valorvault.com"
+BrandingText "${NAME} 2015 ${URL}"
 
 ShowInstDetails show
 VIProductVersion ${VERSION}.@CLIENT_VERSION_BUILD@
@@ -94,8 +94,8 @@ Section -post SEC0001
     !insertmacro MUI_STARTMENU_WRITE_BEGIN Application
     CreateDirectory $SMPROGRAMS\$StartMenuGroup
     CreateShortcut "$SMPROGRAMS\$StartMenuGroup\$(^Name).lnk" $INSTDIR\${lcNAME}-qt.exe
-    CreateShortcut "$SMPROGRAMS\$StartMenuGroup\ValorCoin Console.lnk" "$INSTDIR\${lcNAME}d.exe"
-    CreateShortcut "$SMPROGRAMS\$StartMenuGroup\ValorCoin Debug Console.lnk" "$INSTDIR\${lcNAME}d.exe" "-debug -printtoconsole -daemon=0"
+    CreateShortcut "$SMPROGRAMS\$StartMenuGroup\$(^Name) Console.lnk" "$INSTDIR\${lcNAME}d.exe"
+    CreateShortcut "$SMPROGRAMS\$StartMenuGroup\$(^Name) Debug Console.lnk" "$INSTDIR\${lcNAME}d.exe" "-debug -printtoconsole -daemon=0"
 
     CreateShortcut "$SMPROGRAMS\$StartMenuGroup\Uninstall $(^Name).lnk" $INSTDIR\uninstall.exe
     !insertmacro MUI_STARTMENU_WRITE_END
@@ -107,10 +107,10 @@ Section -post SEC0001
     WriteRegStr HKCU "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$(^Name)" UninstallString $INSTDIR\uninstall.exe
     WriteRegDWORD HKCU "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$(^Name)" NoModify 1
     WriteRegDWORD HKCU "SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\$(^Name)" NoRepair 1
-    WriteRegStr HKCR "valorcoin" "URL Protocol" ""
-    WriteRegStr HKCR "valorcoin" "" "URL:Valorcoin"
-    WriteRegStr HKCR "valorcoin\DefaultIcon" "" $INSTDIR\${lcNAME}-qt.exe
-    WriteRegStr HKCR "valorcoin\shell\open\command" "" '"$INSTDIR\${lcNAME}-qt.exe" "%1"'
+    WriteRegStr HKCR "valorbit" "URL Protocol" ""
+    WriteRegStr HKCR "valorbit" "" "URL:valorbit"
+    WriteRegStr HKCR "valorbit\DefaultIcon" "" $INSTDIR\${lcNAME}-qt.exe
+    WriteRegStr HKCR "valorbit\shell\open\command" "" '"$INSTDIR\${lcNAME}-qt.exe" "%1"'
 SectionEnd
 
 # Macro for selecting uninstaller sections
@@ -128,8 +128,8 @@ done${UNSECTION_ID}:
 
 # Uninstaller sections
 Section /o -un.Main UNSEC0000
-    Delete /REBOOTOK $INSTDIR\valorcoin-qt.exe
-    Delete /REBOOTOK $INSTDIR\valorcoind.exe
+    Delete /REBOOTOK $INSTDIR\valorbit-qt.exe
+    Delete /REBOOTOK $INSTDIR\valorbitd.exe
     Delete /REBOOTOK $INSTDIR\COPYING.txt
     Delete /REBOOTOK $INSTDIR\readme.txt
 #    RMDir /r /REBOOTOK $INSTDIR\daemon
@@ -143,15 +143,15 @@ Section -un.post UNSEC0001
     Delete /REBOOTOK "$SMPROGRAMS\$StartMenuGroup\$(^Name).lnk"
     Delete /REBOOTOK "$SMSTARTUP\$(^Name).lnk"
     Delete /REBOOTOK $INSTDIR\uninstall.exe
-    Delete /REBOOTOK $INSTDIR\valorcoin-qt.exe
-    Delete /REBOOTOK $INSTDIR\valorcoind.exe
+    Delete /REBOOTOK $INSTDIR\valorbit-qt.exe
+    Delete /REBOOTOK $INSTDIR\valorbitd.exe
     Delete /REBOOTOK $INSTDIR\debug.log
     Delete /REBOOTOK $INSTDIR\db.log
     DeleteRegValue HKCU "${REGKEY}" StartMenuGroup
     DeleteRegValue HKCU "${REGKEY}" Path
     DeleteRegKey /IfEmpty HKCU "${REGKEY}\Components"
     DeleteRegKey /IfEmpty HKCU "${REGKEY}"
-    DeleteRegKey HKCR "valorcoin"
+    DeleteRegKey HKCR "valorbit"
     RmDir /REBOOTOK $SMPROGRAMS\$StartMenuGroup
     RmDir /REBOOTOK $INSTDIR
     Push $R0

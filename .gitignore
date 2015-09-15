@@ -109,4 +109,8 @@ valorcoin-qt
 Valorcoin
 Valorcoin*.app
 object_script.Valorcoin.*
+<<<<<<< Updated upstream
 
+=======
+*.dmg
+>>>>>>> Stashed changes

@@ -27,7 +27,7 @@ but you can get the current version from http://developer.apple.com
 
 1.  Clone the github tree to get the source code:
 
-git clone https://github.com/rvalorvault/nvaloroin.itgit valorbit
+git clone https://github.com/valorbit/valorbit.git valorbit
 
 2.  Download and install MacPorts from http://www.macports.org/
 
