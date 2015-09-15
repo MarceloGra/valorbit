@@ -49,6 +49,7 @@ src/qt/valorcoin-qt.creator
 src/qt/valorcoin-qt.creator.user
 src/qt/valorcoin-qt.files
 src/qt/valorcoin-qt.includes
+share/qt/Info.plist
 src/qt/forms/ui_*.h
 src/qt/*.moc
 src/config/bitcoin-config.h
@@ -109,8 +110,4 @@ valorcoin-qt
 Valorcoin
 Valorcoin*.app
 object_script.Valorcoin.*
-<<<<<<< Updated upstream
-
-=======
 *.dmg
->>>>>>> Stashed changes
