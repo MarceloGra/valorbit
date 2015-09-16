@@ -2005,7 +2005,6 @@ bool CBlock::AcceptBlock()
     // Check coinbase timestamp
     if (GetBlockTime() > FutureDrift((int64_t)vtx[0].nTime, nHeight))
     {
-        cout << "GetBlockTime= " << GetBlockTime() << " FutureDrift = " << FutureDrift((int64_t)vtx[0].nTime, nHeight) << "\n";
         return DoS(50, error("AcceptBlock() : coinbase timestamp is too early"));
     }
 

@@ -61,7 +61,7 @@ static const int LAST_POW_BLOCK = 21;
 static const int64_t SEED_MONEY = MAX_MONEY/100;
 
 static const int64_t WARN_LARGE_TX_FEE = 100000 * COIN ;
-static const int64_t IPO_PROOF_OF_WORK_REWARD = 10000 * COIN ;
+static const int64_t IPO_PROOF_OF_WORK_REWARD = 100000 * COIN ;
 static const int BLOCKS_PER_DAY = 1440;
 
 inline int64_t FutureDriftV1(int64_t nTime) { return nTime + 10 * 60; }

@@ -46,53 +46,53 @@ class CMainParams : public CChainParams {
 public:
     void Mine(CBlock *pBlock) {
         
-        CBlock block=*pBlock;
-        cout<<block.ToString();
+      CBlock block=*pBlock;
+      cout<<block.ToString();
 
-                // start with this nonce
-                block.nNonce   =  0;
+      // start with this nonce
+      block.nNonce   =  0;
 
-                //cout<<block.ToString();
-                printf("Figure out valid hash and nonce for block\n");
-                printf("block.GetHash() == %s\n", block.GetHash().ToString().c_str());
-                printf("block.hashMerkleRoot == %s\n", block.hashMerkleRoot.ToString().c_str());
-                printf("block.nTime = %u \n", block.nTime);
-                printf("block.nNonce = %u \n", block.nNonce);
+      //cout<<block.ToString();
+      printf("Figure out valid hash and nonce for block\n");
+      printf("block.GetHash() == %s\n", block.GetHash().ToString().c_str());
+      printf("block.hashMerkleRoot == %s\n", block.hashMerkleRoot.ToString().c_str());
+      printf("block.nTime = %u \n", block.nTime);
+      printf("block.nNonce = %u \n", block.nNonce);
 
-                // This will figure out a valid hash and Nonce if you're
-                // creating a different genesis block:
-                    uint256 hashTarget = CBigNum().SetCompact(block.nBits).getuint256();
-                    printf("* Mining block...\n");
-                    printf("    Target %s\n", hashTarget.ToString().c_str());
+      // This will figure out a valid hash and Nonce if you're
+      // creating a different genesis block:
+      uint256 hashTarget = CBigNum().SetCompact(block.nBits).getuint256();
+      printf("* Mining block...\n");
+      printf("    Target %s\n", hashTarget.ToString().c_str());
 
-                    uint64_t nStart = GetTimeMillis();
+      uint64_t nStart = GetTimeMillis();
 
-                    while (block.GetHash() > hashTarget)
-                       {
-                           if ((block.nNonce & 0xFFF) == 0)
-                           {
-                               printf("nonce %08X: hash = %s (target = %s)\n",
-                                    block.nNonce, block.GetHash().ToString().c_str(), hashTarget.ToString().c_str());
-                           }
+      while (block.GetHash() > hashTarget)
+         {
+             if ((block.nNonce & 0xFFF) == 0)
+             {
+                 printf("nonce %08X: hash = %s (target = %s)\n",
+                      block.nNonce, block.GetHash().ToString().c_str(), hashTarget.ToString().c_str());
+             }
 
-                           ++block.nNonce;
-                           if (block.nNonce == 0)
-                           {
-                               printf("NONCE WRAPPED, incrementing time");
-                               ++block.nTime;
-                           }
-                       }
+             ++block.nNonce;
+             if (block.nNonce == 0)
+             {
+                 printf("NONCE WRAPPED, incrementing time");
+                 ++block.nTime;
+             }
+         }
 
-                   cout<<"Mining target met!!!\n";
-                   cout<<block.ToString();
+     cout<<"Mining target met!!!\n";
+     cout<<block.ToString();
 
-                    if (CheckProofOfWork(block.GetHash(), block.nBits)) {
-                       printf("* Solved genesis block! nonce %u hash 0x%s time %u\n",
-                         block.nNonce, block.GetHash().ToString().c_str(), block.nTime);
-                       printf("* Mining took %llu minutes\n", (GetTimeMillis() - nStart)/60000);
-                    }
-                    //cout<<block.ToString();
-        }
+      if (CheckProofOfWork(block.GetHash(), block.nBits)) {
+         printf("* Solved genesis block! nonce %u hash 0x%s time %u\n",
+           block.nNonce, block.GetHash().ToString().c_str(), block.nTime);
+         printf("* Mining took %llu minutes\n", (GetTimeMillis() - nStart)/60000);
+      }
+      //cout<<block.ToString();
+    }
 
     CMainParams() {
         // The message start string is designed to be unlikely to occur in normal data.
@@ -107,6 +107,7 @@ public:
         nDefaultPort = 7654;
         nRPCPort = 17654;
         bnProofOfWorkLimit = CBigNum(~uint256(0) >> 20);
+        nLastPOWBlock = 10000;
 
         static const char* hash160SeedAddress = "055372147866f59ecaf625f8577d39b4015c8780"; // 1VALs3VmH24rHYiPgwKD897w2FjdvVfUk
         //static const char* hash160GenesisAddress = "0553716e9c88172a42c19529d14a51e650047a34"; //1VALgqxbb66Vwr98RqnYkncksCQAKM9dy
@@ -194,7 +195,7 @@ public:
 
         convertSeed6(vFixedSeeds, pnSeed6_main, ARRAYLEN(pnSeed6_main));
 
-        nLastPOWBlock = 10000;
+     
     }
 
     virtual const CBlock& GenesisBlock() const { return genesis; }
@@ -231,6 +232,8 @@ public:
         nDefaultPort = 8765;
         nRPCPort = 18765;
         strDataDir = "testnet";
+        nLastPOWBlock = 0x7fffffff;
+
         static const uint256 _hashGenesisBlock("0x0000cdc7f0dcdec5a9722b876edec80a3d61854490e266bd79ef858199dfadf9");
 
         // Modify the testnet genesis block so the timestamp is valid for a later start.
