@@ -279,10 +279,7 @@ endif
 RES_IMAGES = \
   qt/res/images/about.png \
   qt/res/images/header.png \
-  qt/res/images/splash2.jpg \
-  qt/res/images/splash3.bmp \
-  qt/res/images/splash3.png \
-  qt/res/images/splash4.png
+  qt/res/images/splash.png
 
 RES_STYLESHEETS = \
   qt/res/text/style.qss
