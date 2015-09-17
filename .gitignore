@@ -111,3 +111,5 @@ Valorcoin
 Valorcoin*.app
 object_script.Valorcoin.*
 *.dmg
+*.exe
+tags
