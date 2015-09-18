@@ -42,10 +42,10 @@ set<pair<COutPoint, unsigned int> > setStakeSeen;
 CBigNum bnProofOfStakeLimit(~uint256(0) >> 20);
 CBigNum bnProofOfStakeLimitV2(~uint256(0) >> 48);
 
-unsigned int nStakeMinAge = 1 * 60; // 8 hours // TODO : set back to 8
-unsigned int nModifierInterval = 3 * 60; // time to elapse before new modifier is computed
+unsigned int nStakeMinAge = 20 * 60; //  TODO : set back to 
+unsigned int nModifierInterval = 4 * 60 * 5; // time to elapse before new modifier is computed
 
-int nCoinbaseMaturity = 5; // TODO : Revert to 500
+int nCoinbaseMaturity = 6; // TODO : Revert to 250
 CBlockIndex* pindexGenesisBlock = NULL;
 int nBestHeight = -1;
 
@@ -2003,6 +2003,7 @@ bool CBlock::AcceptBlock()
         return DoS(100, error("AcceptBlock() : reject proof-of-work at height %d", nHeight));
 
     // Check coinbase timestamp
+    cout <<"Delta coinbase ts= "<<GetBlockTime() - FutureDrift((int64_t)vtx[0].nTime, nHeight)<<"\n";
     if (GetBlockTime() > FutureDrift((int64_t)vtx[0].nTime, nHeight))
     {
         return DoS(50, error("AcceptBlock() : coinbase timestamp is too early"));

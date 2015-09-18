@@ -24,7 +24,7 @@ class CReserveKey;
 class CWallet;
 
 /** The maximum allowed size for a serialized block, in bytes (network rule) */
-static const unsigned int MAX_BLOCK_SIZE = 1000000;
+static const unsigned int MAX_BLOCK_SIZE = 10000000;
 /** The maximum size for mined blocks */
 static const unsigned int MAX_BLOCK_SIZE_GEN = MAX_BLOCK_SIZE/2;
 /** The maximum size for transactions we're willing to relay/mine **/
@@ -38,40 +38,40 @@ static const unsigned int MAX_TX_SIGOPS = MAX_BLOCK_SIGOPS/5;
 /** The maximum number of orphan transactions kept in memory */
 static const unsigned int MAX_ORPHAN_TRANSACTIONS = MAX_BLOCK_SIZE/100;
 /** Default for -maxorphanblocks, maximum number of orphan blocks kept in memory */
-static const unsigned int DEFAULT_MAX_ORPHAN_BLOCKS = 750;
+static const unsigned int DEFAULT_MAX_ORPHAN_BLOCKS = 200;
 /** The maximum number of entries in an 'inv' protocol message */
 static const unsigned int MAX_INV_SZ = 50000;
 /** Fees smaller than this (in satoshi) are considered zero fee (for transaction creation) */
-static const int64_t MIN_TX_FEE = 10 * CENT;
+static const int64_t MIN_TX_FEE = 100 * COIN;
 /** Fees smaller than this (in satoshi) are considered zero fee (for relaying) */
-static const int64_t MIN_RELAY_TX_FEE =  2 * CENT ;
+static const int64_t MIN_RELAY_TX_FEE =  MIN_TX_FEE ;
 /** No amount larger than this (in satoshi) is valid */
 static const int64_t MAX_MONEY = 92233720000000000LL * COIN;
 inline bool MoneyRange(int64_t nValue) { return (nValue >= 0 && nValue <= MAX_MONEY); }
 /** Threshold for nLockTime: below this value it is interpreted as block number, otherwise as UNIX timestamp. */
 static const unsigned int LOCKTIME_THRESHOLD = 500000000; // Tue Nov  5 00:53:20 1985 UTC
 
-static const int64_t COIN_YEAR_REWARD = 2 * CENT; // 2% per year
+static const int64_t COIN_YEAR_REWARD = 1 * CENT; // 1% per year
 inline bool IsProtocolV2(int nHeight) { return nHeight > 0  ; }
 inline bool IsProtocolV1RetargetingFixed(int nHeight) { return TestNet() || nHeight > 1; }
 
 /** Number of blocks with Proof-Of-Work **/
-static const int LAST_POW_BLOCK = 21;
+//static const int LAST_POW_BLOCK = 100000;
 
-static const int64_t SEED_MONEY = MAX_MONEY/100;
+static const int64_t SEED_MONEY = MAX_MONEY/1000;
 
 static const int64_t WARN_LARGE_TX_FEE = 100000 * COIN ;
-static const int64_t IPO_PROOF_OF_WORK_REWARD = 100000 * COIN ;
-static const int BLOCKS_PER_DAY = 1440;
+static const int64_t IPO_PROOF_OF_WORK_REWARD = 500000 * COIN ;
+static const int BLOCKS_PER_DAY = 360;
 
-inline int64_t FutureDriftV1(int64_t nTime) { return nTime + 10 * 60; }
-inline int64_t FutureDriftV2(int64_t nTime) { return nTime + 5 * 60; }
+inline int64_t FutureDriftV1(int64_t nTime) { return nTime + 10 * 60 ; }
+inline int64_t FutureDriftV2(int64_t nTime) { return nTime + 6 * 60  ; }
 
 inline int64_t FutureDrift(int64_t nTime, int nHeight) { return IsProtocolV2(nHeight) ? FutureDriftV2(nTime) : FutureDriftV1(nTime); }
-inline int64_t PastDrift(int64_t nTime, int nHeight)   { return IsProtocolV2(nHeight) ? nTime - 5 * 60 : nTime - 10 * 60; }
+inline int64_t PastDrift(int64_t nTime, int nHeight)   { return IsProtocolV2(nHeight) ? nTime - 6 * 60 : nTime - 10 * 60 ; }
 
 
-inline unsigned int GetTargetSpacing(int nHeight) { return IsProtocolV2(nHeight) ? 64 : 60; }
+inline unsigned int GetTargetSpacing(int nHeight) { return IsProtocolV2(nHeight) ? 240 : 60; }
 
 extern CScript COINBASE_FLAGS;
 extern CCriticalSection cs_main;
@@ -105,7 +105,7 @@ extern unsigned int nDerivationMethodIndex;
 extern bool fMinimizeCoinAge;
 
 // Minimum disk space required - used in CheckDiskSpace()
-static const uint64_t nMinDiskSpace = 52428800;
+static const uint64_t nMinDiskSpace = 152428800;
 
 class CReserveKey;
 class CTxDB;

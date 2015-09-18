@@ -71,7 +71,7 @@ public:
          {
              if ((block.nNonce & 0xFFF) == 0)
              {
-                 printf("nonce %08X: hash = %s (target = %s)\n",
+                 printf("nonce= %08X hash= %s\n",
                       block.nNonce, block.GetHash().ToString().c_str(), hashTarget.ToString().c_str());
              }
 
@@ -113,8 +113,6 @@ public:
         //static const char* hash160GenesisAddress = "0553716e9c88172a42c19529d14a51e650047a34"; //1VALgqxbb66Vwr98RqnYkncksCQAKM9dy
         static const uint256 _hashGenesisBlockMerkleRoot("0xc647fb622441e23f9b136ad9d299b0885cb910e64923257cad942f8e3d13b544");
         static const uint256 _hashGenesisBlock("0x0000040dd9a10e8ec2024ee300e7e61451623375de8c708789fa88c112ab4a12");
-        static const uint256 _hashSeedBlockMerkleRoot("0x458d312185a99203013e608684ac048962e9debaeac4ce7ed1f3870cfb658798");
-        static const uint256 _hashSeedBlock("0x000004f2fbd54d1f711013df0903ff7d57c1a31f5a5fe5dbb8aa40ce016a14e3");
 
 
         // Build the genesis block. Note that the output of the genesis coinbase cannot
@@ -127,7 +125,10 @@ public:
         std::vector<CTxOut> vout;
         vout.resize(1);
         vout[0].SetEmpty();
-        CTransaction txNew(1, 1438816758, vin, vout, 0);
+        
+        CTransaction txNew(1, 0, vin, vout, 0);
+        txNew.nTime = 1438816758;
+
         genesis.vtx.push_back(txNew);
         genesis.hashPrevBlock = 0;
         genesis.hashMerkleRoot = genesis.BuildMerkleTree();
@@ -151,9 +152,13 @@ public:
 
         assert(hashGenesisBlock == _hashGenesisBlock);
 
-        const char* pszTimestampSeed = "05-Aug-2015@seed.valorbit.com";
         CTransaction txSeed;
-        txSeed.nTime = genesis.nTime + 1;
+        const char* pszTimestampSeed = "18-Sep-2015@seed.valorbit.com";
+        txSeed.nTime = 1442585154;
+//        txSeed.nTime = 1442585154;
+        static const uint256 _hashSeedBlockMerkleRoot("0xf3946d88e036728889cb6b2a1bc17541f020709b60b85aefbd8bc226d91a0b5e");
+        static const uint256 _hashSeedBlock("0x000005ab97a27a69e23fd909b4277e441d2ecbd98de7fc9f72756351fba6093c");
+        seed.nNonce   = 327452;
         txSeed.vin.resize(1);
         txSeed.vout.resize(1);
         txSeed.vin[0].scriptSig = CScript() << 486604799 << CBigNum(9999) << vector<unsigned char>((const unsigned char*)pszTimestampSeed, (const unsigned char*)pszTimestampSeed + strlen(pszTimestampSeed));
@@ -167,7 +172,6 @@ public:
         seed.nVersion = 1;
         seed.nTime    = txSeed.nTime;
         seed.nBits    = bnProofOfWorkLimit.GetCompact();
-        seed.nNonce   = 1486264;
 
         if (seed.hashMerkleRoot != _hashSeedBlockMerkleRoot)
         {
