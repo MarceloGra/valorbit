@@ -110,9 +110,9 @@ public:
         nLastPOWBlock = 10000;
 
         static const char* hash160SeedAddress = "055372147866f59ecaf625f8577d39b4015c8780"; // 1VALs3VmH24rHYiPgwKD897w2FjdvVfUk
-        //static const char* hash160GenesisAddress = "0553716e9c88172a42c19529d14a51e650047a34"; //1VALgqxbb66Vwr98RqnYkncksCQAKM9dy
-        static const uint256 _hashGenesisBlockMerkleRoot("0x268bbf8630c0f265dfc0c000e77402f929efb4e298ea50b7b57f9a20375090d6");
-        static const uint256 _hashGenesisBlock("0x0000040dd9a10e8ec2024ee300e7e61451623375de8c708789fa88c112ab4a12");
+
+        static const uint256 _hashGenesisBlockMerkleRoot("0xc7617449c5bf922c55f48dc59dec3a2d4d5089a67798e23cb9ff7b40989636c5");
+        static const uint256 _hashGenesisBlock("0x000008632efb64320fb1e461d3137beae0a26beee8f85474f9eb655193ee37d8");
 
 
         // Build the genesis block. Note that the output of the genesis coinbase cannot
@@ -127,7 +127,7 @@ public:
         vout[0].SetEmpty();
         
         CTransaction txNew(1, 0, vin, vout, 0);
-        txNew.nTime = 1442615726;
+        txNew.nTime = 1442848001;
 
         genesis.vtx.push_back(txNew);
         genesis.hashPrevBlock = 0;
@@ -135,7 +135,7 @@ public:
         genesis.nVersion = 1;
         genesis.nTime    = txNew.nTime;
         genesis.nBits    = bnProofOfWorkLimit.GetCompact();
-        genesis.nNonce   = 1280789;
+        genesis.nNonce   = 876252;
 
         if (genesis.hashMerkleRoot != _hashGenesisBlockMerkleRoot)
         {
@@ -153,11 +153,11 @@ public:
         assert(hashGenesisBlock == _hashGenesisBlock);
 
         CTransaction txSeed;
-        const char* pszTimestampSeed = "18-Sep-2015@seed.valorbit.com";
+        const char* pszTimestampSeed = "2015-09-21@valorbit.com";
         txSeed.nTime = genesis.nTime + 1;
-        static const uint256 _hashSeedBlockMerkleRoot("0xf3946d88e036728889cb6b2a1bc17541f020709b60b85aefbd8bc226d91a0b5e");
-        static const uint256 _hashSeedBlock("0x000005ab97a27a69e23fd909b4277e441d2ecbd98de7fc9f72756351fba6093c");
-        seed.nNonce   = 327452;
+        static const uint256 _hashSeedBlockMerkleRoot("0x4849a528ef16e687d9e3d386e3052994247a739f8c094585c0bcc42d4d3e0d66");
+        static const uint256 _hashSeedBlock("0x00000a24c2d9c8da09a01ee31570b458adcd629fe0ac27b0df8a7c035f54de8d");
+        seed.nNonce   = 252014;
         txSeed.vin.resize(1);
         txSeed.vout.resize(1);
         txSeed.vin[0].scriptSig = CScript() << 486604799 << CBigNum(9999) << vector<unsigned char>((const unsigned char*)pszTimestampSeed, (const unsigned char*)pszTimestampSeed + strlen(pszTimestampSeed));
@@ -237,11 +237,11 @@ public:
         strDataDir = "testnet";
         nLastPOWBlock = 0x7fffffff;
 
-        static const uint256 _hashGenesisBlock("0x0000cdc7f0dcdec5a9722b876edec80a3d61854490e266bd79ef858199dfadf9");
+        static const uint256 _hashGenesisBlock("0x00005c07e6dd245e416ba0b80e7b28924793d297e246f08a936ba822a3d4b690");
 
         // Modify the testnet genesis block so the timestamp is valid for a later start.
         genesis.nBits  = bnProofOfWorkLimit.GetCompact();
-        genesis.nNonce = 128110;
+        genesis.nNonce = 148466;
         hashGenesisBlock = genesis.GetHash();
         //cout<<genesis.ToString();
         if (true  && (hashGenesisBlock != _hashGenesisBlock )) {
@@ -282,10 +282,10 @@ public:
         bnProofOfWorkLimit = CBigNum(~uint256(0) >> 1);
         //genesis.nTime = 1411111111;
         genesis.nBits  = bnProofOfWorkLimit.GetCompact();
-        genesis.nNonce = 0;
+        genesis.nNonce = 2;
         nDefaultPort = 18766;
         strDataDir = "regtest";
-        static const uint256 _hashGenesisBlock("0x6eeefb94c0b6c0621f72ffda2466226f224dc6257f6e3670c957a8a1a6d99cd2");
+        static const uint256 _hashGenesisBlock("0x41e077c4ff08cc84b9bb8ea0f9ee1d11a02a7eac1f0baff7c1f4d3d896a973f7");
 
         hashGenesisBlock = genesis.GetHash();
         //cout<<genesis.ToString();
