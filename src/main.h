@@ -42,7 +42,7 @@ static const unsigned int DEFAULT_MAX_ORPHAN_BLOCKS = 200;
 /** The maximum number of entries in an 'inv' protocol message */
 static const unsigned int MAX_INV_SZ = 50000;
 /** Fees smaller than this (in satoshi) are considered zero fee (for transaction creation) */
-static const int64_t MIN_TX_FEE = 100 * COIN;
+static const int64_t MIN_TX_FEE = 10 * COIN;
 /** Fees smaller than this (in satoshi) are considered zero fee (for relaying) */
 static const int64_t MIN_RELAY_TX_FEE =  MIN_TX_FEE ;
 /** No amount larger than this (in satoshi) is valid */
@@ -53,23 +53,19 @@ static const unsigned int LOCKTIME_THRESHOLD = 500000000; // Tue Nov  5 00:53:20
 
 static const int64_t COIN_YEAR_REWARD = 1 * CENT; // 1% per year
 inline bool IsProtocolV2(int nHeight) { return nHeight > 0  ; }
-inline bool IsProtocolV1RetargetingFixed(int nHeight) { return TestNet() || nHeight > 1; }
-
-/** Number of blocks with Proof-Of-Work **/
-//static const int LAST_POW_BLOCK = 100000;
+//inline bool IsProtocolV1RetargetingFixed(int nHeight) { return TestNet() || nHeight > 1; }
 
 static const int64_t SEED_MONEY = MAX_MONEY/1000;
 
 static const int64_t WARN_LARGE_TX_FEE = 100000 * COIN ;
-static const int64_t IPO_PROOF_OF_WORK_REWARD = 500000 * COIN ;
+static const int64_t IPO_PROOF_OF_WORK_REWARD = 50000 * COIN ;
 static const int BLOCKS_PER_DAY = 360;
 
-inline int64_t FutureDriftV1(int64_t nTime) { return nTime + 10 * 60 ; }
+//inline int64_t FutureDriftV1(int64_t nTime) { return nTime + 10 * 60 ; }
 inline int64_t FutureDriftV2(int64_t nTime) { return nTime + 6 * 60  ; }
 
-inline int64_t FutureDrift(int64_t nTime, int nHeight) { return IsProtocolV2(nHeight) ? FutureDriftV2(nTime) : FutureDriftV1(nTime); }
-inline int64_t PastDrift(int64_t nTime, int nHeight)   { return IsProtocolV2(nHeight) ? nTime - 6 * 60 : nTime - 10 * 60 ; }
-
+inline int64_t FutureDrift(int64_t nTime, int nHeight) { return FutureDriftV2(nTime) ; }
+inline int64_t PastDrift(int64_t nTime, int nHeight)   { return nTime - 6 * 60; }
 
 inline unsigned int GetTargetSpacing(int nHeight) { return IsProtocolV2(nHeight) ? 240 : 60; }
 

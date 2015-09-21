@@ -72,7 +72,7 @@ public:
              if ((block.nNonce & 0xFFF) == 0)
              {
                  printf("nonce= %08X hash= %s\n",
-                      block.nNonce, block.GetHash().ToString().c_str(), hashTarget.ToString().c_str());
+                      block.nNonce, block.GetHash().ToString().c_str());
              }
 
              ++block.nNonce;
@@ -87,9 +87,9 @@ public:
      cout<<block.ToString();
 
       if (CheckProofOfWork(block.GetHash(), block.nBits)) {
-         printf("* Solved genesis block! nonce %u hash 0x%s time %u\n",
+         printf("* Solved block nonce %u hash 0x%s time %u\n",
            block.nNonce, block.GetHash().ToString().c_str(), block.nTime);
-         printf("* Mining took %llu minutes\n", (GetTimeMillis() - nStart)/60000);
+         printf("* Mining took %llu minutes\n", (unsigned long long) (GetTimeMillis() - nStart)/60000);
       }
       //cout<<block.ToString();
     }
@@ -103,7 +103,7 @@ public:
         pchMessageStart[1] = 0xd1;
         pchMessageStart[2] = 0xe8;
         pchMessageStart[3] = 0xea;
-        vAlertPubKey = ParseHex("");
+        vAlertPubKey = ParseHex("0497c88df4a895e5818fb0901f98ed7c9628e054b0401a895ba5805c0464729263cdb74cf7dd0c3b5e6b092edf7d821306b9cd732ca7314993a16c91a473ab2b39");
         nDefaultPort = 7654;
         nRPCPort = 17654;
         bnProofOfWorkLimit = CBigNum(~uint256(0) >> 20);
@@ -111,14 +111,14 @@ public:
 
         static const char* hash160SeedAddress = "055372147866f59ecaf625f8577d39b4015c8780"; // 1VALs3VmH24rHYiPgwKD897w2FjdvVfUk
         //static const char* hash160GenesisAddress = "0553716e9c88172a42c19529d14a51e650047a34"; //1VALgqxbb66Vwr98RqnYkncksCQAKM9dy
-        static const uint256 _hashGenesisBlockMerkleRoot("0xc647fb622441e23f9b136ad9d299b0885cb910e64923257cad942f8e3d13b544");
+        static const uint256 _hashGenesisBlockMerkleRoot("0x268bbf8630c0f265dfc0c000e77402f929efb4e298ea50b7b57f9a20375090d6");
         static const uint256 _hashGenesisBlock("0x0000040dd9a10e8ec2024ee300e7e61451623375de8c708789fa88c112ab4a12");
 
 
         // Build the genesis block. Note that the output of the genesis coinbase cannot
         // be spent as it did not originally exist in the database.
         //
-        const char* pszTimestamp = "Valorbit http://www.wired.com/2015/07/brinks-super-secure-smart-safes-not-secure/";
+        const char* pszTimestamp = "Valorbit http://www.wired.com/2015/09/tower-purifies-million-cubic-feet-air-hour/";
         std::vector<CTxIn> vin;
         vin.resize(1); 
         vin[0].scriptSig = CScript() << 0 << CBigNum(42) << vector<unsigned char>((const unsigned char*)pszTimestamp, (const unsigned char*)pszTimestamp + strlen(pszTimestamp));
@@ -127,7 +127,7 @@ public:
         vout[0].SetEmpty();
         
         CTransaction txNew(1, 0, vin, vout, 0);
-        txNew.nTime = 1438816758;
+        txNew.nTime = 1442615726;
 
         genesis.vtx.push_back(txNew);
         genesis.hashPrevBlock = 0;
@@ -154,8 +154,7 @@ public:
 
         CTransaction txSeed;
         const char* pszTimestampSeed = "18-Sep-2015@seed.valorbit.com";
-        txSeed.nTime = 1442585154;
-//        txSeed.nTime = 1442585154;
+        txSeed.nTime = genesis.nTime + 1;
         static const uint256 _hashSeedBlockMerkleRoot("0xf3946d88e036728889cb6b2a1bc17541f020709b60b85aefbd8bc226d91a0b5e");
         static const uint256 _hashSeedBlock("0x000005ab97a27a69e23fd909b4277e441d2ecbd98de7fc9f72756351fba6093c");
         seed.nNonce   = 327452;
@@ -232,7 +231,7 @@ public:
         pchMessageStart[2] = 0xd8;
         pchMessageStart[3] = 0xc7;
         bnProofOfWorkLimit = CBigNum(~uint256(0) >> 16);
-        vAlertPubKey = ParseHex("");
+        vAlertPubKey = ParseHex("0497c88df4a895e5818fb0901f98ed7c9628e054b0401a895ba5805c0464729263cdb74cf7dd0c3b5e6b092edf7d821306b9cd732ca7314993a16c91a473ab2b39");
         nDefaultPort = 8765;
         nRPCPort = 18765;
         strDataDir = "testnet";
