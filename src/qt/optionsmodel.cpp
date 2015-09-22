@@ -43,10 +43,10 @@ void OptionsModel::Init()
     fMinimizeToTray = settings.value("fMinimizeToTray", false).toBool();
     fMinimizeOnClose = settings.value("fMinimizeOnClose", false).toBool();
     fCoinControlFeatures = settings.value("fCoinControlFeatures", false).toBool();
-    nTransactionFee = settings.value("nTransactionFee").toLongLong();
+    nTransactionFee = settings.value("nTransactionFee", (unsigned long long)MIN_TX_FEE ) .toLongLong();
     nReserveBalance = settings.value("nReserveBalance").toLongLong();
     language = settings.value("language", "").toString();
-    fUseValorTheme = settings.value("fUseValorTheme", true).toBool();
+    fUseValorTheme = settings.value("fUseValorTheme", false).toBool();
 
     // These are shared with core Bitcoin; we want
     // command-line options to override the GUI settings:

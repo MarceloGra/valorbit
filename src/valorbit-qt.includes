@@ -1,0 +1,16 @@
+.
+config
+json
+leveldb/db
+leveldb/helpers/memenv
+leveldb/include/leveldb
+leveldb/port
+leveldb/port/win
+leveldb/table
+leveldb/util
+obj
+qt
+qt/forms
+qt/test
+support
+test/data

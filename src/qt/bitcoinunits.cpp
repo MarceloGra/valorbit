@@ -12,8 +12,8 @@ QList<BitcoinUnits::Unit> BitcoinUnits::availableUnits()
 {
     QList<BitcoinUnits::Unit> unitlist;
     unitlist.append(BTC);
-    unitlist.append(mBTC);
-    unitlist.append(uBTC);
+//    unitlist.append(mBTC);
+//    unitlist.append(uBTC);
     return unitlist;
 }
 
@@ -41,7 +41,7 @@ QString BitcoinUnits::description(int unit)
 {
     switch(unit)
     {
-    case BTC: return QString("Valorbits");
+    case BTC: return QString("valorbits");
     default: return QString("VAL");
     }
 }
