@@ -52,7 +52,7 @@ inline bool MoneyRange(int64_t nValue) { return (nValue >= 0 && nValue <= MAX_MO
 static const unsigned int LOCKTIME_THRESHOLD = 500000000; // Tue Nov  5 00:53:20 1985 UTC
 
 static const int64_t COIN_YEAR_REWARD = 1 * CENT; // 1% per year
-inline bool IsProtocolV2(int nHeight) { return nHeight > 0  ; }
+inline bool IsProtocolV2(int nHeight) { return nHeight > 1  ; }
 //inline bool IsProtocolV1RetargetingFixed(int nHeight) { return TestNet() || nHeight > 1; }
 
 static const int64_t SEED_MONEY = MAX_MONEY/1000;
@@ -67,7 +67,7 @@ inline int64_t FutureDriftV2(int64_t nTime) { return nTime + 6 * 60  ; }
 inline int64_t FutureDrift(int64_t nTime, int nHeight) { return FutureDriftV2(nTime) ; }
 inline int64_t PastDrift(int64_t nTime, int nHeight)   { return nTime - 6 * 60; }
 
-inline unsigned int GetTargetSpacing(int nHeight) { return IsProtocolV2(nHeight) ? 240 : 60; }
+inline unsigned int GetTargetSpacing(int nHeight) { return IsProtocolV2(nHeight) ? 64 : 60; }
 
 extern CScript COINBASE_FLAGS;
 extern CCriticalSection cs_main;
