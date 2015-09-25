@@ -2003,14 +2003,6 @@ bool CBlock::AcceptBlock()
     if (IsProofOfWork() && nHeight > Params().LastPOWBlock())
         return DoS(100, error("AcceptBlock() : reject proof-of-work at height %d", nHeight));
 
-    // Check coinbase timestamp
-    cout <<"Delta coinbase ts= "<<GetBlockTime() - FutureDrift((int64_t)vtx[0].nTime, nHeight)<<"\n";
-    if (GetBlockTime() > FutureDrift((int64_t)vtx[0].nTime, nHeight))
-    {
-        cout <<"Coinbase timestamp too early!\n";
-        //return DoS(50, error("AcceptBlock() : coinbase timestamp is too early"));
-    }
-
     // Check coinstake timestamp
     if (IsProofOfStake() && !CheckCoinStakeTimestamp(nHeight, GetBlockTime(), (int64_t)vtx[1].nTime))
         return DoS(50, error("AcceptBlock() : coinstake timestamp violation nTimeBlock=%d nTimeTx=%u", GetBlockTime(), vtx[1].nTime));

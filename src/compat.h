@@ -28,9 +28,12 @@
 typedef u_int SOCKET;
 #endif
 
+// As Solaris does not have the MSG_NOSIGNAL flag for send(2) syscall, it is defined as 0
+#if !defined(HAVE_MSG_NOSIGNAL) && !defined(MSG_NOSIGNAL)
+#define MSG_NOSIGNAL 0
+#endif
 
 #ifdef WIN32
-#define MSG_NOSIGNAL        0
 #define MSG_DONTWAIT        0
 typedef int socklen_t;
 #else
