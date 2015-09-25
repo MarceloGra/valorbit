@@ -113,3 +113,9 @@ object_script.Valorcoin.*
 *.dmg
 *.exe
 tags
+Makefile.in
+aclocal.m4
+configure
+libtool
+src/config/bitcoin-config.h
+src/qt/forms/*.h
