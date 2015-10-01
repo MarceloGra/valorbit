@@ -4,12 +4,15 @@ SUBDIRS = src
 
 GZIP_ENV="-9n"
 
+PLATFORM_OSX=osx
+
 BITCOIND_BIN=$(top_builddir)/src/valorbitd$(EXEEXT)
 BITCOIN_QT_BIN=$(top_builddir)/src/qt/valorbit-qt$(EXEEXT)
 BITCOIN_WIN_INSTALLER=$(PACKAGE)-$(PACKAGE_VERSION)-win$(WINDOWS_BITS)-setup$(EXEEXT)
 
 OSX_APP=Valorbit.app
-OSX_DMG=Valorbit.dmg
+#OSX_DMG=Valorbit.dmg
+OSX_DMG=$(PACKAGE)-$(PACKAGE_VERSION)-$(PLATFORM_OSX)64-setup
 OSX_DEPLOY_SCRIPT=$(top_srcdir)/contrib/macdeploy/macdeployqtplus
 OSX_FANCY_PLIST=$(top_srcdir)/contrib/macdeploy/fancy.plist
 OSX_INSTALLER_ICONS=$(top_srcdir)/src/qt/res/icons/bitcoin.icns
@@ -82,7 +85,7 @@ OSX_APP_BUILT=$(OSX_APP)/Contents/PkgInfo $(OSX_APP)/Contents/Resources/empty.lp
 
 if BUILD_DARWIN
 $(OSX_DMG): $(OSX_APP_BUILT) $(OSX_PACKAGING)
-	$(OSX_DEPLOY_SCRIPT) $(OSX_APP) -add-qt-tr $(OSX_QT_TRANSLATIONS) -translations-dir=$(QT_TRANSLATION_DIR) -dmg -fancy $(OSX_FANCY_PLIST) -verbose 2 -sign
+	$(OSX_DEPLOY_SCRIPT) $(OSX_APP) -add-qt-tr $(OSX_QT_TRANSLATIONS) -translations-dir=$(QT_TRANSLATION_DIR) -dmg $(OSX_DMG) -fancy $(OSX_FANCY_PLIST) -verbose 2 -sign
 
 deploydir: $(OSX_DMG)
 else
