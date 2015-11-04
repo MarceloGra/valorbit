@@ -863,6 +863,15 @@ bool GetTransaction(const uint256 &hash, CTransaction &tx, uint256 &hashBlock)
                 hashBlock = block.GetHash();
             return true;
         }
+
+        // The genesis tx is not in the wallet
+        CTransaction gtx = Params().GenesisBlock().vtx[0];
+        if (hash == gtx.GetHash()) {
+            tx = gtx;
+            hashBlock = Params().GenesisBlock().GetHash();
+            return true;
+        }
+
     }
     return false;
 }
