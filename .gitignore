@@ -121,3 +121,4 @@ src/config/bitcoin-config.h
 src/qt/forms/*.h
 src/test/data/*.h
 src/qt/test/moc_*.cpp
+CMakeLists.txt

@@ -45,7 +45,7 @@ CBigNum bnProofOfStakeLimitV2(~uint256(0) >> 10);
 unsigned int nStakeMinAge = 8 * 60 * 60; 
 unsigned int nModifierInterval = 4 * 60 * 5; // time to elapse before new modifier is computed
 
-int nCoinbaseMaturity = 100;
+int nCoinbaseMaturity = 500;
 CBlockIndex* pindexGenesisBlock = NULL;
 int nBestHeight = -1;
 
@@ -970,11 +970,18 @@ static CBigNum GetProofOfStakeLimit(int nHeight)
 }
 
 // miner's coin base reward
-int64_t GetProofOfWorkReward(int64_t nFees)
+//int64_t GetProofOfWorkReward(int64_t nFees)
+int64_t GetProofOfWorkReward(int nHeight, int64_t nFees)
 {
-    int64_t nSubsidy = IPO_PROOF_OF_WORK_REWARD;
+    int64_t nSubsidy ; // = IPO_PROOF_OF_WORK_REWARD;
 
-    LogPrint("creation", "GetProofOfWorkReward() : create=%s nSubsidy=%d\n", FormatMoney(nSubsidy), nSubsidy);
+    int year = min ( nHeight / ( BLOCKS_PER_DAY * DAYS_PER_YEAR ), 3 ) ;
+
+    LogPrint("creation", "GetProofOfWork year=%i", year);
+
+    nSubsidy = IPO_PROOF_OF_WORK_REWARD << year ;
+
+    LogPrint("creation", "GetProofOfWorkReward() : create=%s nSubsidy=%"PRI64d"\n", FormatMoney(nSubsidy), nSubsidy);
 
     return nSubsidy + nFees;
 }
@@ -1018,6 +1025,9 @@ unsigned int GetNextTargetRequired(const CBlockIndex* pindexLast, bool fProofOfS
 
     if (nActualSpacing < 0)
         nActualSpacing = nTargetSpacing;
+
+    if (nActualSpacing > nTargetSpacing * 10)
+        nActualSpacing = nTargetSpacing * 10;
 
     // ppcoin: target change every block
     // ppcoin: retarget with exponential moving toward target spacing
@@ -1481,7 +1491,7 @@ bool CBlock::ConnectBlock(CTxDB& txdb, CBlockIndex* pindex, bool fJustCheck)
         if ( prevHash != Params().HashGenesisBlock() || hash != Params().HashSeedBlock() )
         {
         //printf("ConnectBlock(): prev block %s\n", prevHash.ToString().c_str());
-        int64_t nReward = GetProofOfWorkReward(nFees);
+        int64_t nReward = GetProofOfWorkReward(pindex->nHeight,nFees);
         // Check coinbase reward
         if (vtx[0].GetValueOut() > nReward)
             return DoS(50, error("ConnectBlock() : coinbase reward exceeded (actual=%d vs calculated=%d)",

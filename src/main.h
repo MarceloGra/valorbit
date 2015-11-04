@@ -51,15 +51,17 @@ inline bool MoneyRange(int64_t nValue) { return (nValue >= 0 && nValue <= MAX_MO
 /** Threshold for nLockTime: below this value it is interpreted as block number, otherwise as UNIX timestamp. */
 static const unsigned int LOCKTIME_THRESHOLD = 500000000; // Tue Nov  5 00:53:20 1985 UTC
 
-static const int64_t COIN_YEAR_REWARD = 1 * CENT; // 1% per year
+static const int64_t COIN_YEAR_REWARD = 2 * CENT; // 2% per year
 inline bool IsProtocolV2(int nHeight) { return nHeight > 1  ; }
 //inline bool IsProtocolV1RetargetingFixed(int nHeight) { return TestNet() || nHeight > 1; }
 
-static const int64_t SEED_MONEY = MAX_MONEY/1000;
+static const int64_t SEED_MONEY = MAX_MONEY/100;
 
-static const int64_t WARN_LARGE_TX_FEE = 100000 * COIN ;
+static const int64_t WARN_LARGE_TX_FEE = 10000 * MIN_TX_FEE ;
 static const int64_t IPO_PROOF_OF_WORK_REWARD = 50000 * COIN ;
 static const int BLOCKS_PER_DAY = 360;
+static const int DAYS_PER_YEAR = 365;
+
 
 //inline int64_t FutureDriftV1(int64_t nTime) { return nTime + 10 * 60 ; }
 inline int64_t FutureDriftV2(int64_t nTime) { return nTime + 6 * 60  ; }
@@ -67,7 +69,7 @@ inline int64_t FutureDriftV2(int64_t nTime) { return nTime + 6 * 60  ; }
 inline int64_t FutureDrift(int64_t nTime, int nHeight) { return FutureDriftV2(nTime) ; }
 inline int64_t PastDrift(int64_t nTime, int nHeight)   { return nTime - 6 * 60; }
 
-inline unsigned int GetTargetSpacing(int nHeight) { return IsProtocolV2(nHeight) ? 64 : 60; }
+inline unsigned int GetTargetSpacing(int nHeight) { return IsProtocolV2(nHeight) ?  ( 24 * 60 * 60 )/BLOCKS_PER_DAY : 60; }
 
 extern CScript COINBASE_FLAGS;
 extern CCriticalSection cs_main;
@@ -101,7 +103,7 @@ extern unsigned int nDerivationMethodIndex;
 extern bool fMinimizeCoinAge;
 
 // Minimum disk space required - used in CheckDiskSpace()
-static const uint64_t nMinDiskSpace = 152428800;
+static const uint64_t nMinDiskSpace = 52428800;
 
 class CReserveKey;
 class CTxDB;
@@ -139,7 +141,8 @@ void ThreadImport(std::vector<boost::filesystem::path> vImportFiles);
 
 bool CheckProofOfWork(uint256 hash, unsigned int nBits);
 unsigned int GetNextTargetRequired(const CBlockIndex* pindexLast, bool fProofOfStake);
-int64_t GetProofOfWorkReward(int64_t nFees);
+//int64_t GetProofOfWorkReward(int64_t nFees);
+int64_t GetProofOfWorkReward(int nHeight, int64_t nFees);
 int64_t GetProofOfStakeReward(int64_t nCoinAge, int64_t nFees);
 bool IsInitialBlockDownload();
 std::string GetWarnings(std::string strFor);
