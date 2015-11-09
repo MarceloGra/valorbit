@@ -61,7 +61,8 @@ static const int64_t WARN_LARGE_TX_FEE = 10000 * MIN_TX_FEE ;
 static const int64_t IPO_PROOF_OF_WORK_REWARD = 50000 * COIN ;
 static const int BLOCKS_PER_DAY = 360;
 static const int DAYS_PER_YEAR = 365;
-
+static const int NEWBORN_BLOCKS = 500;
+static const int NEWBORN_TARGET_SPACING = 5;
 
 //inline int64_t FutureDriftV1(int64_t nTime) { return nTime + 10 * 60 ; }
 inline int64_t FutureDriftV2(int64_t nTime) { return nTime + 6 * 60  ; }
@@ -69,7 +70,8 @@ inline int64_t FutureDriftV2(int64_t nTime) { return nTime + 6 * 60  ; }
 inline int64_t FutureDrift(int64_t nTime, int nHeight) { return FutureDriftV2(nTime) ; }
 inline int64_t PastDrift(int64_t nTime, int nHeight)   { return nTime - 6 * 60; }
 
-inline unsigned int GetTargetSpacing(int nHeight) { return IsProtocolV2(nHeight) ?  ( 24 * 60 * 60 )/BLOCKS_PER_DAY : 60; }
+inline bool IsNewborn(int nHeight) { return nHeight < NEWBORN_BLOCKS  ; }
+inline unsigned int GetTargetSpacing(int nHeight) { return IsNewborn(nHeight) ? NEWBORN_TARGET_SPACING : ( IsProtocolV2(nHeight) ?  ( 24 * 60 * 60 )/BLOCKS_PER_DAY : 60) ; }
 
 extern CScript COINBASE_FLAGS;
 extern CCriticalSection cs_main;

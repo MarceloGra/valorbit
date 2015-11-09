@@ -11,7 +11,7 @@
 const std::string CLIENT_NAME("Satoshi");
 
 // Client version number
-#define CLIENT_VERSION_SUFFIX   "-celestic"
+#define CLIENT_VERSION_SUFFIX   "-rewards"
 
 
 // The following part of the code determines the CLIENT_BUILD variable.

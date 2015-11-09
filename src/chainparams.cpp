@@ -20,6 +20,9 @@ struct SeedSpec6 {
 
 #include "chainparamsseeds.h"
 
+#ifndef GENESIS_MINE
+#define GENESIS_MINE false
+#endif
 //
 // Main network
 //
@@ -106,8 +109,8 @@ public:
         vAlertPubKey = ParseHex("04219bef90531b2bfa82a03cf3e93f4281bf0bd9be79150ed93a3203f4d552d6a4732582fce6c94b7ca30459f4f9a84996f1a96833451cb0b13625893fa5a1c154");
 
 
-        nDefaultPort = 7654;
-        nRPCPort = 17654;
+        nDefaultPort = 8338;
+        nRPCPort = 8339;
         bnProofOfWorkLimit = CBigNum(~uint256(0) >> 20);
         nLastPOWBlock = BLOCKS_PER_DAY * DAYS_PER_YEAR * 128;
 
@@ -147,7 +150,7 @@ public:
         assert(genesis.hashMerkleRoot == _hashGenesisBlockMerkleRoot);
 
         hashGenesisBlock = genesis.GetHash();
-        if (true  && (hashGenesisBlock != _hashGenesisBlock )) {
+        if (GENESIS_MINE  && (hashGenesisBlock != _hashGenesisBlock )) {
                 cout<<"Mining GENESIS block ...............\n";
                 Mine(&genesis);
             }
@@ -182,7 +185,7 @@ public:
         assert(seed.hashMerkleRoot == _hashSeedBlockMerkleRoot);
 
         hashSeedBlock = seed.GetHash();
-        if (true  && (hashSeedBlock != _hashSeedBlock )) {
+        if (GENESIS_MINE  && (hashSeedBlock != _hashSeedBlock )) {
            cout<<"Mining SEED block ...............\n";
            Mine(&seed);
         }
@@ -234,8 +237,8 @@ public:
         pchMessageStart[3] = 0xc7;
         bnProofOfWorkLimit = CBigNum(~uint256(0) >> 16);
         vAlertPubKey = ParseHex("04f84f9a4d41d3009d0ad1f9b30e234e8da2663631daa3ead20b6d761bd2e202725358400421d028e664990cafb53df80e890d3a40a23aed828ee1675bc2c1a644");
-        nDefaultPort = 8765;
-        nRPCPort = 18765;
+        nDefaultPort = 18338;
+        nRPCPort = 18339;
         strDataDir = "testnet";
         nLastPOWBlock = 0x7fffffff;
 
@@ -246,8 +249,8 @@ public:
         genesis.nNonce = 54984;
         hashGenesisBlock = genesis.GetHash();
         //cout<<genesis.ToString();
-        if (true  && (hashGenesisBlock != _hashGenesisBlock )) {
-                printf("Mining GENESIS block on TestNet ...............\n");
+        if (GENESIS_MINE  && (hashGenesisBlock != _hashGenesisBlock )) {
+                printf("Mining GENESIS block on testnet ...............\n");
                 Mine(&genesis);
         }
 
@@ -285,14 +288,14 @@ public:
         //genesis.nTime = 1411111111;
         genesis.nBits  = bnProofOfWorkLimit.GetCompact();
         genesis.nNonce = 3;
-        nDefaultPort = 18766;
+        nDefaultPort = 28338;
         strDataDir = "regtest";
         static const uint256 _hashGenesisBlock("0x0b687e82b23d3f22665adfc7895ac125218f504177f5735bebfd735a3c1a5df5");
 
         hashGenesisBlock = genesis.GetHash();
         //cout<<genesis.ToString();
-        if (true  && (hashGenesisBlock != _hashGenesisBlock )) {
-                printf("Mining GENESIS block on RegNet ...............\n");
+        if (GENESIS_MINE && (hashGenesisBlock != _hashGenesisBlock )) {
+                printf("Mining GENESIS block on regtest ...............\n");
                 Mine(&genesis);
         }
 
