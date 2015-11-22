@@ -307,7 +307,7 @@ public:
         BN_bin2bn(vchSecretIn, 32, bnSecret);
         BN_add(bnSecret, bnSecret, bnTweak);
         BN_nnmod(bnSecret, bnSecret, bnOrder, ctx);
-        if (BN_is_zero(bnSecret))
+        if BN_is_zero(bnSecret)
             ret = false; // ridiculously unlikely
         int nBits = BN_num_bits(bnSecret);
         memset(vchSecretOut, 0, 32);

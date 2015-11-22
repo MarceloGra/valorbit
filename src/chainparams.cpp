@@ -106,7 +106,8 @@ public:
         pchMessageStart[1] = 0xd1;
         pchMessageStart[2] = 0xe8;
         pchMessageStart[3] = 0xea;
-        vAlertPubKey = ParseHex("04219bef90531b2bfa82a03cf3e93f4281bf0bd9be79150ed93a3203f4d552d6a4732582fce6c94b7ca30459f4f9a84996f1a96833451cb0b13625893fa5a1c154");
+        vAlertPubKey = ParseHex("04894885B16E72DA9E2A56FC5B6BE4B1EBB9F3FE96B58A43EF8013EAEC246C2E3D01AC4317EFBCFFC0E8FE36E4D525DD7C7F6664AED00288D234686AF3D9F37180"); //1VALabNVujcHnWis49uQWFnWhQe4btyCX
+        
 
 
         nDefaultPort = 8338;
@@ -194,6 +195,9 @@ public:
 
         vSeeds.push_back(CDNSSeedData("seed.valorbit.com", "seed.valorbit.com"));
         vSeeds.push_back(CDNSSeedData("seed2.valorbit.com", "seed2.valorbit.com"));
+        vSeeds.push_back(CDNSSeedData("seed3.valorbit.com", "seed3.valorbit.com"));
+        vSeeds.push_back(CDNSSeedData("seed.dblore.com", "seed.dblore.com"));
+        vSeeds.push_back(CDNSSeedData("seed2.dblore.com", "seed2.dblore.com"));
 
         base58Prefixes[PUBKEY_ADDRESS] = list_of(0);
         base58Prefixes[SCRIPT_ADDRESS] = list_of(5);
