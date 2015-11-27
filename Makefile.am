@@ -79,17 +79,18 @@ $(OSX_APP)/Contents/MacOS/Valorbit: $(BITCOIN_QT_BIN)
 	$(MKDIR_P) $(@D)
 	STRIPPROG="$(STRIP)" $(INSTALL_STRIP_PROGRAM)  $< $@
 
-$(OSX_APP)/Contents/MacOS/valorbitd: $(BITCOIND_BIN)
-	$(MKDIR_P) $(@D)
-	STRIPPROG="$(STRIP)" $(INSTALL_STRIP_PROGRAM)  $< $@
+#$(OSX_APP)/Contents/MacOS/valorbitd: $(BITCOIND_BIN)
+#	$(MKDIR_P) $(@D)
+#	STRIPPROG="$(STRIP)" $(INSTALL_STRIP_PROGRAM)  $< $@
 
 #	STRIPPROG="$(STRIP)" $(INSTALL_STRIP_PROGRAM) $(BITCOIND_BIN) $(@D)
 #	STRIPPROG="$(STRIP)" $(INSTALL_STRIP_PROGRAM) $(BITCOIN_QT_BIN) $@
 
 OSX_APP_BUILT=$(OSX_APP)/Contents/PkgInfo $(OSX_APP)/Contents/Resources/empty.lproj \
   $(OSX_APP)/Contents/Resources/bitcoin.icns $(OSX_APP)/Contents/Info.plist \
-  $(OSX_APP)/Contents/MacOS/Valorbit \
-  $(OSX_APP)/Contents/MacOS/valorbitd
+  $(OSX_APP)/Contents/MacOS/Valorbit
+
+#  $(OSX_APP)/Contents/MacOS/valorbitd
 
 if BUILD_DARWIN
 $(OSX_DMG): $(OSX_APP_BUILT) $(OSX_PACKAGING)
