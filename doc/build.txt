@@ -1,0 +1,92 @@
+See build-osx.txt, build-msw.txt, build-unix.txt for detailed build
+info.
+
+This is a concise guide with mostly commands:
+
+Developer's Guide
+
+Build
+===================
+
+Linux pre-requisites for building
+===================
+
+sudo apt-get install g++ git-core pkg-config autoconf2.13 libtool
+automake faketime bsdmainutils mingw-w64 g++-mingw-w64 nsis zip
+
+sudo apt install g++-mingw-w64-i686 binutils-mingw-w64-i686
+gcc-mingw-w64-i686 mingw-w64-i686-dev
+
+OSX pre-requisite
+===================
+
+QREncode
+Only when not using make -C depends
+brew install qrencode
+
+XCode
+# Works with : Xcode 5.1.1 , 6
+OSX : Xcode command line tools must be installed for include headers
+Install with :
+xcode-select --install
+Python appscript
+For making a deployment .app / .dmg we need
+
+sudo easy_install appscript
+
+Linux build
+===================
+export HOST=x86_64-unknown-linux-gnu
+make -C depends download-linux
+
+OSX build
+===================
+# Mavericks uses Xcode 6.2
+
+export HOST=x86_64-apple-darwin13.4.0 # Mavericks
+export HOST=x86_64-apple-darwin14.5.0  # Yosemite
+
+make -C depends download-osx
+Windows build
+export HOST=x86_64-w64-mingw32
+# For 32 bit builds
+export HOST=i686-w64-mingw32  
+make -C depends download-win
+
+Any platform
+===================
+cd valorbit
+make clean
+make -C depends -j4
+./autogen.sh
+
+# full build , static
+./configure --prefix=`pwd`/depends/$HOST --enable-static=true
+--enable-shared=false --with-gui=qt5
+
+# configure command line static build only
+./configure --prefix=`pwd`/depends/$HOST --enable-static=true
+ --enable-shared=false --with-gui=no
+
+./configure --prefix=`pwd`/depends/$HOST --enable-static=true
+ --enable-shared=true --with-gui=qt5
+make -j4
+
+Change version
+===================
+vi configure.ac
+vi src/clientversion.h
+
+Create build.h for version
+
+# List all git tags
+git tag -l
+The release needs an adnotated tag to stamp the build version
+
+Make annotated tag
+===================
+git add . -A
+git commit -m
+git tag -a -m"comment" v1.x.yy.z  
+git push origin v1.x.yy.z
+share/genbuild.sh src/obj/build.h
