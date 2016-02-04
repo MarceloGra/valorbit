@@ -122,3 +122,4 @@ src/qt/forms/*.h
 src/test/data/*.h
 src/qt/test/moc_*.cpp
 CMakeLists.txt
+dist/
